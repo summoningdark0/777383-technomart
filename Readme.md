@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Дмитрий Галкин](https://up.htmlacademy.ru/htmlcss/21/user/777383).
-* Наставник: `Алексей Белов` (https://htmlacademy.ru/profile/id96038).
+* Наставник: [Алексей Белов](https://htmlacademy.ru/profile/id96038).
 
 ---
 
