@@ -1,1 +1,167 @@
-<!-- Каталог техномарта-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	<title>HTML Academy: Техномарт</title>
+  </head>
+  <body>
+	<header class="header">
+		<section class="header-top">
+			<h2 class="visually-hidden">Интернет-магазин Техномарт</h2>
+			<a class="header-logo">Техномаркет</a>
+			<input class="header-search" type="search"> 
+			<ul>
+				<li><a class="header-bookmarks" href="#">Закладки</a></li>
+				<li><a class="header-cart" href="#">Корзина: 10</a></li>
+				<li><a class="header-place-order" href="#">Оформить заказ</a></li><!--Кнопка?-->
+			</ul>
+		</section>
+		<section class="header-middle">
+			<h1 class="header-caption">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+			<div class="header-contact-info">
+				<span class="header-phone">+7 (812) 555-05-55</span>
+				г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+			</div>
+			<ul class="header-profile">
+				<li class="header-profile-user"><a href="#">Равшан Джамшутович</a></li>
+				<li class="header-profile-link header-profile-link-my-orders"><a href="my-orders.html">Мои заказы</a></li>
+				<li class="header-profile-link headre-profile-link-dashboard"><a href="dashboard.html">Личный кабинет</a></li>
+				
+			</ul>
+		</section>
+		<nav class="main-menu">
+			<ul>
+				<li class="main-menu-item"><a href="index.html">Главная</a></li>
+				<li class="main-menu-item"><a href="about-us.html">Компания</a></li>
+				<li class="main-menu-item"><a href="catalog.html">Каталог</a></li>
+				<li class="main-menu-item"><a href="news.html">Новости</a></li>
+				<li class="main-menu-item"><a href="offers.html">Спецпредложения</a></li>
+				<li class="main-menu-item"><a href="delivery.html">Доставка</a></li>
+				<li class="main-menu-item"><a href="contacts.html">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main">
+		<section class="catalog-tree">
+			<ul class="catalog-tree-list">
+				<li class="catalog-tree-item"><a href="index.html"><img src="" width="25px" height="25px"></a></li>	<!-- img - это временная забивка -->
+				<li class="catalog-tree-item"><a href="catalog.html">Каталог</a></li>
+				<li class="catalog-tree-item"><a href="catalog-tools.html">Инструменты</a></li>
+				<li class="catalog-tree-item"><a href="catalog-tools-perforator.html">Перфораторы</a></li>
+			</ul>
+			<h2 class="catalog-current-category">Перфораторы</h2>
+		</section>
+		<section class="catalog-filters">
+      	  <h2 class="visually-hidden">Фильтр товаров</h2>
+          <!-- это мы не проходили это нам не задавали -->
+     	</section>
+		<section class="catalog">
+			<ul class="catalog-items-list">
+				<li class="catalog-item"> 
+				<!-- Если нет различий, то можно взять класс .popular-items-item с главной, или же заменить его на той же главной на .category-item -->
+					<img src="img/bosch-bfg-3000.png" alt="Перфоратор BOSCH BFG 3000">
+					<h3>Перфоратор BOSCH BFG 3000</h3>
+					<span>22500 Р.</span>
+					<a href="catalog-item-bfg3000.html">15500 Р.</a>
+				</li>
+				<li class="catalog-item">
+					<img src="img/bosch-bfg-6000.png" alt="Перфоратор BOSCH BFG 6000">
+					<h3>Перфоратор BOSCH BFG 6000</h3>
+					<span>30500 Р.</span>
+					<a href="catalog-item-bfg6000.html">25500 Р.</a>
+				</li>
+				<li class="catalog-item item-new"><!-- Наложение сверху "Купить" и "В закладки" не верстаю, т.к. это вроде пихается в цсс-->
+					<img src="img/bosch-bfg-2000.png" alt="Перфоратор BOSCH BFG 2000">
+					<h3>Перфоратор BOSCH BFG 2000</h3>
+					<span></span>
+					<a href="catalog-item-bfg2000.html">12500 Р.</a>
+				</li>
+				<li class="catalog-item">
+					<img src="img/bosch-bfg-3000.png" alt="Перфоратор BOSCH BFG 3000">
+					<h3>Перфоратор BOSCH BFG 3000</h3>
+					<span>22500 Р.</span>
+					<a href="catalog-item-bfg3000.html">15500 Р.</a>
+				</li>
+				<li class="catalog-item item-new">
+					<img src="img/bosch-bfg-6000.png" alt="Перфоратор BOSCH BFG 6000">
+					<h3>Перфоратор BOSCH BFG 6000</h3>
+					<span>30500 Р.</span>
+					<a href="catalog-item-bfg6000.html">25500 Р.</a>
+				</li>
+				<li class="catalog-item">
+					<img src="img/bosch-bfg-2000.png" alt="Перфоратор BOSCH BFG 2000">
+					<h3>Перфоратор BOSCH BFG 2000</h3>
+					<span></span>
+					<a href="catalog-item-bfg2000.html">12500 Р.</a>
+				</li>
+				<li class="catalog-item item-new">
+					<img src="img/bosch-bfg-3000.png" alt="Перфоратор BOSCH BFG 3000">
+					<h3>Перфоратор BOSCH BFG 3000</h3>
+					<span>22500 Р.</span>
+					<a href="catalog-item-bfg3000.html">15500 Р.</a>
+				</li>
+				<li class="catalog-item">
+					<img src="img/bosch-bfg-6000.png" alt="Перфоратор BOSCH BFG 6000">
+					<h3>Перфоратор BOSCH BFG 6000</h3>
+					<span>30500 Р.</span>
+					<a href="catalog-item-bfg6000.html">25500 Р.</a>
+				</li>
+				<li class="catalog-item">
+					<img src="img/bosch-bfg-2000.png" alt="Перфоратор BOSCH BFG 2000">
+					<h3>Перфоратор BOSCH BFG 2000</h3>
+					<span></span>
+					<a href="catalog-item-bfg2000.html">12500 Р.</a>
+				</li>
+			</ul>
+			<ul class="catalog-pagination-list">
+				<li class="catalog-pagination-item catalog-pagination-item-current"><a href="">1</a></li>
+				<li class="catalog-pagination-item"><a href="">2</a></li>
+				<li class="catalog-pagination-item"><a href="">3</a></li>
+				<li class="catalog-pagination-item"><a href="">Следующая</a></li>
+			</ul>
+		</section>
+		<section class="category-details">
+			<h2>Пара слов о перфораторах</h2>
+			<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Cуществуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+		</section>
+
+	</main>
+	<footer class="footer">
+		<section class="footer-top"><a class="footer-logo" href="">Техномарт</a>
+			<ul class="footer-general-menu footer-menu">
+				<li class="footer-menu-item"><a href="about-us.html">Компания</a></li>
+				<li class="footer-menu-item"><a href="news.html">Новости</a></li>
+				<li class="footer-menu-item"><a href="catalog.html">Каталог</a></li>
+				<li class="footer-menu-item"><a href="delivery.html">Доставка</a></li>
+				<li class="footer-menu-item"><a href="contacts.html">Контакты</a></li>
+			</ul>
+			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+				   +7 (812) 555-05-55
+			</p>
+			<ul class="footer-catalog-menu footer-menu">
+				<li class="footer-catalog-menu-item"><a href="catalog-materials.html">Материалы</a></li>
+				<li class="footer-catalog-menu-item"><a href="catalog-heavy-machinery.html">Техника</a></li>
+				<li class="footer-catalog-menu-item"><a href="catalog-tools.htms">Инструмент</a></li>
+				<li class="footer-catalog-menu-item"><a href="catalog-sale.html">Спецпредложения</a></li>
+			</ul>
+		</section>
+
+		<section class="footer-bottom">
+			<p class="footer-copyright">© 2010–2017 Компания «Техномарт»<br>
+					Все права защищены
+			</p>
+
+			<a class="social social-vk" href="https://vk.com/">ВКонтакте</a>
+			<a class="social social-fb" href="https://facebook.com/">Facebook</a>
+			<a class="social social-ig" href="https://instagram.com/">Instagram</a>
+				
+			<p class="footer-feedback">Обратная связь:<br>
+				<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+			</p>
+			<p class="footer-developer-info">Разработано — <br>
+				<a href="http://htmlacademy.ru/">htmlacademy.ru</a>
+			</p>
+		</section>
+	</footer>
+  </body>
+</html>
