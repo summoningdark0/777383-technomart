@@ -9,7 +9,7 @@
 		<section class="header-top">
 			<h2 class="visually-hidden">Интернет-магазин Техномарт</h2>
 			<a class="header-logo">Техномаркет</a>
-			<input class="header-search" type="search"> 
+			<input class="header-search" type="search" placeholder="Поиск"> 
 			<ul>
 				<li><a class="header-bookmarks" href="#">Закладки</a></li>
 				<li><a class="header-cart" href="#">Корзина: 10</a></li>
@@ -53,9 +53,73 @@
 		</section>
 		<section class="catalog-filters">
       	  <h2 class="visually-hidden">Фильтр товаров</h2>
-          <!-- это мы не проходили это нам не задавали -->
+         <!-- Форма -->
+         <form class="filter" method="get" action="http://echo.htmlacademy.ru"> <!-- Адрес-заглушка -->
+         	<div class="filter-header">
+         			<h4>Фильтр:</h4>
+         	</div>
+         	<fieldset> 
+         		<legend>Цена:</legend>
+         		<!-- на js?-->
+         		<input type="range" name="range-min">
+         		<input type="range" name="range-max">
+         		<input type="number">
+         		<input type="number">
+         	</fieldset>
+         	<fieldset>
+         		<legend>Производители:</legend>
+         		<ul>
+         			<li class="filter-option">
+         				<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="filter-item-bosch" id="filter-label-bosch" checked>
+         				<label for="filter-label-bosch">BOSCH</label>
+         			</li>
+         			<li class="filter-option">
+         				<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="filetr-item-interskol" id="filter-label-interskol">
+         				<label for="filter-label-interskol">Интерскол</label>
+         			</li>
+         			<li class="filter-option">
+         				<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="filter-item-makita" id="filter-label-makita" checked>
+         				<label for="filter-label-makita">makita</label>
+         			</li>
+         			<li class="filter-option">
+         				<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="filter-item-dewalt" id="filter-label-dewalt">
+         				<label for="filter-label-dewalt">DeWALT</label>
+         			</li>
+         			<li class="filter-option">
+         				<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="filter-item-hitachi" id="filter-label-hitachi">
+         				<label for="filter-label-hitachi">Hitachi</label>
+         			</li>
+         		</ul>
+         	</fieldset>
+         	<fieldset>
+         		<legend>Питание:</legend>
+         		<ul>
+         			<li class="filter-option">
+         				<input type="radio" class="visually-hidden filter-input filter-input-radiobutton" name="filter-power" id="filter-power-cordless" checked>
+         				<label for="filter-power-cordless">Аккумуляторные</label>
+         			</li>
+         			<li class="filter-option">
+         				<input type="radio" class="visually-hidden filter-input filter-input-radiobutton" name="filter-power" id="filter-power-wired">
+         				<label for="filter-power-wired">Сетевые</label>
+         			</li>
+         		</ul>
+         	</fieldset>
+         	<button type="submit" class="filter-button button">Показать</button>
+         </form>
+		<!-- Конец формы -->
      	</section>
 		<section class="catalog">
+			<div class="catalog-sort-items-header">
+				<h4>Сортировка</h4>
+				<ul>
+					<!-- не уверен, что .catalog-sort-items-parameter надо ставить li, а не ссылкам-->
+					<li class="catalog-sort-items-parameter"><a href="#by-price">По цене</a></li>
+					<li class="catalog-sort-items-parameter"><a href="#by-type">По типу</a></li>
+					<li class="catalog-sort-items-parameter"><a href="#by-function">По функционалу</a></li>
+					<li class="catalog-sort-items-parameter"><a class="sort-arrow sort-arrow-asc" href="#ascending"></a></li>
+					<li class="catalog-sort-items-parameter"><a class="sort-arrow sort-arrow-desc" href="#descending"></a></li>
+				</ul>
+			</div>
 			<ul class="catalog-items-list">
 				<li class="catalog-item"> 
 				<!-- Если нет различий, то можно взять класс .popular-items-item с главной, или же заменить его на той же главной на .category-item -->
