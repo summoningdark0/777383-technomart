@@ -31,13 +31,13 @@
 		</section>
 		<nav class="main-menu">
 			<ul>
-				<li class="main-menu-item"><a href="index.html">Главная</a></li>
-				<li class="main-menu-item"><a href="about-us.html">Компания</a></li>
-				<li class="main-menu-item"><a href="catalog.html">Каталог</a></li>
-				<li class="main-menu-item"><a href="news.html">Новости</a></li>
-				<li class="main-menu-item"><a href="offers.html">Спецпредложения</a></li>
-				<li class="main-menu-item"><a href="delivery.html">Доставка</a></li>
-				<li class="main-menu-item"><a href="contacts.html">Контакты</a></li>
+				<li class="menu-item"><a href="index.html">Главная</a></li>
+				<li class="menu-item"><a href="about-us.html">Компания</a></li>
+				<li class="menu-item"><a href="catalog.html">Каталог</a></li>
+				<li class="menu-item"><a href="news.html">Новости</a></li>
+				<li class="menu-item"><a href="offers.html">Спецпредложения</a></li>
+				<li class="menu-item"><a href="delivery.html">Доставка</a></li>
+				<li class="menu-item"><a href="contacts.html">Контакты</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -49,14 +49,14 @@
 				<li class="breadcrumbs-item"><a href="catalog-tools.html">Инструменты</a></li>
 				<li class="breadcrumbs-item"><a href="catalog-tools-perforator.html">Перфораторы</a></li>
 			</ul>
-			<h2 class="catalog-current-category">Перфораторы</h2>
+			<h2 class="current-category">Перфораторы</h2>
 		</section>
-		<section class="catalog-filters">
+		<section class="filters">
       	  <h2 class="visually-hidden">Фильтр товаров</h2>
          <!-- Форма -->
          <form class="filter" method="get" action="http://echo.htmlacademy.ru"> <!-- Адрес-заглушка -->
-         	<div class="filter-header">
-         			<h4>Фильтр:</h4>
+         	<div>
+         			<h4>Фильтр:</h4> <!-- .filter h4 -->
          	</div>
          	<fieldset> 
          		<legend>Цена:</legend>
@@ -70,23 +70,23 @@
          		<legend>Производители:</legend>
          		<ul>
          			<li class="filter-option">
-         				<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="filter-item-bosch" id="filter-label-bosch" checked>
+         				<input type="checkbox" class="visually-hidden filter-input filter-checkbox" name="filter-item-bosch" id="filter-label-bosch" checked>
          				<label for="filter-label-bosch">BOSCH</label>
          			</li>
          			<li class="filter-option">
-         				<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="filetr-item-interskol" id="filter-label-interskol">
+         				<input type="checkbox" class="visually-hidden filter-input filter-checkbox" name="filetr-item-interskol" id="filter-label-interskol">
          				<label for="filter-label-interskol">Интерскол</label>
          			</li>
          			<li class="filter-option">
-         				<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="filter-item-makita" id="filter-label-makita" checked>
+         				<input type="checkbox" class="visually-hidden filter-input filter-checkbox" name="filter-item-makita" id="filter-label-makita" checked>
          				<label for="filter-label-makita">makita</label>
          			</li>
          			<li class="filter-option">
-         				<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="filter-item-dewalt" id="filter-label-dewalt">
+         				<input type="checkbox" class="visually-hidden filter-input filter-checkbox" name="filter-item-dewalt" id="filter-label-dewalt">
          				<label for="filter-label-dewalt">DeWALT</label>
          			</li>
          			<li class="filter-option">
-         				<input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="filter-item-hitachi" id="filter-label-hitachi">
+         				<input type="checkbox" class="visually-hidden filter-input filter-checkbox" name="filter-item-hitachi" id="filter-label-hitachi">
          				<label for="filter-label-hitachi">Hitachi</label>
          			</li>
          		</ul>
@@ -95,11 +95,11 @@
          		<legend>Питание:</legend>
          		<ul>
          			<li class="filter-option">
-         				<input type="radio" class="visually-hidden filter-input filter-input-radiobutton" name="filter-power" id="filter-power-cordless" checked>
+         				<input type="radio" class="visually-hidden filter-input filter-radiobutton" name="filter-power" id="filter-power-cordless" checked>
          				<label for="filter-power-cordless">Аккумуляторные</label>
          			</li>
          			<li class="filter-option">
-         				<input type="radio" class="visually-hidden filter-input filter-input-radiobutton" name="filter-power" id="filter-power-wired">
+         				<input type="radio" class="visually-hidden filter-input filter-radiobutton" name="filter-power" id="filter-power-wired">
          				<label for="filter-power-wired">Сетевые</label>
          			</li>
          		</ul>
@@ -109,27 +109,27 @@
 		<!-- Конец формы -->
      	</section>
 		<section class="catalog">
-			<div class="catalog-sort-items-header">
-				<h4>Сортировка</h4>
+			<div>
+				<h4>Сортировка</h4> <!-- .catalog h4 -->
 				<ul>
-					<!-- не уверен, что .catalog-sort-items-parameter надо ставить li, а не ссылкам-->
-					<li class="catalog-sort-items-parameter"><a href="#by-price">По цене</a></li>
-					<li class="catalog-sort-items-parameter"><a href="#by-type">По типу</a></li>
-					<li class="catalog-sort-items-parameter"><a href="#by-function">По функционалу</a></li>
-					<li class="catalog-sort-items-parameter"><a class="sort-arrow sort-arrow-asc" href="#ascending"></a></li>
-					<li class="catalog-sort-items-parameter"><a class="sort-arrow sort-arrow-desc" href="#descending"></a></li>
+					<!-- не уверен, что .sort-parameter надо ставить li, а не ссылкам-->
+					<li class="sort-parameter"><a href="#by-price">По цене</a></li>
+					<li class="sort-parameter"><a href="#by-type">По типу</a></li>
+					<li class="sort-parameter"><a href="#by-function">По функционалу</a></li>
+					<li class="sort-parameter"><a class="sort-arrow sort-arrow-asc" href="#ascending"></a></li>
+					<li class="sort-parameter"><a class="sort-arrow sort-arrow-desc" href="#descending"></a></li>
 				</ul>
 			</div>
 			<ul class="catalog-items-list">
 				<li class="catalog-item"> 
-				<!-- Если нет различий, то можно взять класс .popular-items-item с главной, или же заменить его на той же главной на .category-item -->
+				<!-- Если нет различий, то можно взять класс .item с главной, или же заменить его на той же главной на .category-item -->
 					<img src="img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="169">
 					<h3>Перфоратор BOSCH BFG 3000</h3>
 					<span>22500 Р.</span>
 					<a href="catalog-item-bfg3000.html">15500 Р.</a>
 					<div class="catalog-item-on-hover">
-						<button type="button" class="catalog-item-on-hover-add-to-cart">Купить</button>
-						<button type="button" class="catalog-item-on-hover-bookmark">В закладки</button>
+						<button type="button" class="add-to-cart">Купить</button>
+						<button type="button" class="bookmark">В закладки</button>
 					</div>
 				</li>
 				<li class="catalog-item">
@@ -138,8 +138,8 @@
 					<span>30500 Р.</span>
 					<a href="catalog-item-bfg6000.html">25500 Р.</a>
 					<div class="catalog-item-on-hover">
-						<button type="button" class="catalog-item-on-hover-add-to-cart">Купить</button>
-						<button type="button" class="catalog-item-on-hover-bookmark">В закладки</button>
+						<button type="button" class="add-to-cart">Купить</button>
+						<button type="button" class="bookmark">В закладки</button>
 					</div>
 				</li>
 				<li class="catalog-item item-new">
@@ -148,8 +148,8 @@
 					<span></span>
 					<a href="catalog-item-bfg2000.html">12500 Р.</a>
 					<div class="catalog-item-on-hover">
-						<button type="button" class="catalog-item-on-hover-add-to-cart">Купить</button>
-						<button type="button" class="catalog-item-on-hover-bookmark">В закладки</button>
+						<button type="button" class="add-to-cart">Купить</button>
+						<button type="button" class="bookmark">В закладки</button>
 					</div>
 				</li>
 				<li class="catalog-item">
@@ -158,8 +158,8 @@
 					<span>22500 Р.</span>
 					<a href="catalog-item-bfg3000.html">15500 Р.</a>
 					<div class="catalog-item-on-hover">
-						<button type="button" class="catalog-item-on-hover-add-to-cart">Купить</button>
-						<button type="button" class="catalog-item-on-hover-bookmark">В закладки</button>
+						<button type="button" class="add-to-cart">Купить</button>
+						<button type="button" class="bookmark">В закладки</button>
 					</div>
 				</li>
 				<li class="catalog-item item-new">
@@ -168,8 +168,8 @@
 					<span>30500 Р.</span>
 					<a href="catalog-item-bfg6000.html">25500 Р.</a>
 					<div class="catalog-item-on-hover">
-						<button type="button" class="catalog-item-on-hover-add-to-cart">Купить</button>
-						<button type="button" class="catalog-item-on-hover-bookmark">В закладки</button>
+						<button type="button" class="add-to-cart">Купить</button>
+						<button type="button" class="bookmark">В закладки</button>
 					</div>
 				</li>
 				<li class="catalog-item">
@@ -178,8 +178,8 @@
 					<span></span>
 					<a href="catalog-item-bfg2000.html">12500 Р.</a>
 					<div class="catalog-item-on-hover">
-						<button type="button" class="catalog-item-on-hover-add-to-cart">Купить</button>
-						<button type="button" class="catalog-item-on-hover-bookmark">В закладки</button>
+						<button type="button" class="add-to-cart">Купить</button>
+						<button type="button" class="bookmark">В закладки</button>
 					</div>
 				</li>
 				<li class="catalog-item item-new">
@@ -188,8 +188,8 @@
 					<span>22500 Р.</span>
 					<a href="catalog-item-bfg3000.html">15500 Р.</a>
 					<div class="catalog-item-on-hover">
-						<button type="button" class="catalog-item-on-hover-add-to-cart">Купить</button>
-						<button type="button" class="catalog-item-on-hover-bookmark">В закладки</button>
+						<button type="button" class="add-to-cart">Купить</button>
+						<button type="button" class="bookmark">В закладки</button>
 					</div>
 				</li>
 				<li class="catalog-item">
@@ -198,8 +198,8 @@
 					<span>30500 Р.</span>
 					<a href="catalog-item-bfg6000.html">25500 Р.</a>
 					<div class="catalog-item-on-hover">
-						<button type="button" class="catalog-item-on-hover-add-to-cart">Купить</button>
-						<button type="button" class="catalog-item-on-hover-bookmark">В закладки</button>
+						<button type="button" class="add-to-cart">Купить</button>
+						<button type="button" class="bookmark">В закладки</button>
 					</div>
 				</li>
 				<li class="catalog-item">
@@ -208,16 +208,16 @@
 					<span></span>
 					<a href="catalog-item-bfg2000.html">12500 Р.</a>
 					<div class="catalog-item-on-hover">
-						<button type="button" class="catalog-item-on-hover-add-to-cart">Купить</button>
-						<button type="button" class="catalog-item-on-hover-bookmark">В закладки</button>
+						<button type="button" class="add-to-cart">Купить</button>
+						<button type="button" class="bookmark">В закладки</button>
 					</div>
 				</li>
 			</ul>
 			<ul class="catalog-pagination-list">
-				<li class="catalog-pagination-item catalog-pagination-item-current"><a href="">1</a></li>
-				<li class="catalog-pagination-item"><a href="">2</a></li>
-				<li class="catalog-pagination-item"><a href="">3</a></li>
-				<li class="catalog-pagination-item"><a href="">Следующая</a></li>
+				<li class="pagination pagination-current"><a href="">1</a></li>
+				<li class="pagination"><a href="">2</a></li>
+				<li class="pagination"><a href="">3</a></li>
+				<li class="pagination"><a href="">Следующая</a></li>
 			</ul>
 		</section>
 		<section class="category-details">
@@ -240,10 +240,10 @@
 				   +7 (812) 555-05-55
 			</p>
 			<ul class="footer-catalog-menu footer-menu">
-				<li class="footer-catalog-menu-item"><a href="catalog-materials.html">Материалы</a></li>
-				<li class="footer-catalog-menu-item"><a href="catalog-heavy-machinery.html">Техника</a></li>
-				<li class="footer-catalog-menu-item"><a href="catalog-tools.htms">Инструмент</a></li>
-				<li class="footer-catalog-menu-item"><a href="catalog-sale.html">Спецпредложения</a></li>
+				<li class="footer-catalog-item"><a href="catalog-materials.html">Материалы</a></li>
+				<li class="footer-catalog-item"><a href="catalog-heavy-machinery.html">Техника</a></li>
+				<li class="footer-catalog-item"><a href="catalog-tools.htms">Инструмент</a></li>
+				<li class="footer-catalog-item"><a href="catalog-sale.html">Спецпредложения</a></li>
 			</ul>
 		</div>
 
