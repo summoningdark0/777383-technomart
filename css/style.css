@@ -2,6 +2,172 @@ body{
 	margin: 0;
 	padding: 0;
 
-	font-family: ;
-	font-size: ;
+	font-family: "Cuprum", "Tahoma", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #ffffff;
+
+	background-color: #293449; 
+}
+
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.visually-hidden{
+	position: absolute; 
+	overflow: hidden; 
+ 	clip: rect(0 0 0 0); 
+	height: 1px; width: 1px; 
+	margin: -1px; padding: 0; border: 0;
+}
+
+.header-logo{
+	text-transform: uppercase;
+	background-color: #ee3643;
+	font-size: 24px;
+	line-height: 24px;
+}
+
+.header-shortcuts{
+	font-size: 17px;
+	line-height: 18px;
+}
+
+.header-place-order{
+	background-color: #63a63e;
+}
+
+.header-top ul,
+.header-profile,
+.main-menu ul,
+.featured-category-list,
+.slider{
+	list-style: none;
+}
+/*геноцид оформлений списка*/
+
+.header-middle{
+	background-color: #f4f7f9;
+}
+
+.header-caption{
+	color: #ee3643;
+	font-size: 16px;
+	line-height: 23px;
+	font-style: italic;
+}
+
+span.header-phone{
+	color: #ee3643;
+	font-size: 21px;
+	line-height: 21px;
+	text-transform: uppercase;
+}
+/*!при увеличении специфичности .header-contact-info может слететь оформление телефона*/
+
+.header-contact-info{
+	color: #32425c;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+
+.header-profile a{
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 21px;
+	line-height: 21px;
+}
+
+nav.main-menu{
+	background-color: #32425c;
+}
+
+.menu-item{
+	font-size: 17px;
+	line-height: 17px;
+}
+
+.main {
+	/*background-color: #ffffff;*/
+}
+
+.featured-materials{
+	background-color: #ffbf47;
+}
+
+.featured-tools{
+	background-color: #3bbce3;
+}
+
+.featured-heavy-machinery{
+	background-color: #dc91d8;
+}
+
+.featured-sale{
+	background-color: #8ed78f;
+}
+
+.featured-delivery{
+	background-color: #ffc047;
+}
+
+.featured-category {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+
+/*30 20 10*/
+.featured-category a{
+	background-color: rgba(0, 0, 0, 0.1);
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.featured-category a:hover{
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.featured-category a:active{
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slide h3{
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.slide p{
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.slide a{
+	background-color: #ee3643;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.slide {
+	
+	width: 620px;
+	height: 265px;
+}
+.slide-1{
+	background-color: #293449;
+	background-image: url("../img/featured-slide-1.jpg");
+	background-repeat: no-repeat;
+}
+
+.slide-2{
+	background-color: #293449;
+	background-image: url("../img/featured-slide-2.jpg");
+	background-repeat: no-repeat;
 }
