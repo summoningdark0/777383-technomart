@@ -25,6 +25,13 @@ a {
 	margin: -1px; padding: 0; border: 0;
 }
 
+/*временный клирфикс, чтобы самому было понятнее что происходит*/
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .header-logo, 
 .footer-logo {
 	text-transform: uppercase;
@@ -91,8 +98,10 @@ a.header-place-order:focus {
 
 a.header-place-order:active {
 	background-color: #518534;
-	color:  rgba(255, 255, 255, 0.5);
+	/*color:  rgba(255, 255, 255, 0.5);*/
+	opacity: 0.5;
 }
+
 
 /*геноцид оформлений списка*/
 .header-top ul,
@@ -126,7 +135,7 @@ span.header-phone {
 	text-transform: uppercase;
 }
 /*!при увеличении специфичности 
-.header-contact-info может слететь оформление телефона*/
+.header-contact-info может слететь оформление телефона. или нет*/
 
 .header-contact-info {
 	color: #32425c;
@@ -135,12 +144,25 @@ span.header-phone {
 }
 
 
-.header-profile a {
+.profile {
 	background-color: #ffffff;
 	color: #000000;
 	font-size: 21px;
 	line-height: 21px;
 }
+
+.profile:focus,
+.profile:hover {
+	color: #ee3643;
+
+}
+
+.profile:active {
+	color: rgba(0, 0, 0, 0.3);
+
+}
+/*в случаях где манипуляции с прозрачностью, 
+может лучше использовать opacity, чем переключаться с хекса в ргба*/
 
 nav.main-menu {
 	background-color: #32425c;
@@ -149,6 +171,15 @@ nav.main-menu {
 .menu-item {
 	font-size: 17px;
 	line-height: 17px;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+	background-color: #293449;
+}
+
+.menu-item:active {
+	opacity: 0.5;
 }
 
 .main {
@@ -182,18 +213,19 @@ nav.main-menu {
 
 
 /*30 20 10*/
-.featured-category a {
+.featured-button {
 	background-color: rgba(0, 0, 0, 0.1);
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
 }
 
-.featured-category a:hover {
+.featured-button:hover,
+.featured-button:focus {
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
-.featured-category a:active {
+.featured-button:active {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -212,6 +244,7 @@ nav.main-menu {
 	width: 620px;
 	height: 265px;
 }
+
 .slide-1 {
 	background-color: #293449;
 	background-image: url("../img/featured-slide-1.jpg");
@@ -223,6 +256,8 @@ nav.main-menu {
 	background-image: url("../img/featured-slide-2.jpg");
 	background-repeat: no-repeat;
 }
+
+/*стилизация кнопок в слайдере и вообще - в конце файла*/
 
 .popular-items-header, 
 .popular-brands-header {
@@ -237,12 +272,6 @@ nav.main-menu {
 	text-transform: uppercase;
 }
 
-/*временный клирфикс, чтобы было понятнее что происходит*/
-.clearfix {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .item {
 	display: inline-block; /* вспомогательное */
@@ -294,6 +323,17 @@ nav.main-menu {
 
 }
 
+.catalog-item-on-hover .add-to-cart:hover,
+.catalog-item-on-hover .add-to-cart:focus {
+	background-color: #5fbb2d;
+}
+
+.catalog-item-on-hover .add-to-cart:active {
+	background-color: #518534;
+
+}
+
+
 .catalog-item-on-hover .bookmark {
  	color: #32425c;
  	background-color: #ffffff;
@@ -305,6 +345,15 @@ nav.main-menu {
 	line-height: 18px;
 }
 
+.catalog-item-on-hover .bookmark:focus,
+.catalog-item-on-hover .bookmark:hover {
+	border-color: #000000;
+
+}
+
+.catalog-item-on-hover .bookmark:active {
+	opacity: 0.3;
+}
 
 
 .brand { /* вспомогательное */
@@ -438,6 +487,14 @@ p.delivery-service {
 	text-transform: uppercase;
 }
 
+.button:hover,
+.button:focus {
+	background-color: #ca2c37;
+}
+
+.button:active {
+	background-color: #ba2732;
+}
 
 
 
