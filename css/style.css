@@ -33,13 +33,65 @@ a {
 	line-height: 24px;
 }
 
+.header-logo:hover,
+.header-logo:focus {
+	background-color: #ca2c37;
+}
+
+.header-logo:active {
+	background-color: #ba2732;
+
+}
+
+.header-search {
+	background-color: #293449;
+	
+}
+
+.header-search::placeholder {
+	color: #ffffff;
+	font-size: 17px;
+	line-height: 18px;
+}
+
+.header-search:hover,
+.header-search {
+	background-color: #212a3a;
+}
+
+.header-search:focus {
+	background-color: #ffffff;
+	color: #000000;
+}
+
 .header-shortcuts {
 	font-size: 17px;
 	line-height: 18px;
 }
 
-.header-place-order {
+.header-shortcuts:hover,
+.header-shortcuts:focus {
+	background-color: #161d29;
+}
+
+.header-shortcuts:active {
+	/*надо ли сюда дублировать background-color: #161d29;*/
+	color: rgba(255, 255, 255, 0.6);
+
+}
+/*странное поведение! надо ли прописывать все параметры каждому состоянию? */
+a.header-place-order {
 	background-color: #63a63e;
+}
+
+a.header-place-order:hover, 
+a.header-place-order:focus {
+	background-color: #5fbb2d;
+}
+
+a.header-place-order:active {
+	background-color: #518534;
+	color:  rgba(255, 255, 255, 0.5);
 }
 
 /*геноцид оформлений списка*/
@@ -360,6 +412,7 @@ p.delivery-service {
 
 .feedback-popup {
 	background-color: #ffffff;
+	border-top:3px solid #ee3643;
 	color: #000000;
 	font-size: 18px;
 	line-height: 18px;
@@ -375,9 +428,7 @@ p.delivery-service {
 	background-color: #f4f4f4;
 }
 
-/*кнопки*/ 
-/*пока работает, но могут быть проблемы со всплывающими 
-кнопками на карточках товаров*/
+/*красные кнопки*/ 
 .button {
 	background-color: #ee3643;
 	color: #ffffff;
