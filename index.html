@@ -64,12 +64,12 @@
 					<li class="slide slide-1">
 						<h3>Дрели</h3>
 						<p>Соседям на радость!</p>
-						<a href="catalog-tools-drill.html">Открыть каталог</a>
+						<a class="button" href="catalog-tools-drill.html">Открыть каталог</a>
 					</li>
 					<li class="slide slide-2">
 						<h3>Перфораторы</h3>
 						<p>Настоящие мужские игрушки</p>
-						<a href="catalog-tools-perforator.html">Открыть каталог</a>
+						<a class="button" href="catalog-tools-perforator.html">Открыть каталог</a>
 					</li>
 				</ul>
 			</div>
@@ -93,16 +93,16 @@
 
 		<section class="popular popular-items">
 			<div class="popular-items-header">
-				<h2>Популярные товары</h2>
-				<a href="catalog-popular-items.html">Все популярные товары</a>
+				<h2>Популярные товары:</h2>
+				<a class="button" href="catalog-popular-items.html">Все популярные товары</a>
 			</div>
-			<ul class="popular-items-list">
+			<ul class="popular-items-list clearfix"> <!-- временный клирфикс -->
 				<li class="item">
 					<img src="img/bosch-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="169"> 
 					<!-- Не уверен в необходимости дополнительных классов для внутренностей карточек товаров. Теги внутри карточки уникальны, и на них можно ссылаться, к примеру, через .populart-items-item img{} -->
 					<h3>Перфоратор BOSCH BFG 9000</h3>
-					<span>32500 Р.</span>
-					<a href="catalog-item-bfg9000.html">25500 Р.</a>
+					<span class="old-price">32500 Р.</span>
+					<a class="price-button" href="catalog-item-bfg9000.html">25500 Р.</a>
 					<div class="catalog-item-on-hover">
 						<button type="button" class="add-to-cart">Купить</button>
 						<button type="button" class="bookmark">В закладки</button>
@@ -111,8 +111,8 @@
 				<li class="item">
 					<img src="img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="169">
 					<h3>Перфоратор BOSCH BFG 3000</h3>
-					<span>22500 Р.</span>
-					<a href="catalog-item-bfg3000.html">15500 Р.</a>
+					<span class="old-price">22500 Р.</span>
+					<a class="price-button" href="catalog-item-bfg3000.html">15500 Р.</a>
 					<div class="catalog-item-on-hover">
 						<button type="button" class="add-to-cart">Купить</button>
 						<button type="button" class="bookmark">В закладки</button>
@@ -121,8 +121,8 @@
 				<li class="item">
 					<img src="img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="169">
 					<h3>Перфоратор BOSCH BFG 6000</h3>
-					<span>30500 Р.</span>
-					<a href="catalog-item-bfg6000.html">25500 Р.</a>
+					<span class="old-price">30500 Р.</span>
+					<a class="price-button" href="catalog-item-bfg6000.html">25500 Р.</a>
 					<div class="catalog-item-on-hover">
 						<button type="button" class="add-to-cart">Купить</button>
 						<button type="button" class="bookmark">В закладки</button>
@@ -131,8 +131,8 @@
 				<li class="item item-new">
 					<img src="img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="169">
 					<h3>Перфоратор BOSCH BFG 2000</h3>
-					<span></span>
-					<a href="catalog-item-bfg2000.html">12500 Р.</a>
+					<span class="old-price"></span>
+					<a class="price-button" href="catalog-item-bfg2000.html">12500 Р.</a>
 					<div class="catalog-item-on-hover">
 						<button type="button" class="add-to-cart">Купить</button>
 						<button type="button" class="bookmark">В закладки</button>
@@ -143,8 +143,8 @@
 
 		<section class="popular popular-brands">
 			<div class="popular-brands-header">
-				<h2>Популярные производители</h2>
-				<a href="catalog-brands.html">Все производители</a>
+				<h2>Популярные производители:</h2>
+				<a class="button" href="catalog-brands.html">Все производители</a>
 			</div>
 			<ul class="popular-brands-list">
 				<li class="brand"><a href="catalog-bosch.html"><img src="img/brands-bosch.jpg" alt="BOSCH" width="185" height="89"></a></li>

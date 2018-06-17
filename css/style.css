@@ -41,14 +41,17 @@ a {
 	background-color: #63a63e;
 }
 
+/*геноцид оформлений списка*/
 .header-top ul,
 .header-profile,
 .main-menu ul,
 .featured-category-list,
-.slider{
+.slider,
+.popular-brands-list,
+.popular-items-list{
 	list-style: none;
 }
-/*геноцид оформлений списка*/
+
 
 .header-middle{
 	background-color: #f4f7f9;
@@ -148,7 +151,8 @@ nav.main-menu{
 	line-height: 24px;
 }
 
-.slide a{
+/*кнопки в слайдере, популярных товарах, популярных производителях*/
+.button{
 	background-color: #ee3643;
 	font-size: 14px;
 	line-height: 18px;
@@ -171,3 +175,92 @@ nav.main-menu{
 	background-image: url("../img/featured-slide-2.jpg");
 	background-repeat: no-repeat;
 }
+
+.popular-items-header, 
+.popular-brands-header{
+	background-color: #f9f5f0;
+}
+
+.popular-items-header h2, 
+.popular-brands-header h2{
+	color: #32425c; 
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+/*временный клирфикс, чтобы было понятнее что происходит*/
+.clearfix{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.item{
+	display: inline-block; /* вспомогательное */
+	border:1px solid black; /* вспомогательное */
+
+	float: left;
+	background-color: #ffffff;
+	color: #000;
+	font-family: "PT Sans", "Tahoma", sans-serif;
+	font-weight: 700;
+}
+
+.item h2{
+	color: #000000;
+
+	font-size: 18px;
+	line-height: 20px
+}
+
+.old-price {
+	color: #a9a9a9;
+
+	font-size: 17px;
+	line-height: 18px;
+	text-decoration: line-through;
+}
+
+.price-button{
+	background-color: #ee3643;
+
+	font-size: 17px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.catalog-item-on-hover button{
+	/*пока ничего*/
+}
+
+.catalog-item-on-hover .add-to-cart{
+	color: #ffffff;
+	background-color: #63a63e;
+	border-color: #367315;
+
+	font-family: "Cuprum", "Tahoma", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+
+}
+
+.catalog-item-on-hover .bookmark{
+ 	color: #32425c;
+ 	background-color: #ffffff;
+ 	border-color: #63a63e;
+
+ 	font-family: "Cuprum", "Tahoma", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+
+
+
+
+
+
+
