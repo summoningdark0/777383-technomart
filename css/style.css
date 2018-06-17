@@ -1,4 +1,4 @@
-body{
+body {
 	margin: 0;
 	padding: 0;
 
@@ -17,7 +17,7 @@ a {
 	color: #ffffff;
 }
 
-.visually-hidden{
+.visually-hidden {
 	position: absolute; 
 	overflow: hidden; 
  	clip: rect(0 0 0 0); 
@@ -25,19 +25,20 @@ a {
 	margin: -1px; padding: 0; border: 0;
 }
 
-.header-logo{
+.header-logo, 
+.footer-logo {
 	text-transform: uppercase;
 	background-color: #ee3643;
 	font-size: 24px;
 	line-height: 24px;
 }
 
-.header-shortcuts{
+.header-shortcuts {
 	font-size: 17px;
 	line-height: 18px;
 }
 
-.header-place-order{
+.header-place-order {
 	background-color: #63a63e;
 }
 
@@ -48,74 +49,77 @@ a {
 .featured-category-list,
 .slider,
 .popular-brands-list,
-.popular-items-list{
+.popular-items-list,
+.services-list,
+.footer-menu {
 	list-style: none;
 }
 
 
-.header-middle{
+.header-middle {
 	background-color: #f4f7f9;
 }
 
-.header-caption{
+.header-caption {
 	color: #ee3643;
 	font-size: 16px;
 	line-height: 23px;
 	font-style: italic;
 }
 
-span.header-phone{
+span.header-phone {
 	color: #ee3643;
 	font-size: 21px;
 	line-height: 21px;
 	text-transform: uppercase;
 }
-/*!при увеличении специфичности .header-contact-info может слететь оформление телефона*/
+/*!при увеличении специфичности 
+.header-contact-info может слететь оформление телефона*/
 
-.header-contact-info{
+.header-contact-info {
 	color: #32425c;
 	font-size: 14px;
 	line-height: 24px;
 }
 
 
-.header-profile a{
+.header-profile a {
 	background-color: #ffffff;
 	color: #000000;
 	font-size: 21px;
 	line-height: 21px;
 }
 
-nav.main-menu{
+nav.main-menu {
 	background-color: #32425c;
 }
 
-.menu-item{
+.menu-item {
 	font-size: 17px;
 	line-height: 17px;
 }
 
 .main {
-	/*background-color: #ffffff;*/
+	background-color: #ffffff;
 }
 
-.featured-materials{
+.featured-materials {
 	background-color: #ffbf47;
 }
 
-.featured-tools{
+.featured-tools {
 	background-color: #3bbce3;
 }
 
-.featured-heavy-machinery{
+.featured-heavy-machinery {
 	background-color: #dc91d8;
 }
 
-.featured-sale{
+.featured-sale {
 	background-color: #8ed78f;
 }
 
-.featured-delivery{
+.featured-delivery {
 	background-color: #ffc047;
 }
 
@@ -126,37 +130,29 @@ nav.main-menu{
 
 
 /*30 20 10*/
-.featured-category a{
+.featured-category a {
 	background-color: rgba(0, 0, 0, 0.1);
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
 }
 
-.featured-category a:hover{
+.featured-category a:hover {
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
-.featured-category a:active{
+.featured-category a:active {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
-.slide h3{
+.slide h3 {
 	font-size: 36px;
 	line-height: 36px;
 }
 
-.slide p{
+.slide p {
 	font-size: 18px;
 	line-height: 24px;
-}
-
-/*кнопки в слайдере, популярных товарах, популярных производителях*/
-.button{
-	background-color: #ee3643;
-	font-size: 14px;
-	line-height: 18px;
-	text-transform: uppercase;
 }
 
 .slide {
@@ -164,25 +160,25 @@ nav.main-menu{
 	width: 620px;
 	height: 265px;
 }
-.slide-1{
+.slide-1 {
 	background-color: #293449;
 	background-image: url("../img/featured-slide-1.jpg");
 	background-repeat: no-repeat;
 }
 
-.slide-2{
+.slide-2 {
 	background-color: #293449;
 	background-image: url("../img/featured-slide-2.jpg");
 	background-repeat: no-repeat;
 }
 
 .popular-items-header, 
-.popular-brands-header{
+.popular-brands-header {
 	background-color: #f9f5f0;
 }
 
 .popular-items-header h2, 
-.popular-brands-header h2{
+.popular-brands-header h2 {
 	color: #32425c; 
 	font-size: 30px;
 	line-height: 30px;
@@ -190,13 +186,13 @@ nav.main-menu{
 }
 
 /*временный клирфикс, чтобы было понятнее что происходит*/
-.clearfix{
+.clearfix {
   content: "";
   display: table;
   clear: both;
 }
 
-.item{
+.item {
 	display: inline-block; /* вспомогательное */
 	border:1px solid black; /* вспомогательное */
 
@@ -207,7 +203,7 @@ nav.main-menu{
 	font-weight: 700;
 }
 
-.item h2{
+.item h2 {
 	color: #000000;
 
 	font-size: 18px;
@@ -222,7 +218,7 @@ nav.main-menu{
 	text-decoration: line-through;
 }
 
-.price-button{
+.price-button {
 	background-color: #ee3643;
 
 	font-size: 17px;
@@ -230,11 +226,11 @@ nav.main-menu{
 	text-transform: uppercase;
 }
 
-.catalog-item-on-hover button{
+.catalog-item-on-hover button {
 	/*пока ничего*/
 }
 
-.catalog-item-on-hover .add-to-cart{
+.catalog-item-on-hover .add-to-cart {
 	color: #ffffff;
 	background-color: #63a63e;
 	border-color: #367315;
@@ -246,7 +242,7 @@ nav.main-menu{
 
 }
 
-.catalog-item-on-hover .bookmark{
+.catalog-item-on-hover .bookmark {
  	color: #32425c;
  	background-color: #ffffff;
  	border-color: #63a63e;
@@ -256,6 +252,141 @@ nav.main-menu{
 	font-size: 14px;
 	line-height: 18px;
 }
+
+
+
+.brand { /* вспомогательное */
+	display: block;
+	float: left;
+	border: 1px solid black;
+}
+
+.services {
+	background-color: #f2f6f8;
+}
+
+.services p {
+	color: #000000;
+	font-family: "PT Sans", "Tahoma", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.services h2 {
+	color: #000000;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.services h3 {
+	color: #32425c;
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.service-option {
+	background-color: #32425c;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 30px;
+}
+
+.option-active {
+	background-color: #ffffff;
+	color: #32425c;
+}
+.services-description { /*вспомогательное*/
+	height: 300px;
+}
+.services-warranty {
+	background-image: url("../img/services-bg-warranty.png");
+	background-repeat: no-repeat;
+}
+
+.services-delivery {
+	background-image: url("../img/services-bg-delivery.png");
+	background-repeat: no-repeat;
+}
+
+.services-loan {
+	background-image: url("../img/services-bg-loan.png");
+	background-repeat: no-repeat;
+}
+
+.company-info {
+	/*background-color: #ffffff;*/
+	color: #000000;
+
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.company-info h3 {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+
+}
+
+p.delivery-service {
+	font-size: 18px;
+	line-height: 20px;
+}
+
+
+.footer-top{
+	background-color: #32425c;
+	/*color: #ffffff;*/
+
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.footer-catalog-item a {
+	color: #ffd180;
+}
+
+.footer-bottom {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.footer-bottom a {
+	color: #ffd180;
+}
+
+
+.feedback-popup {
+	background-color: #ffffff;
+	color: #000000;
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.feedback-popup ::placeholder {
+	color: #a9a9a9;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.button-wrapper {
+	background-color: #f4f4f4;
+}
+
+/*кнопки*/ 
+/*пока работает, но могут быть проблемы со всплывающими 
+кнопками на карточках товаров*/
+.button {
+	background-color: #ee3643;
+	color: #ffffff;
+
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
 
 
 
