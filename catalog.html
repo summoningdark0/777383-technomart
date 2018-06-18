@@ -114,13 +114,15 @@
          			</li>
          		</ul>
          	</fieldset>
-         	<button type="submit" class="filter-button button">Показать</button>
+         	<button type="submit" class="filter-button">Показать</button>
+         	<!-- нужно ли добавлять в эту кнопку общий класс? 
+         		 возможно в других баттонах добавить класс, где стилизовать какие-то общие параметры, и добавить красным кнопкам с индекса что-то вроде button-red с их спецификой. думать, но не сейчас -->
          </form>
 		<!-- Конец формы -->
      	</section>
 		<section class="catalog">
 			<div class="catalog-sort">
-				<h4>Сортировка</h4> <!-- .catalog h4 -->
+				<h4>Сортировка:</h4> <!-- .catalog h4 -->
 				<ul>
 					<li><a class="sort-parameter active-sort" href="#by-price">По цене</a></li>
 					<li><a class="sort-parameter" href="#by-type">По типу</a></li>
@@ -223,11 +225,11 @@
 					</div>
 				</li>
 			</ul>
-			<ul class="catalog-pagination-list">
-				<li class="pagination pagination-current"><a href="">1</a></li>
-				<li class="pagination"><a href="">2</a></li>
-				<li class="pagination"><a href="">3</a></li>
-				<li class="pagination"><a href="">Следующая</a></li>
+			<ul class="pagination-list">
+				<li><a class="pagination pagination-active" href="">1</a></li>
+				<li><a class="pagination" href="">2</a></li>
+				<li><a class="pagination" href="">3</a></li>
+				<li><a class="pagination" href="">Следующая</a></li>
 			</ul>
 		</section>
 		<section class="category-details">

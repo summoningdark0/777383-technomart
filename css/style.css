@@ -129,7 +129,8 @@ a.header-place-order:active {
 .footer-menu,
 .breadcrumbs-list,
 .filter-option,
-.catalog-sort ul {
+.catalog-sort ul,
+.pagination-list {
 	list-style: none;
 }
 
@@ -387,7 +388,8 @@ nav.main-menu {
 	background-color: #f2f6f8;
 }
 
-.services p {
+.services p,
+.category-details p{
 	color: #000000;
 	font-family: "PT Sans", "Tahoma", sans-serif;
 	font-weight: 400;
@@ -591,23 +593,24 @@ p.delivery-service {
 }
 
 
-.main {
-	background-color: #000; /*временно */
+/*.main {
+	background-color: #000; 
 }
-
+*/
 
 .breadcrumbs, 
 .filters,/*надо что-то делать с двумя похожими селекторами фильтер и фильтерС*/ 
 .catalog-sort { 
 	font-family: "PT Sans", "Tahoma", sans-serif;
 	font-weight: 400;
+	text-transform: uppercase;
 }
 
-.breadcrumbs {
+.breadcrumbs a{
 	color: #000000;
 	font-size: 13px;
 	line-height: 18px;
-	text-transform: uppercase;
+
 }
 
 .current-category {
@@ -618,19 +621,18 @@ p.delivery-service {
 	text-transform: uppercase;
 }
 
-.filter,
-.catalog-sort {
-	text-transform: uppercase;
+.filters {
+	color: #000000;
 }
-
-
 
 .filter fieldset {
 	border: 0;
 }
 
 .filter legend {
-
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 700;
 }
 
 .filter input[type="number"],
@@ -642,7 +644,9 @@ p.delivery-service {
 
 .filter h4,
 .catalog-sort, 
-.catalog-sort h4{ 
+.catalog-sort h4,
+.filter-button,
+.pagination-list a{ 
 	color: #000000;
 
 	font-size: 13px;
@@ -650,6 +654,21 @@ p.delivery-service {
 	font-weight: 400;
 	text-transform: uppercase;
 
+}
+
+.filter-option label {
+	font-size: 15px;
+	line-height: 20px;
+}
+
+/*стилизация радиобатнов и чекбоксов позже, когда картинки к ним прилепим*/
+
+.filter-button {
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
 }
 
 .sort-parameter:not(.active-sort) {
@@ -673,4 +692,30 @@ p.delivery-service {
 
 .active-sort {
 	color: #ee3643;
+}
+
+.pagination:not(.pagination-active):hover,
+.pagination:not(.pagination-active):focus {
+	/*манипуляции с границей*/
+}
+
+.pagination:not(.pagination-active):active {
+	/*манипуляции с границей*/
+}
+
+a.pagination-active {
+	background-color: #ee3643;
+	color: #ffffff;
+}
+
+.category-details {
+	background-color: #f2f6f8;
+}
+
+.category-details h2 {
+	color: #000000;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+
 }
