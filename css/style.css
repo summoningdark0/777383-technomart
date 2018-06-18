@@ -86,6 +86,20 @@ a {
 	color: rgba(255, 255, 255, 0.6);
 
 }
+.header-cart:not(.cart-empty) {
+	background-color: #ee3643;
+}
+.header-cart:not(.cart-empty):hover,
+.header-cart:not(.cart-empty):focus {
+	background-color: #ca2c37;
+}
+
+.header-cart:not(.cart-empty):active {
+	background-color: #ba2732;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+
 /*странное поведение! надо ли прописывать все параметры каждому состоянию? */
 a.header-place-order {
 	background-color: #63a63e;
@@ -299,8 +313,9 @@ nav.main-menu {
 	text-decoration: line-through;
 }
 
-.price-button {
+.price {
 	background-color: #ee3643;
+	color: #ffffff;
 
 	font-size: 17px;
 	line-height: 18px;
