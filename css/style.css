@@ -126,10 +126,16 @@ a.header-place-order:active {
 .popular-brands-list,
 .popular-items-list,
 .services-list,
-.footer-menu {
+.footer-menu,
+.breadcrumbs-list,
+.filter-option,
+.catalog-sort ul {
 	list-style: none;
 }
 
+.header-profile li:last-child {
+	list-style: disc;
+}
 
 .header-middle {
 	background-color: #f4f7f9;
@@ -585,5 +591,86 @@ p.delivery-service {
 }
 
 
+.main {
+	background-color: #000; /*временно */
+}
 
 
+.breadcrumbs, 
+.filters,/*надо что-то делать с двумя похожими селекторами фильтер и фильтерС*/ 
+.catalog-sort { 
+	font-family: "PT Sans", "Tahoma", sans-serif;
+	font-weight: 400;
+}
+
+.breadcrumbs {
+	color: #000000;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.current-category {
+	color: #32425c;
+	background-color: #f2f6f8;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.filter,
+.catalog-sort {
+	text-transform: uppercase;
+}
+
+
+
+.filter fieldset {
+	border: 0;
+}
+
+.filter legend {
+
+}
+
+.filter input[type="number"],
+.price-range,
+.filter h4,
+.catalog-sort {
+	background-color: #f7f3ec;
+}
+
+.filter h4,
+.catalog-sort, 
+.catalog-sort h4{ 
+	color: #000000;
+
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+
+}
+
+.sort-parameter:not(.active-sort) {
+	display: inline;
+
+	color: rgba(0, 0, 0, 0.3);
+	border-bottom: 1px dotted #ee3643;
+}
+
+.sort-parameter:not(.active-sort):focus,
+.sort-parameter:not(.active-sort):hover {
+
+	color: rgba(0, 0, 0, 1);
+	border-bottom: 1px solid #ee3643;
+}
+
+.sort-parameter:not(.active-sort):active {
+	color: #ee3643;
+	border-bottom: none;
+}
+
+.active-sort {
+	color: #ee3643;
+}

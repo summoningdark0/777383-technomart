@@ -8,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> <!-- PT Sans Regular + Bold, Eng + Cyr -->
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet"> <!-- Cuprum Regular + Italic + Bold, Eng + Cyr // убрать италик удалив 400i  -->
   </head>
-  <body class="inner-page"> <!-- надо ли? -->
+  <body> 
 	<header class="header">
 		<section class="header-top">
 			<h2 class="visually-hidden">Интернет-магазин Техномарт</h2>
@@ -45,16 +45,19 @@
 			</ul>
 		</nav>
 	</header>
+
 	<main class="main">
 		<section class="breadcrumbs">
 			<ul class="breadcrumbs-list">
-				<li class="breadcrumbs-item"><a href="index.html"><img src="http://via.placeholder.com/20x20" width="20" height="20" alt="Главная страница"></a></li>	<!-- img - это временная забивка -->
-				<li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
-				<li class="breadcrumbs-item"><a href="catalog-tools.html">Инструменты</a></li>
-				<li class="breadcrumbs-item"><a href="catalog-tools-perforator.html">Перфораторы</a></li>
+				<li><a  class="breadcrumbs-item" href="index.html"><img src="http://via.placeholder.com/20x20" width="20" height="20" alt="Главная страница"></a></li>	<!-- img - это временная забивка -->
+				<li><a  class="breadcrumbs-item" href="catalog.html">Каталог</a></li>
+				<li><a  class="breadcrumbs-item" href="catalog-tools.html">Инструменты</a></li>
+				<li><a  class="breadcrumbs-item" href="catalog-tools-perforator.html">Перфораторы</a></li>
 			</ul>
-			<h2 class="current-category">Перфораторы</h2>
 		</section>
+		<div class="current-category"> <!-- костыли.жпг -->
+				<h2>Перфораторы</h2>
+		</div>
 		<section class="filters">
       	  <h2 class="visually-hidden">Фильтр товаров</h2>
          <!-- Форма -->
@@ -65,9 +68,12 @@
          	<fieldset> 
          		<legend>Цена:</legend>
          		<!-- на js?-->
-         		<input type="range" name="range-min">
-         		<input type="range" name="range-max">
+         		<div class="price-range">
+         			<input type="range" name="range-min">
+         			<input type="range" name="range-max">
+         		</div>
          		<input type="number">
+         		<!-- затолкать дефис в псевдоэлемент -->
          		<input type="number">
          	</fieldset>
          	<fieldset>
@@ -113,20 +119,19 @@
 		<!-- Конец формы -->
      	</section>
 		<section class="catalog">
-			<div>
+			<div class="catalog-sort">
 				<h4>Сортировка</h4> <!-- .catalog h4 -->
 				<ul>
-					<!-- не уверен, что .sort-parameter надо ставить li, а не ссылкам-->
-					<li class="sort-parameter"><a href="#by-price">По цене</a></li>
-					<li class="sort-parameter"><a href="#by-type">По типу</a></li>
-					<li class="sort-parameter"><a href="#by-function">По функционалу</a></li>
+					<li><a class="sort-parameter active-sort" href="#by-price">По цене</a></li>
+					<li><a class="sort-parameter" href="#by-type">По типу</a></li>
+					<li><a class="sort-parameter" href="#by-function">По функционалу</a></li>
 					<li class="sort-parameter"><a class="sort-arrow sort-arrow-asc" href="#ascending"></a></li>
 					<li class="sort-parameter"><a class="sort-arrow sort-arrow-desc" href="#descending"></a></li>
 				</ul>
 			</div>
-			<ul class="catalog-items-list">
+			<ul class="catalog-items-list clearfix"> <!-- убрать клирфикс -->
 				<li class="item"> 
-				<!-- аналогично классам с индекса-->
+				<!-- аналогично селекторам с индекса-->
 					<img src="img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="169">
 					<h3>Перфоратор BOSCH BFG 3000</h3>
 					<span class="old-price">22500 Р.</span>
@@ -205,6 +210,7 @@
 						<button type="button" class="add-to-cart">Купить</button>
 						<button type="button" class="bookmark">В закладки</button>
 					</div>
+
 				</li>
 				<li class="item">
 					<img src="img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="169">
@@ -254,17 +260,17 @@
 		<div class="footer-bottom">
 			<p class="footer-copyright">© 2010–2017 Компания «Техномарт»<br>
 					Все права защищены
-			</p>
+			</p>	
 
-			<a class="social social-vk" href="https://vk.com/">ВКонтакте</a>	
+			<a class="social social-vk" href="https://vk.com/">ВКонтакте</a>
 			<a class="social social-fb" href="https://facebook.com/">Facebook</a>
 			<a class="social social-ig" href="https://instagram.com/">Instagram</a>
 				
-			<p class="footer-feedback">Обратная связь:<br>
-				<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+			<p >Обратная связь:<br>
+				<a class="footer-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 			</p>
-			<p class="footer-developer-info">Разработано — <br>
-				<a href="http://htmlacademy.ru/">htmlacademy.ru</a>
+			<p>Разработано — <br>
+				<a class="footer-link" href="http://htmlacademy.ru/">htmlacademy.ru</a>
 			</p>
 		</div>
 	</footer>
