@@ -394,10 +394,21 @@ nav.main-menu {
 	line-height: 30px;
 }
 
+.service-option:not(.option-active):hover,
+.service-option:not(.option-active):focus {
+	background-color: #293449;
+}
+
+.service-option:not(.option-active):active {
+	background-color: #ffffff;
+	color: #32425c;
+}
+
 .option-active {
 	background-color: #ffffff;
 	color: #32425c;
 }
+
 .services-description { /*вспомогательное*/
 	height: 300px;
 }
@@ -449,14 +460,38 @@ p.delivery-service {
 	color: #ffd180;
 }
 
+.footer-menu a:hover,
+.footer-menu a:focus {
+	text-decoration: underline;
+}
+
+.footer-menu a:active {
+	opacity: 0.5;
+}
+
 .footer-bottom {
 	font-size: 16px;
 	line-height: 18px;
 }
 
-.footer-bottom a {
+.footer-link {
 	color: #ffd180;
 }
+.footer-link:hover,
+.footer-link:focus {
+	text-decoration: underline;
+
+}
+
+.footer-link:active {
+	color: #ee3643;
+}
+.social:hover, 
+.social:focus,
+.social:active {
+	background-color: #ee3643;
+}
+
 
 
 .feedback-popup {
@@ -473,9 +508,11 @@ p.delivery-service {
 	line-height: 18px;
 }
 
-.button-wrapper {
+.feedback-button-wraper {
 	background-color: #f4f4f4;
 }
+
+
 
 /*красные кнопки*/ 
 .button {
@@ -495,6 +532,8 @@ p.delivery-service {
 .button:active {
 	background-color: #ba2732;
 }
+/*------------*/
+
 
 
 
