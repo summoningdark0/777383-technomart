@@ -549,10 +549,40 @@ p.delivery-service {
 }
 /*------------*/
 
+/*доп-стили для каталога */
+.header-profile-user {
+	background-color: #ffffff;
+	color: #000000;
 
+	font-size: 21px;
+	line-height: 21px;
+}
 
+.header-profile-user:hover, 
+.header-profile-user:focus {
+	color: #ee3643;
 
+}
 
+.header-profile-user:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.header-profile-link {
+	color: #32425c;
+	font-size: 16px;
+	line-height: 18px;
+	text-decoration: underline;
+}
+
+.header-profile-link:hover, 
+.header-profile-link:focus {
+	color: #ee3643;
+}
+
+.header-profile-link:active {
+	color: rgba(50, 66, 92, 0.3);
+}
 
 
 
