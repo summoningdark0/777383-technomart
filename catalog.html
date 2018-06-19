@@ -12,12 +12,12 @@
 	<header class="header">
 		<section class="header-top">
 			<h2 class="visually-hidden">Интернет-магазин Техномарт</h2>
-			<a class="header-logo">Техномаркет</a>
+			<a class="header-logo">Техномарт</a>
 			<input class="header-search" type="search" placeholder="Поиск"> 
-			<ul>
-				<li><a class="header-bookmarks" href="#">Закладки</a></li>
-				<li><a class="header-cart" href="#">Корзина: 10</a></li>
-				<li><a class="header-place-order" href="#">Оформить заказ</a></li><!--Кнопка?-->
+			<ul class="list-style-none">
+				<li><a class="header-shortcuts header-bookmarks" href="#">Закладки</a></li>
+				<li><a class="header-shortcuts header-cart-has-items" href="#">Корзина: 10</a></li>
+				<li><a class="header-shortcuts header-place-order" href="#">Оформить заказ</a></li><!--Кнопка?-->
 			</ul>
 		</section>
 		<section class="header-middle">
@@ -26,7 +26,7 @@
 				<span class="header-phone">+7 (812) 555-05-55</span>
 				г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 			</div>
-			<ul class="header-profile"> <!-- заменить на дивы здесь и в индексе -->
+			<ul class="header-profile list-style-none"> <!-- заменить на дивы здесь и в индексе -->
 				<li><a class="header-profile-user" href="#">Равшан Джамшутович</a></li>
 				<li><a class="header-profile-link" href="my-orders.html">Мои заказы</a></li>
 				<li><a class="header-profile-link" href="dashboard.html">Личный кабинет</a></li>
@@ -34,7 +34,7 @@
 			</ul>
 		</section>
 		<nav class="main-menu">
-			<ul>
+			<ul class="list-style-none">
 				<li class="menu-item"><a href="index.html">Главная</a></li>
 				<li class="menu-item"><a href="about-us.html">Компания</a></li>
 				<li class="menu-item"><a href="catalog.html">Каталог</a></li>
@@ -48,23 +48,19 @@
 
 	<main class="main">
 		<section class="breadcrumbs">
-			<ul class="breadcrumbs-list">
+			<ul class="breadcrumbs-list list-style-none">
 				<li><a  class="breadcrumbs-item" href="index.html"><img src="http://via.placeholder.com/20x20" width="20" height="20" alt="Главная страница"></a></li>	<!-- img - это временная забивка -->
 				<li><a  class="breadcrumbs-item" href="catalog.html">Каталог</a></li>
 				<li><a  class="breadcrumbs-item" href="catalog-tools.html">Инструменты</a></li>
 				<li><a  class="breadcrumbs-item" href="catalog-tools-perforator.html">Перфораторы</a></li>
 			</ul>
 		</section>
-		<div class="current-category"> <!-- костыли.жпг -->
-				<h2>Перфораторы</h2>
-		</div>
+				<h2 class="current-category">Перфораторы</h2>
 		<section class="filters">
       	  <h2 class="visually-hidden">Фильтр товаров</h2>
          <!-- Форма -->
          <form class="filter" method="get" action="http://echo.htmlacademy.ru"> <!-- Адрес-заглушка -->
-         	<div>
-         			<h4>Фильтр:</h4> <!-- .filter h4 -->
-         	</div>
+         	<h4 class="filter-header">Фильтр:</h4> 
          	<fieldset> 
          		<legend>Цена:</legend>
          		<!-- на js?-->
@@ -78,7 +74,7 @@
          	</fieldset>
          	<fieldset>
          		<legend>Производители:</legend>
-         		<ul>
+         		<ul class="list-style-none">
          			<li class="filter-option">
          				<input type="checkbox" class="visually-hidden filter-input filter-checkbox" name="filter-item-bosch" id="filter-label-bosch" checked>
          				<label for="filter-label-bosch">BOSCH</label>
@@ -103,7 +99,7 @@
          	</fieldset>
          	<fieldset>
          		<legend>Питание:</legend>
-         		<ul>
+         		<ul class="list-style-none">
          			<li class="filter-option">
          				<input type="radio" class="visually-hidden filter-input filter-radiobutton" name="filter-power" id="filter-power-cordless" checked>
          				<label for="filter-power-cordless">Аккумуляторные</label>
@@ -122,8 +118,8 @@
      	</section>
 		<section class="catalog">
 			<div class="catalog-sort">
-				<h4>Сортировка:</h4> <!-- .catalog h4 -->
-				<ul>
+				<h4 class="catalog-sort-header">Сортировка:</h4> <!-- .catalog h4 -->
+				<ul class="list-style-none">
 					<li><a class="sort-parameter active-sort" href="#by-price">По цене</a></li>
 					<li><a class="sort-parameter" href="#by-type">По типу</a></li>
 					<li><a class="sort-parameter" href="#by-function">По функционалу</a></li>
@@ -131,7 +127,7 @@
 					<li class="sort-parameter"><a class="sort-arrow sort-arrow-desc" href="#descending"></a></li>
 				</ul>
 			</div>
-			<ul class="catalog-items-list clearfix"> <!-- убрать клирфикс -->
+			<ul class="catalog-items-list list-style-none clearfix"> <!-- убрать клирфикс -->
 				<li class="item"> 
 				<!-- аналогично селекторам с индекса-->
 					<img src="img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="169">
@@ -225,7 +221,7 @@
 					</div>
 				</li>
 			</ul>
-			<ul class="pagination-list">
+			<ul class="pagination-list list-style-none">
 				<li><a class="pagination pagination-active" href="">1</a></li>
 				<li><a class="pagination" href="">2</a></li>
 				<li><a class="pagination" href="">3</a></li>
@@ -234,14 +230,14 @@
 		</section>
 		<section class="category-details">
 			<h2>Пара слов о перфораторах</h2>
-			<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Cуществуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+			<p class="category-details-paragraph"> Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Cуществуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 		</section>
 
 	</main>
 	<footer class="footer">
 		<div class="footer-top">
 			<a class="footer-logo" href="">Техномарт</a>
-			<ul class="footer-general-menu footer-menu">
+			<ul class="footer-general-menu footer-menu list-style-none">
 				<li class="footer-menu-item"><a href="about-us.html">Компания</a></li>
 				<li class="footer-menu-item"><a href="news.html">Новости</a></li>
 				<li class="footer-menu-item"><a href="catalog.html">Каталог</a></li>
@@ -251,7 +247,7 @@
 			<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
 				   +7 (812) 555-05-55
 			</p>
-			<ul class="footer-catalog-menu footer-menu">
+			<ul class="footer-catalog-menu footer-menu list-style-none">
 				<li class="footer-catalog-item"><a href="catalog-materials.html">Материалы</a></li>
 				<li class="footer-catalog-item"><a href="catalog-heavy-machinery.html">Техника</a></li>
 				<li class="footer-catalog-item"><a href="catalog-tools.htms">Инструмент</a></li>

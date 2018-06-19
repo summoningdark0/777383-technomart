@@ -86,31 +86,30 @@ a {
 	color: rgba(255, 255, 255, 0.6);
 
 }
-.header-cart:not(.cart-empty) {
+.header-cart-has-items {
 	background-color: #ee3643;
 }
-.header-cart:not(.cart-empty):hover,
-.header-cart:not(.cart-empty):focus {
+.header-cart-has-items:hover,
+.header-cart-has-items:focus {
 	background-color: #ca2c37;
 }
 
-.header-cart:not(.cart-empty):active {
+.header-cart-has-items:active {
 	background-color: #ba2732;
 	color: rgba(255, 255, 255, 0.5);
 }
 
 
-/*странное поведение! надо ли прописывать все параметры каждому состоянию? */
-a.header-place-order {
+.header-place-order {
 	background-color: #63a63e;
 }
 
-a.header-place-order:hover, 
-a.header-place-order:focus {
+.header-place-order:hover, 
+.header-place-order:focus {
 	background-color: #5fbb2d;
 }
 
-a.header-place-order:active {
+.header-place-order:active {
 	background-color: #518534;
 	/*color:  rgba(255, 255, 255, 0.5);*/
 	opacity: 0.5;
@@ -118,6 +117,7 @@ a.header-place-order:active {
 
 
 /*геноцид оформлений списка*/
+/*расписать по классам
 .header-top ul,
 .header-profile,
 .main-menu ul,
@@ -130,7 +130,8 @@ a.header-place-order:active {
 .breadcrumbs-list,
 .filter-option,
 .catalog-sort ul,
-.pagination-list {
+.pagination-list,*/
+.list-style-none {
 	list-style: none;
 }
 
@@ -149,14 +150,6 @@ a.header-place-order:active {
 	font-style: italic;
 }
 
-span.header-phone {
-	color: #ee3643;
-	font-size: 21px;
-	line-height: 21px;
-	text-transform: uppercase;
-}
-/*!при увеличении специфичности 
-.header-contact-info может слететь оформление телефона. или нет*/
 
 .header-contact-info {
 	color: #32425c;
@@ -164,28 +157,33 @@ span.header-phone {
 	line-height: 24px;
 }
 
+.header-phone {
+	color: #ee3643;
+	font-size: 21px;
+	line-height: 21px;
+	text-transform: uppercase;
+}
 
-.profile {
+
+.profile-logged-out {
 	background-color: #ffffff;
 	color: #000000;
 	font-size: 21px;
 	line-height: 21px;
 }
 
-.profile:focus,
-.profile:hover {
+.profile-logged-out:focus,
+.profile-logged-out:hover {
 	color: #ee3643;
 
 }
 
-.profile:active {
+.profile-logged-out:active {
 	color: rgba(0, 0, 0, 0.3);
 
 }
-/*в случаях где манипуляции с прозрачностью, 
-может лучше использовать opacity, чем переключаться с хекса в ргба*/
 
-nav.main-menu {
+.main-menu {
 	background-color: #32425c;
 }
 
@@ -219,10 +217,12 @@ nav.main-menu {
 	background-color: #dc91d8;
 }
 
+/*сделать нормальный дизайн в лейте*/
 .featured-sale {
 	background-color: #8ed78f;
 }
 
+/*сделать нормальный дизайн в лейте*/
 .featured-delivery {
 	background-color: #ffc047;
 }
@@ -232,8 +232,6 @@ nav.main-menu {
 	line-height: 30px;
 }
 
-
-/*30 20 10*/
 .featured-button {
 	background-color: rgba(0, 0, 0, 0.1);
 	font-size: 14px;
@@ -250,12 +248,12 @@ nav.main-menu {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
-.slide h3 {
+.slide-header {
 	font-size: 36px;
 	line-height: 36px;
 }
 
-.slide p {
+.slide-paragraph {
 	font-size: 18px;
 	line-height: 24px;
 }
@@ -285,8 +283,9 @@ nav.main-menu {
 	background-color: #f9f5f0;
 }
 
-.popular-items-header h2, 
-.popular-brands-header h2 {
+/*.popular-items-header h2, 
+.popular-brands-header h2 */
+.popular-caption {
 	color: #32425c; 
 	font-size: 30px;
 	line-height: 30px;
@@ -388,8 +387,8 @@ nav.main-menu {
 	background-color: #f2f6f8;
 }
 
-.services p,
-.category-details p{
+.services-description-paragraph,
+.category-details-paragraph {
 	color: #000000;
 	font-family: "PT Sans", "Tahoma", sans-serif;
 	font-weight: 400;
@@ -397,7 +396,7 @@ nav.main-menu {
 	line-height: 24px;
 }
 
-.services h2 {
+.services-title {
 	color: #000000;
 	font-size: 30px;
 	line-height: 30px;
@@ -417,17 +416,17 @@ nav.main-menu {
 	line-height: 30px;
 }
 
-.service-option:not(.option-active):hover,
-.service-option:not(.option-active):focus {
+.service-option:hover,
+.service-option:focus {
 	background-color: #293449;
 }
 
-.service-option:not(.option-active):active {
+.service-option:active {
 	background-color: #ffffff;
 	color: #32425c;
 }
 
-.option-active {
+.service-option-active { /*не путать с состоянием :active;*/
 	background-color: #ffffff;
 	color: #32425c;
 }
@@ -637,7 +636,7 @@ p.delivery-service {
 
 .filter input[type="number"],
 .price-range,
-.filter h4,
+.filter-header,
 .catalog-sort {
 	background-color: #f7f3ec;
 }
@@ -646,9 +645,8 @@ p.delivery-service {
 .catalog-sort, 
 .catalog-sort h4,
 .filter-button,
-.pagination-list a{ 
+.pagination-list a { 
 	color: #000000;
-
 	font-size: 13px;
 	line-height: 18px;
 	font-weight: 400;
