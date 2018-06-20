@@ -86,31 +86,30 @@ a {
 	color: rgba(255, 255, 255, 0.6);
 
 }
-.header-cart:not(.cart-empty) {
+.header-cart-has-items {
 	background-color: #ee3643;
 }
-.header-cart:not(.cart-empty):hover,
-.header-cart:not(.cart-empty):focus {
+.header-cart-has-items:hover,
+.header-cart-has-items:focus {
 	background-color: #ca2c37;
 }
 
-.header-cart:not(.cart-empty):active {
+.header-cart-has-items:active {
 	background-color: #ba2732;
 	color: rgba(255, 255, 255, 0.5);
 }
 
 
-/*странное поведение! надо ли прописывать все параметры каждому состоянию? */
-a.header-place-order {
+.header-place-order {
 	background-color: #63a63e;
 }
 
-a.header-place-order:hover, 
-a.header-place-order:focus {
+.header-place-order:hover, 
+.header-place-order:focus {
 	background-color: #5fbb2d;
 }
 
-a.header-place-order:active {
+.header-place-order:active {
 	background-color: #518534;
 	/*color:  rgba(255, 255, 255, 0.5);*/
 	opacity: 0.5;
@@ -118,6 +117,7 @@ a.header-place-order:active {
 
 
 /*геноцид оформлений списка*/
+/*расписать по классам
 .header-top ul,
 .header-profile,
 .main-menu ul,
@@ -126,11 +126,12 @@ a.header-place-order:active {
 .popular-brands-list,
 .popular-items-list,
 .services-list,
-.footer-menu,
+.footer-menu-item,
 .breadcrumbs-list,
 .filter-option,
 .catalog-sort ul,
-.pagination-list {
+.pagination-list,*/
+.list-style-none {
 	list-style: none;
 }
 
@@ -149,14 +150,6 @@ a.header-place-order:active {
 	font-style: italic;
 }
 
-span.header-phone {
-	color: #ee3643;
-	font-size: 21px;
-	line-height: 21px;
-	text-transform: uppercase;
-}
-/*!при увеличении специфичности 
-.header-contact-info может слететь оформление телефона. или нет*/
 
 .header-contact-info {
 	color: #32425c;
@@ -164,28 +157,33 @@ span.header-phone {
 	line-height: 24px;
 }
 
+.header-phone {
+	color: #ee3643;
+	font-size: 21px;
+	line-height: 21px;
+	text-transform: uppercase;
+}
 
-.profile {
+
+.profile-logged-out {
 	background-color: #ffffff;
 	color: #000000;
 	font-size: 21px;
 	line-height: 21px;
 }
 
-.profile:focus,
-.profile:hover {
+.profile-logged-out:focus,
+.profile-logged-out:hover {
 	color: #ee3643;
 
 }
 
-.profile:active {
+.profile-logged-out:active {
 	color: rgba(0, 0, 0, 0.3);
 
 }
-/*в случаях где манипуляции с прозрачностью, 
-может лучше использовать opacity, чем переключаться с хекса в ргба*/
 
-nav.main-menu {
+.main-menu {
 	background-color: #32425c;
 }
 
@@ -219,10 +217,12 @@ nav.main-menu {
 	background-color: #dc91d8;
 }
 
+/*сделать нормальный дизайн в лейте*/
 .featured-sale {
 	background-color: #8ed78f;
 }
 
+/*сделать нормальный дизайн в лейте*/
 .featured-delivery {
 	background-color: #ffc047;
 }
@@ -232,8 +232,6 @@ nav.main-menu {
 	line-height: 30px;
 }
 
-
-/*30 20 10*/
 .featured-button {
 	background-color: rgba(0, 0, 0, 0.1);
 	font-size: 14px;
@@ -250,12 +248,12 @@ nav.main-menu {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
-.slide h3 {
+.slide-header {
 	font-size: 36px;
 	line-height: 36px;
 }
 
-.slide p {
+.slide-paragraph {
 	font-size: 18px;
 	line-height: 24px;
 }
@@ -285,8 +283,9 @@ nav.main-menu {
 	background-color: #f9f5f0;
 }
 
-.popular-items-header h2, 
-.popular-brands-header h2 {
+/*.popular-items-header h2, 
+.popular-brands-header h2 */
+.popular-caption {
 	color: #32425c; 
 	font-size: 30px;
 	line-height: 30px;
@@ -388,8 +387,8 @@ nav.main-menu {
 	background-color: #f2f6f8;
 }
 
-.services p,
-.category-details p{
+.services-description-paragraph,
+.category-details-paragraph {
 	color: #000000;
 	font-family: "PT Sans", "Tahoma", sans-serif;
 	font-weight: 400;
@@ -397,7 +396,7 @@ nav.main-menu {
 	line-height: 24px;
 }
 
-.services h2 {
+.services-title {
 	color: #000000;
 	font-size: 30px;
 	line-height: 30px;
@@ -417,17 +416,17 @@ nav.main-menu {
 	line-height: 30px;
 }
 
-.service-option:not(.option-active):hover,
-.service-option:not(.option-active):focus {
+.service-option:hover,
+.service-option:focus {
 	background-color: #293449;
 }
 
-.service-option:not(.option-active):active {
+.service-option:active {
 	background-color: #ffffff;
 	color: #32425c;
 }
 
-.option-active {
+.service-option-selected { 
 	background-color: #ffffff;
 	color: #32425c;
 }
@@ -451,7 +450,6 @@ nav.main-menu {
 }
 
 .company-info {
-	/*background-color: #ffffff;*/
 	color: #000000;
 
 	font-size: 13px;
@@ -465,7 +463,7 @@ nav.main-menu {
 
 }
 
-p.delivery-service {
+.delivery-service {
 	font-size: 18px;
 	line-height: 20px;
 }
@@ -479,16 +477,16 @@ p.delivery-service {
 	line-height: 24px;
 }
 
-.footer-catalog-item a {
+.footer-catalog-link {
 	color: #ffd180;
 }
 
-.footer-menu a:hover,
-.footer-menu a:focus {
+.footer-menu-link:hover,
+.footer-menu-link:focus {
 	text-decoration: underline;
 }
 
-.footer-menu a:active {
+.footer-menu-link:active {
 	opacity: 0.5;
 }
 
@@ -555,6 +553,7 @@ p.delivery-service {
 .button:active {
 	background-color: #ba2732;
 }
+/* переделать */
 /*------------*/
 
 /*доп-стили для каталога */
@@ -599,14 +598,14 @@ p.delivery-service {
 */
 
 .breadcrumbs, 
-.filters,/*надо что-то делать с двумя похожими селекторами фильтер и фильтерС*/ 
+.filter-section,/*надо что-то делать с двумя похожими селекторами фильтер и фильтерС*/ 
 .catalog-sort { 
 	font-family: "PT Sans", "Tahoma", sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;
 }
 
-.breadcrumbs a{
+.breadcrumbs-link{
 	color: #000000;
 	font-size: 13px;
 	line-height: 18px;
@@ -621,34 +620,33 @@ p.delivery-service {
 	text-transform: uppercase;
 }
 
-.filters {
+.filter-section {
 	color: #000000;
 }
 
-.filter fieldset {
+.filter-fieldset {
 	border: 0;
 }
 
-.filter legend {
+.filter-legend {
 	font-size: 17px;
 	line-height: 30px;
 	font-weight: 700;
 }
 
-.filter input[type="number"],
+.filter-price-input,
 .price-range,
-.filter h4,
+.filter-header,
 .catalog-sort {
 	background-color: #f7f3ec;
 }
 
-.filter h4,
+.filter-header,
 .catalog-sort, 
-.catalog-sort h4,
+.catalog-sort-header,
 .filter-button,
-.pagination-list a{ 
+.pagination { 
 	color: #000000;
-
 	font-size: 13px;
 	line-height: 18px;
 	font-weight: 400;
@@ -656,7 +654,7 @@ p.delivery-service {
 
 }
 
-.filter-option label {
+.filter-option-label {
 	font-size: 15px;
 	line-height: 20px;
 }
@@ -671,39 +669,39 @@ p.delivery-service {
 	text-transform: uppercase;
 }
 
-.sort-parameter:not(.active-sort) {
+.sort-parameter {
 	display: inline;
 
 	color: rgba(0, 0, 0, 0.3);
 	border-bottom: 1px dotted #ee3643;
 }
 
-.sort-parameter:not(.active-sort):focus,
-.sort-parameter:not(.active-sort):hover {
+.sort-parameter:focus,
+.sort-parameter:hover {
 
 	color: rgba(0, 0, 0, 1);
 	border-bottom: 1px solid #ee3643;
 }
 
-.sort-parameter:not(.active-sort):active {
+.sort-parameter:active {
 	color: #ee3643;
 	border-bottom: none;
 }
 
-.active-sort {
+.sort-parameter-selected {
 	color: #ee3643;
 }
 
-.pagination:not(.pagination-active):hover,
-.pagination:not(.pagination-active):focus {
+.pagination:hover,
+.pagination:focus {
 	/*манипуляции с границей*/
 }
 
-.pagination:not(.pagination-active):active {
+.pagination:active {
 	/*манипуляции с границей*/
 }
 
-a.pagination-active {
+.pagination-selected {
 	background-color: #ee3643;
 	color: #ffffff;
 }
@@ -712,7 +710,7 @@ a.pagination-active {
 	background-color: #f2f6f8;
 }
 
-.category-details h2 {
+.category-details-header {
 	color: #000000;
 	font-size: 30px;
 	line-height: 30px;
