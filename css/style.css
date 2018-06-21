@@ -11,12 +11,12 @@ body {
 	background-color: #293449; 
 }
 
-
+/*
 a {
 	text-decoration: none;
 	color: #ffffff;
 }
-
+*/
 .visually-hidden {
 	position: absolute; 
 	overflow: hidden; 
@@ -34,10 +34,12 @@ a {
 
 .header-logo, 
 .footer-logo {
-	text-transform: uppercase;
+	color: #ffffff;
 	background-color: #ee3643;
 	font-size: 24px;
 	line-height: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .header-logo:hover,
@@ -72,8 +74,11 @@ a {
 }
 
 .header-shortcuts {
+	color: #ffffff;
 	font-size: 17px;
 	line-height: 18px;
+	text-decoration: none;
+
 }
 
 .header-shortcuts:hover,
@@ -116,21 +121,6 @@ a {
 }
 
 
-/*геноцид оформлений списка*/
-/*расписать по классам
-.header-top ul,
-.header-profile,
-.main-menu ul,
-.featured-category-list,
-.slider,
-.popular-brands-list,
-.popular-items-list,
-.services-list,
-.footer-menu-item,
-.breadcrumbs-list,
-.filter-option,
-.catalog-sort ul,
-.pagination-list,*/
 .list-style-none {
 	list-style: none;
 }
@@ -188,8 +178,10 @@ a {
 }
 
 .menu-item {
+	color: #ffffff;
 	font-size: 17px;
 	line-height: 17px;
+	text-decoration: none;
 }
 
 .menu-item:hover,
@@ -233,10 +225,12 @@ a {
 }
 
 .featured-button {
+	color: #ffffff;
 	background-color: rgba(0, 0, 0, 0.1);
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
+	text-decoration: none;
 }
 
 .featured-button:hover,
@@ -330,6 +324,7 @@ a {
 
 .catalog-item-on-hover button {
 	/*пока ничего*/
+	 /*и возможно вообще ничего с таким селектором*/
 }
 
 .catalog-item-on-hover .add-to-cart {
@@ -477,9 +472,13 @@ a {
 	line-height: 24px;
 }
 
-.footer-catalog-link {
-	color: #ffd180;
+
+.footer-menu-link {
+	color: #ffffff;
+	text-decoration: none;
+
 }
+
 
 .footer-menu-link:hover,
 .footer-menu-link:focus {
@@ -490,6 +489,10 @@ a {
 	opacity: 0.5;
 }
 
+/* !!! .footer-catalog-link не может быть выше .footer-menu-link*/
+.footer-catalog-link {
+	color: #ffd180;
+}
 .footer-bottom {
 	font-size: 16px;
 	line-height: 18px;
@@ -497,6 +500,7 @@ a {
 
 .footer-link {
 	color: #ffd180;
+	text-decoration: none;
 }
 .footer-link:hover,
 .footer-link:focus {
@@ -543,6 +547,7 @@ a {
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
+	text-decoration: none;
 }
 
 .button:hover,
@@ -609,6 +614,7 @@ a {
 	color: #000000;
 	font-size: 13px;
 	line-height: 18px;
+	text-decoration: none;
 
 }
 
@@ -674,6 +680,7 @@ a {
 
 	color: rgba(0, 0, 0, 0.3);
 	border-bottom: 1px dotted #ee3643;
+	text-decoration: none;
 }
 
 .sort-parameter:focus,
@@ -690,8 +697,12 @@ a {
 
 .sort-parameter-selected {
 	color: #ee3643;
+	text-decoration: none;
 }
 
+.pagination {
+	text-decoration: none;
+}
 .pagination:hover,
 .pagination:focus {
 	/*манипуляции с границей*/
