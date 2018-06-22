@@ -11,15 +11,17 @@
   </head>
   <body>
 	<header class="header">
-		<section class="header-top">
-			<h2 class="visually-hidden">Интернет-магазин Техномарт</h2>
-			<a class="header-logo">Техномарт</a>
-			<input class="header-search" type="search" placeholder="Поиск"> 
-			<ul class="list-style-none">
-				<li><a class="header-shortcuts header-bookmarks" href="bookmarks.html">Закладки</a></li>
-				<li><a class="header-shortcuts header-cart" href="cart.html">Корзина: 0</a></li>
-				<li><a class="header-shortcuts header-place-order" href="checkout.html">Оформить заказ</a></li>
-			</ul>
+		<section class="header-upper-section">
+			<div class="wrapper">
+				<div class="header-top">
+					<h2 class="visually-hidden">Интернет-магазин Техномарт</h2>
+					<a class="header-logo">Техномарт</a>
+					<input class="header-search" type="search" placeholder="Поиск"> 
+					<a class="header-shortcuts header-bookmarks" href="#">Закладки</a>
+					<a class="header-shortcuts header-cart" href="#">Корзина: 0</a>
+					<a class="header-shortcuts header-place-order" href="#">Оформить заказ</a>
+				 </div>
+			</div>
 		</section>
 
 		<section class="header-middle">
@@ -34,18 +36,18 @@
 				<!-- Подумать над ссылками -->
 
 			</ul>
+			<nav class="main-menu">
+				<ul class="list-style-none">
+					<li><a class="menu-item" href="index.html">Главная</a></li>
+					<li><a class="menu-item" href="about-us.html">Компания</a></li>
+					<li><a class="menu-item" href="catalog.html">Каталог</a></li>
+					<li><a class="menu-item" href="news.html">Новости</a></li>
+					<li><a class="menu-item" href="offers.html">Спецпредложения</a></li>
+					<li><a class="menu-item" href="delivery.html">Доставка</a></li>
+					<li><a class="menu-item" href="contacts.html">Контакты</a></li>
+				</ul>
+			</nav>
 		</section>
-		<nav class="main-menu">
-			<ul class="list-style-none">
-				<li><a class="menu-item" href="index.html">Главная</a></li>
-				<li><a class="menu-item" href="about-us.html">Компания</a></li>
-				<li><a class="menu-item" href="catalog.html">Каталог</a></li>
-				<li><a class="menu-item" href="news.html">Новости</a></li>
-				<li><a class="menu-item" href="offers.html">Спецпредложения</a></li>
-				<li><a class="menu-item" href="delivery.html">Доставка</a></li>
-				<li><a class="menu-item" href="contacts.html">Контакты</a></li>
-			</ul>
-		</nav>
 	</header>
 
 	<main class="main">
@@ -202,9 +204,9 @@
 			<section class="about-us">
 				<h3>Компания «Техномарт»</h3>
 				<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-				<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-					Техномарт работает со многими транспортными компаниями: </p>
-				<!-- возможно стоит добавить селекторы к p над этим комментарием -->
+				<p>Мы можем доставить ваш товар в самые отдаленные точки России!
+					<br>
+				Техномарт работает со многими транспортными компаниями: </p>
 				<p class="delivery-service">Деловые линии</p>
 				<p class="delivery-service">Автотрейдинг</p>					
 				<p class="delivery-service">ЖелДорЭкспедиция</p>
