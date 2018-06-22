@@ -343,6 +343,40 @@ a {
 	background-color: #ffffff;
 }
 
+.featured-category {
+	position: relative;
+	width: 300px;
+	height: 125px;
+}
+
+.featured-title {
+
+	padding-top: 23px;
+	padding-left: 22px;
+
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.featured-button {
+	display: block;
+	position: absolute;
+	width: 135px;
+	height: 38px;
+	bottom: 22px;
+	left: 25px;
+	text-align: center;
+	padding-top: 12px;
+	
+	border-radius: 4px;
+	color: #ffffff;
+	background-color: rgba(0, 0, 0, 0.1);
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
 .featured-materials {
 	background-color: #ffbf47;
 }
@@ -365,19 +399,7 @@ a {
 	background-color: #ffc047;
 }
 
-.featured-category {
-	font-size: 24px;
-	line-height: 30px;
-}
 
-.featured-button {
-	color: #ffffff;
-	background-color: rgba(0, 0, 0, 0.1);
-	font-size: 14px;
-	line-height: 18px;
-	text-transform: uppercase;
-	text-decoration: none;
-}
 
 .featured-button:hover,
 .featured-button:focus {

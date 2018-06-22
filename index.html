@@ -54,119 +54,121 @@
 	</header>
 
 	<main class="main">
-		<section class="featured">
-			<h2 class="visually-hidden">Спецпредложения</h2><!-- Скрыть -->
-			<div>
-				<ul class="featured-category-list list-style-none">
-					<li class="featured-category featured-materials">
-						<h3>Материалы</h3>
-						<a class="featured-button" href="catalog-materials.html">на любой вкус</a>
+		<div class="wrapper">
+			<section class="featured">
+				<h2 class="visually-hidden">Спецпредложения</h2><!-- Скрыть -->
+				<div>
+					<ul class="featured-category-list list-style-none">
+						<li class="featured-category featured-materials">
+							<h3 class="featured-title">Материалы</h3>
+							<a class="featured-button" href="catalog-materials.html">на любой вкус</a>
+						</li>
+						<li class="featured-category featured-tools">
+							<h3 class="featured-title">Инструменты</h3>
+							<a class="featured-button" href="catalog-tools.html">на все случаи</a>
+						</li>
+					</ul>
+					<ul class="slider list-style-none">
+						<li class="slide slide-1">
+							<h3 class="slide-header">Дрели</h3>
+							<p class="slide-paragraph">Соседям на радость!</p>
+							<a class="button" href="catalog-tools-drill.html">Открыть каталог</a>
+						</li>
+						<li class="slide slide-2">
+							<h3 class="slide-header">Перфораторы</h3>
+							<p class="slide-paragraph">Настоящие мужские игрушки</p>
+							<a class="button" href="catalog-tools-perforator.html">Открыть каталог</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<ul class="featured-category-list list-style-none">
+						<li class="featured-category featured-heavy-machinery">
+							<h3 class="featured-title">Техника</h3>
+							<a class="featured-button" href="catalog-heavy-machinery.html">для стройки</a>
+						</li>
+						<li class="featured-category featured-sale">
+							<h3 class="featured-title">Скидки 50%</h3>
+							<a class="featured-button" href="catalog-sale.html">на 350 товаров</a>
+						</li>
+						<li class="featured-category featured-delivery">
+							<h3 class="featured-title">Доставка</h3>
+							<a class="featured-button" href="delivery.html">бесплатно</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			
+			<section class="popular popular-items">
+				<div class="popular-items-header">
+					<h2 class="popular-caption">Популярные товары:</h2>
+					<a class="button" href="catalog-popular-items.html">Все популярные товары</a>
+				</div>
+				<ul class="popular-items-list list-style-none clearfix"> <!-- временный клирфикс -->
+					<li class="item">
+						<img src="img/bosch-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="169"> 
+						<h3>Перфоратор BOSCH BFG 9000</h3>
+						<span class="old-price">32500 Р.</span>
+						<!-- в нормальной версии поменять на спан с текущей ценой поменять на ссылку ведущую на страницу товара
+			
+						! сделать ссылки ведущие на несвёрстаные страницы попапчиками - тип "вы нажали на ссыль attr(href) или как-то так.
+						попапы длительностью 1-2 секунды, с автоматическим fade-out -->
+						<span class="price">25500 Р.</span>
+						<div class="catalog-item-on-hover">
+							<button type="button" class="add-to-cart">Купить</button>
+							<button type="button" class="bookmark">В закладки</button>
+						</div>
 					</li>
-					<li class="featured-category featured-tools">
-						<h3>Инструменты</h3>
-						<a class="featured-button" href="catalog-tools.html">на все случаи</a>
+					<li class="item">
+						<img src="img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="169">
+						<h3>Перфоратор BOSCH BFG 3000</h3>
+						<span class="old-price">22500 Р.</span>
+						<span class="price">15500 Р.</span>
+						<div class="catalog-item-on-hover">
+							<button type="button" class="add-to-cart">Купить</button>
+							<button type="button" class="bookmark">В закладки</button>
+						</div>
+					</li>
+					<li class="item">
+						<img src="img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="169">
+						<h3>Перфоратор BOSCH BFG 6000</h3>
+						<span class="old-price">30500 Р.</span>
+						<span class="price">25500 Р.</span>
+						<div class="catalog-item-on-hover">
+							<button type="button" class="add-to-cart">Купить</button>
+							<button type="button" class="bookmark">В закладки</button>
+						</div>
+					</li>
+					<li class="item item-new">
+						<img src="img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="169">
+						<h3>Перфоратор BOSCH BFG 2000</h3>
+						<span class="old-price"></span>
+						<span class="price">12500 Р.</span>
+						<div class="catalog-item-on-hover">
+							<button type="button" class="add-to-cart">Купить</button>
+							<button type="button" class="bookmark">В закладки</button>
+						</div>
 					</li>
 				</ul>
-				<ul class="slider list-style-none">
-					<li class="slide slide-1">
-						<h3 class="slide-header">Дрели</h3>
-						<p class="slide-paragraph">Соседям на радость!</p>
-						<a class="button" href="catalog-tools-drill.html">Открыть каталог</a>
-					</li>
-					<li class="slide slide-2">
-						<h3 class="slide-header">Перфораторы</h3>
-						<p class="slide-paragraph">Настоящие мужские игрушки</p>
-						<a class="button" href="catalog-tools-perforator.html">Открыть каталог</a>
-					</li>
+			</section>
+			
+			<section class="popular popular-brands">
+				<div class="popular-brands-header">
+					<h2 class="popular-caption">Популярные производители:</h2>
+					<a class="button" href="catalog-brands.html">Все производители</a>
+				</div>
+				<ul class="popular-brands-list list-style-none clearfix"> <!-- убрать клирфикс -->
+					<li class="brand"><a href="catalog-bosch.html"><img src="img/brands-bosch.jpg" alt="BOSCH" width="185" height="89"></a></li>
+					<li class="brand"><a href="catalog-makita.html"><img src="img/brands-makia.jpg" alt="makita" width="185" height="89"></a></li>
+					<li class="brand"><a href="catalog-dewalt.html"><img src="img/brands-dewalt.jpg" alt="DeWalt" width="185" height="89"></a></li>
+					<li class="brand"><a href="catalog-interskol.html"><img src="img/brands-interskol.jpg" alt="Интерскол" width="185" height="89"></a></li>
+					<li class="brand"><a href="catalog-hitachi.html"><img src="img/brands-hitachi.jpg" alt="HITACHI" width="185" height="89"></a></li>
+					<li class="brand"><a href="catalog-lg.html"><img src="img/brands-lg.jpg" alt="LJ" width="185" height="89"></a></li>
+					<li class="brand"><a href="catalog-aeg.html"><img src="img/brands-aeg.jpg" alt="AEG" width="185" height="89"></a></li>
+					<li class="brand"><a href="catalog-metabo.html"><img src="img/brands-metabo.jpg" alt="metabo" width="185" height="89"></a></li>
 				</ul>
-			</div>
-			<div>
-				<ul class="featured-category-list list-style-none">
-					<li class="featured-category featured-heavy-machinery">
-						<h3>Техника</h3>
-						<a class="featured-button" href="catalog-heavy-machinery.html">для стройки</a>
-					</li>
-					<li class="featured-category featured-sale">
-						<h3>Скидки 50%</h3>
-						<a class="featured-button" href="catalog-sale.html">на 350 товаров</a>
-					</li>
-					<li class="featured-category featured-delivery">
-						<h3>Доставка</h3>
-						<a class="featured-button" href="delivery.html">бесплатно</a>
-					</li>
-				</ul>
-			</div>
-		</section>
-
-		<section class="popular popular-items">
-			<div class="popular-items-header">
-				<h2 class="popular-caption">Популярные товары:</h2>
-				<a class="button" href="catalog-popular-items.html">Все популярные товары</a>
-			</div>
-			<ul class="popular-items-list list-style-none clearfix"> <!-- временный клирфикс -->
-				<li class="item">
-					<img src="img/bosch-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="169"> 
-					<h3>Перфоратор BOSCH BFG 9000</h3>
-					<span class="old-price">32500 Р.</span>
-					<!-- в нормальной версии поменять на спан с текущей ценой поменять на ссылку ведущую на страницу товара
-
-					! сделать ссылки ведущие на несвёрстаные страницы попапчиками - тип "вы нажали на ссыль attr(href) или как-то так.
-					попапы длительностью 1-2 секунды, с автоматическим fade-out -->
-					<span class="price">25500 Р.</span>
-					<div class="catalog-item-on-hover">
-						<button type="button" class="add-to-cart">Купить</button>
-						<button type="button" class="bookmark">В закладки</button>
-					</div>
-				</li>
-				<li class="item">
-					<img src="img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="169">
-					<h3>Перфоратор BOSCH BFG 3000</h3>
-					<span class="old-price">22500 Р.</span>
-					<span class="price">15500 Р.</span>
-					<div class="catalog-item-on-hover">
-						<button type="button" class="add-to-cart">Купить</button>
-						<button type="button" class="bookmark">В закладки</button>
-					</div>
-				</li>
-				<li class="item">
-					<img src="img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="169">
-					<h3>Перфоратор BOSCH BFG 6000</h3>
-					<span class="old-price">30500 Р.</span>
-					<span class="price">25500 Р.</span>
-					<div class="catalog-item-on-hover">
-						<button type="button" class="add-to-cart">Купить</button>
-						<button type="button" class="bookmark">В закладки</button>
-					</div>
-				</li>
-				<li class="item item-new">
-					<img src="img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="169">
-					<h3>Перфоратор BOSCH BFG 2000</h3>
-					<span class="old-price"></span>
-					<span class="price">12500 Р.</span>
-					<div class="catalog-item-on-hover">
-						<button type="button" class="add-to-cart">Купить</button>
-						<button type="button" class="bookmark">В закладки</button>
-					</div>
-				</li>
-			</ul>
-		</section>
-
-		<section class="popular popular-brands">
-			<div class="popular-brands-header">
-				<h2 class="popular-caption">Популярные производители:</h2>
-				<a class="button" href="catalog-brands.html">Все производители</a>
-			</div>
-			<ul class="popular-brands-list list-style-none clearfix"> <!-- убрать клирфикс -->
-				<li class="brand"><a href="catalog-bosch.html"><img src="img/brands-bosch.jpg" alt="BOSCH" width="185" height="89"></a></li>
-				<li class="brand"><a href="catalog-makita.html"><img src="img/brands-makia.jpg" alt="makita" width="185" height="89"></a></li>
-				<li class="brand"><a href="catalog-dewalt.html"><img src="img/brands-dewalt.jpg" alt="DeWalt" width="185" height="89"></a></li>
-				<li class="brand"><a href="catalog-interskol.html"><img src="img/brands-interskol.jpg" alt="Интерскол" width="185" height="89"></a></li>
-				<li class="brand"><a href="catalog-hitachi.html"><img src="img/brands-hitachi.jpg" alt="HITACHI" width="185" height="89"></a></li>
-				<li class="brand"><a href="catalog-lg.html"><img src="img/brands-lg.jpg" alt="LJ" width="185" height="89"></a></li>
-				<li class="brand"><a href="catalog-aeg.html"><img src="img/brands-aeg.jpg" alt="AEG" width="185" height="89"></a></li>
-				<li class="brand"><a href="catalog-metabo.html"><img src="img/brands-metabo.jpg" alt="metabo" width="185" height="89"></a></li>
-			</ul>
-		</section>
+			</section>
+		</div>
 
 		<section class="services">
 			<h2 class="services-title">Сервисы</h2>
