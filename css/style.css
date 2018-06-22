@@ -48,6 +48,7 @@ a {
 }
 .header-top {
 	display: flex;
+	height: 42px;
 /*	margin: 0 auto;*/
 }
 
@@ -58,10 +59,11 @@ a {
 
 .header-logo, 
 .footer-logo {
-	padding: 5px 55px;
+	padding: 10px 55px;
 	margin: 0;
 	color: #ffffff;
 	background-color: #ee3643;
+
 	font-size: 24px;
 	line-height: 24px;
 	text-decoration: none;
@@ -78,19 +80,24 @@ a {
 
 }
 
-.header-search {
+.header-search{
 	width: 250px;
-	padding: 0;
 	margin: 0;
+	padding-left: 30px;
 	border:none;
+	color: #ffffff;
 	background-color: #293449;
-	
 }
 
 .header-search::placeholder {
+	/*padding-top: 12px;*/
+	/*padding-left: 30px;*/
+	/*vertical-align: middle;*/
 	color: #ffffff;
 	font-size: 17px;
-	line-height: 18px;
+	/*line-height: 18px;*/
+	opacity: 1; /*фаерфоксу*/
+	
 }
 
 .header-search:hover {
@@ -98,17 +105,20 @@ a {
 }
 
 .header-search:focus {
+	padding-left: 30px;
 	background-color: #ffffff;
 	color: #000000;
 }
 
 .header-cart, 
 .header-bookmarks {
-	width: 160px;
+	width: 150px;
 	/*padding: 12px 20px 5px 45px;*/
 
 }
 .header-shortcuts {
+	padding-top: 12px;
+	padding-left: 40px;
 	color: #ffffff;
 	font-size: 17px;
 	line-height: 18px;
@@ -142,6 +152,8 @@ a {
 
 .header-place-order {
 	width: 150px;
+	padding-left: 0;
+	text-align: center;
 	background-color: #63a63e;
 
 }
