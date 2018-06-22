@@ -13,7 +13,9 @@ body {
 	background-color: #f2f6f8; 
 }
 
-*, *::after, *::before {
+*, 
+*::after, 
+*::before {
 	box-sizing: border-box;
 }
 /*
@@ -37,37 +39,40 @@ a {
   clear: both;
 }
 
+.list-style-none {
+	list-style: none;
+}
+
 .wrapper {
 	width: 940px;
 	margin: 0 auto;
 }
 
-.header-upper-section {
-	
+.header-upper-section {	
 	background-color: #293449;
 }
+
 .header-top {
 	display: flex;
 	height: 42px;
 /*	margin: 0 auto;*/
 }
 
-
-.header-middle{
-	background-color: #f3f7f8;
-}
-
 .header-logo, 
 .footer-logo {
-	padding: 10px 55px;
+	width: 220px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
 	margin: 0;
 	color: #ffffff;
 	background-color: #ee3643;
-
+	border-bottom: 5px solid #b52933; /*надо чтобы граница выпадала*/
 	font-size: 24px;
 	line-height: 24px;
 	text-decoration: none;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .header-logo:hover,
@@ -80,11 +85,11 @@ a {
 
 }
 
-.header-search{
-	width: 250px;
+.header-search {
+	width: 270px;
 	margin: 0;
 	padding-left: 30px;
-	border:none;
+	border: none;
 	color: #ffffff;
 	background-color: #293449;
 }
@@ -108,6 +113,7 @@ a {
 	padding-left: 30px;
 	background-color: #ffffff;
 	color: #000000;
+	outline: none;
 }
 
 .header-cart, 
@@ -170,45 +176,86 @@ a {
 }
 
 
-.list-style-none {
-	list-style: none;
-}
-
-.header-profile li:last-child {
-	list-style: disc;
+.header-lower-section{
+	background-color: #f3f7f8;
 }
 
 .header-middle {
-	background-color: #f4f7f9;
+	display: flex;
+	margin-top: 46px;
+	flex-flow: row wrap;
+    justify-content: flex-end;
+	align-items: flex-start;
 }
 
+/*
+а это что здесь делает.
+оставлено на случай, если что-то пойдёт не так*/
+/*.header-middle { 
+	background-color: #f4f7f9;
+}*/
+
 .header-caption {
+	display: block;
+	width: 185px;
 	color: #ee3643;
 	font-size: 16px;
 	line-height: 23px;
 	font-style: italic;
 }
 
+.nowrap {
+	white-space: nowrap;
+}
 
 .header-contact-info {
+	display: block;
+	width: 270px;
+	margin-right: 70px;
+	margin-left: 70px;
 	color: #32425c;
 	font-size: 14px;
 	line-height: 24px;
+	text-align: center;
 }
 
 .header-phone {
+	display: block;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 3px solid #ffffff;
 	color: #ee3643;
 	font-size: 21px;
 	line-height: 21px;
 	text-transform: uppercase;
 }
 
+.header-profile {
+	display: flex;
+	flex-basis: 300px;
+	flow: row nowrap;
+	justify-content: flex-end;
+}
 
 .profile-logged-out {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
 	background-color: #ffffff;
 	color: #000000;
 	font-size: 21px;
 	line-height: 21px;
+	text-decoration: none;
+}
+
+.header-login {
+	width: 120px;
+}
+
+.header-signup {
+	width: 150px;
+	margin-left: 10px;
 }
 
 .profile-logged-out:focus,
@@ -219,18 +266,68 @@ a {
 
 .profile-logged-out:active {
 	color: rgba(0, 0, 0, 0.3);
+}
+
+.header-profile-user {
+	background-color: #ffffff;
+	color: #000000;
+
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.header-profile-user:hover, 
+.header-profile-user:focus {
+	color: #ee3643;
 
 }
+
+.header-profile-user:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.header-profile-link {
+	color: #32425c;
+	font-size: 16px;
+	line-height: 18px;
+	text-decoration: underline;
+}
+
+.header-profile-link:hover, 
+.header-profile-link:focus {
+	color: #ee3643;
+}
+
+.header-profile-link:active {
+	color: rgba(50, 66, 92, 0.3);
+}
+
+/*.header-profile .header-profile-link:last-child {
+	list-style: disc;
+в каталоге отсутствует точка между ссылок профиля
+}*/
 
 .main-menu {
+	display: flex;
+	flex-basis: 940px;
+	margin-bottom: 60px;
+	height: 55px;
+	justify-content: space-between;
+	align-items: stretch;
 	background-color: #32425c;
+
+	border-bottom: 5px solid #293449;
 }
 
+
 .menu-item {
+	flex-grow: 1;
+	padding-top: 19px;
 	color: #ffffff;
 	font-size: 17px;
 	line-height: 17px;
 	text-decoration: none;
+	text-align: center;
 }
 
 .menu-item:hover,
@@ -611,39 +708,6 @@ a {
 /*------------*/
 
 /*доп-стили для каталога */
-.header-profile-user {
-	background-color: #ffffff;
-	color: #000000;
-
-	font-size: 21px;
-	line-height: 21px;
-}
-
-.header-profile-user:hover, 
-.header-profile-user:focus {
-	color: #ee3643;
-
-}
-
-.header-profile-user:active {
-	color: rgba(0, 0, 0, 0.3);
-}
-
-.header-profile-link {
-	color: #32425c;
-	font-size: 16px;
-	line-height: 18px;
-	text-decoration: underline;
-}
-
-.header-profile-link:hover, 
-.header-profile-link:focus {
-	color: #ee3643;
-}
-
-.header-profile-link:active {
-	color: rgba(50, 66, 92, 0.3);
-}
 
 
 /*.main {
@@ -652,7 +716,7 @@ a {
 */
 
 .breadcrumbs, 
-.filter-section,/*надо что-то делать с двумя похожими селекторами фильтер и фильтерС*/ 
+.filter-section,
 .catalog-sort { 
 	font-family: "PT Sans", "Tahoma", sans-serif;
 	font-weight: 400;
