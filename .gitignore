@@ -8,3 +8,7 @@
 node_modules/
 npm-debug.*
 Thumbs.db
+
+stylelint-config-htmlacademy/index\.js
+
+stylelint-config-htmlacademy/
