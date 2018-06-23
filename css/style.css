@@ -590,6 +590,8 @@ a {
 	margin-top: 7px;
 	background-color: #ee3643;
 	color: #ffffff;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
 
 	font-size: 17px;
 	line-height: 18px;
@@ -638,7 +640,16 @@ a {
 	border-radius: 4px;
 
 	text-transform: uppercase;
+	outline: none;
 }
+
+/* рандомные красявости */
+.button-add-to-cart:focus,
+.button-bookmark:focus {
+	outline: 1px ridge #85c47c;
+	outline-offset: 1px;
+}
+/*в идеале сделать такой стейт для всех кнопок*/
 
 .button-add-to-cart {
 	color: #ffffff;
@@ -687,7 +698,7 @@ a {
 .popular-brands-header {
 	margin: 0;
 	padding: 0;
-	margin-top: 20px;
+	margin-top: 21px;
 }
 
 /*.brand {  вспомогательное 
@@ -697,7 +708,6 @@ a {
 }
 */
 .popular-brands-list {
-
 	display: flex;
 	flex-flow: row wrap;
 	flex-basis: 940px;
@@ -707,12 +717,13 @@ a {
 	margin: 0;
 	padding: 0;
 	margin-top: 20px;
+	margin-bottom: 65px;
 }
 
 .brand {
 	margin: 0;
 	padding: 0;
-	padding-top: 28px;
+	padding-top: 27px;
 	/*margin-right: 10px;*/
 	margin-bottom: 20px;
 	/*display: inline-block;*/
@@ -723,29 +734,27 @@ a {
 	border: 1px solid #eaeaea;
 }
 
+/*сервисы*/
+
 .services {
 	background-color: #f2f6f8;
+	padding-top: 40px;
 }
 
-.services-description-paragraph,
-.category-details-paragraph {
-	color: #000000;
-	font-family: "PT Sans", "Tahoma", sans-serif;
-	font-weight: 400;
-	font-size: 13px;
-	line-height: 24px;
+
+/*.services-description-paragraph {
+	padding-top: 1px;
 }
+пиксельперфект - пересмотреть как вообще размечены селекторы
+.services-description-paragraph 
+в последнюю очередь
+*/
 
 .services-title {
 	color: #000000;
 	font-size: 30px;
 	line-height: 30px;
-}
-
-.services h3 {
-	color: #32425c;
-	font-size: 36px;
-	line-height: 36px;
+	text-transform: uppercase;
 }
 
 .service-option {
@@ -756,19 +765,45 @@ a {
 	line-height: 30px;
 }
 
-.service-option:hover,
-.service-option:focus {
+.service-option-link {
+	
+}
+
+.service-option-link:hover,
+.service-option-link:focus {
 	background-color: #293449;
 }
 
-.service-option:active {
+.service-option-link:active,
+.service-option-selected {
 	background-color: #ffffff;
 	color: #32425c;
 }
 
+/*
+дублируется с селектором выше
 .service-option-selected {
 	background-color: #ffffff;
 	color: #32425c;
+}*/
+
+
+
+/*ниже дивы*/
+
+.services-description-title {
+	color: #32425c;
+	font-size: 36px;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+.services-description-paragraph,
+.category-details-paragraph {
+	color: #000000;
+	font-family: "PT Sans", "Tahoma", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 24px;
 }
 
 .services-description { /*вспомогательное*/
