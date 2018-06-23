@@ -2,19 +2,17 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	min-width: 960px;
-	
-
 	font-family: "Cuprum", "Tahoma", sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 400;
 	color: #ffffff;
 
-	background-color: #f2f6f8; 
+	background-color: #f2f6f8;
 }
 
-*, 
-*::after, 
+*,
+*::after,
 *::before {
 	box-sizing: border-box;
 }
@@ -25,19 +23,23 @@ a {
 }
 */
 .visually-hidden {
-	position: absolute; 
-	overflow: hidden; 
- 	clip: rect(0 0 0 0); 
-	height: 1px; width: 1px; 
-	margin: -1px; padding: 0; border: 0;
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
 }
 
 /*временный клирфикс, чтобы самому было понятнее что происходит*/
-.clearfix {
+/*.clearfix {
   content: "";
   display: table;
   clear: both;
 }
+*/
 
 .list-style-none {
 	list-style: none;
@@ -48,17 +50,44 @@ a {
 	margin: 0 auto;
 }
 
-.header-upper-section {	
+.button {
+	display: block;
+	width: 10px;
+	/*нереальная ширина, чтобы не забывать указывать её в каждом инстансе*/
+	height: 38px;
+	padding-top: 11px;
+
+	background-color: #ee3643;
+	color: #ffffff;
+
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+	background-color: #ca2c37;
+}
+
+.button:active {
+	background-color: #ba2732;
+}
+
+.header-upper-section {
 	background-color: #293449;
 }
 
 .header-top {
 	display: flex;
 	height: 42px;
-/*	margin: 0 auto;*/
+	/*	margin: 0 auto;*/
 }
 
-.header-logo, 
+.header-logo,
 .footer-logo {
 	width: 220px;
 	padding-top: 10px;
@@ -82,7 +111,6 @@ a {
 
 .header-logo:active {
 	background-color: #ba2732;
-
 }
 
 .header-search {
@@ -102,7 +130,6 @@ a {
 	font-size: 17px;
 	/*line-height: 18px;*/
 	opacity: 1; /*фаерфоксу*/
-	
 }
 
 .header-search:hover {
@@ -116,12 +143,12 @@ a {
 	outline: none;
 }
 
-.header-cart, 
+.header-cart,
 .header-bookmarks {
 	width: 150px;
 	/*padding: 12px 20px 5px 45px;*/
-
 }
+
 .header-shortcuts {
 	padding-top: 12px;
 	padding-left: 40px;
@@ -129,7 +156,6 @@ a {
 	font-size: 17px;
 	line-height: 18px;
 	text-decoration: none;
-
 }
 
 .header-shortcuts:hover,
@@ -140,11 +166,12 @@ a {
 .header-shortcuts:active {
 	/*надо ли сюда дублировать background-color: #161d29;*/
 	color: rgba(255, 255, 255, 0.6);
-
 }
+
 .header-cart-has-items {
 	background-color: #ee3643;
 }
+
 .header-cart-has-items:hover,
 .header-cart-has-items:focus {
 	background-color: #ca2c37;
@@ -161,10 +188,9 @@ a {
 	padding-left: 0;
 	text-align: center;
 	background-color: #63a63e;
-
 }
 
-.header-place-order:hover, 
+.header-place-order:hover,
 .header-place-order:focus {
 	background-color: #5fbb2d;
 }
@@ -176,27 +202,30 @@ a {
 }
 
 
-.header-lower-section{
+.header-lower-section {
 	background-color: #f3f7f8;
 }
 
 .header-middle {
 	display: flex;
-	margin-top: 46px;
+	margin-top: 47px;
+	margin-bottom: 40px;
 	flex-flow: row wrap;
-    justify-content: flex-end;
+	justify-content: flex-end;
 	align-items: flex-start;
 }
 
 /*
 а это что здесь делает.
 оставлено на случай, если что-то пойдёт не так*/
-/*.header-middle { 
+/*.header-middle {
 	background-color: #f4f7f9;
 }*/
 
 .header-caption {
 	display: block;
+	margin: 0px;
+	margin-top: 2px;
 	width: 185px;
 	color: #ee3643;
 	font-size: 16px;
@@ -261,7 +290,6 @@ a {
 .profile-logged-out:focus,
 .profile-logged-out:hover {
 	color: #ee3643;
-
 }
 
 .profile-logged-out:active {
@@ -276,10 +304,9 @@ a {
 	line-height: 21px;
 }
 
-.header-profile-user:hover, 
+.header-profile-user:hover,
 .header-profile-user:focus {
 	color: #ee3643;
-
 }
 
 .header-profile-user:active {
@@ -293,7 +320,7 @@ a {
 	text-decoration: underline;
 }
 
-.header-profile-link:hover, 
+.header-profile-link:hover,
 .header-profile-link:focus {
 	color: #ee3643;
 }
@@ -311,7 +338,7 @@ a {
 	display: flex;
 	flex-basis: 940px;
 	margin-bottom: 60px;
-	height: 55px;
+	height: 60px;
 	justify-content: space-between;
 	align-items: stretch;
 	background-color: #32425c;
@@ -340,20 +367,39 @@ a {
 }
 
 .main {
+	margin-top: 40px;
 	background-color: #ffffff;
+}
+
+.featured {
+	display: flex;
+	flex-basis: 940px;
+	padding-top: 40px;
+}
+
+.featured-category-list {
+	display: flex;
+	flex-basis: 620px;
+	padding: 0;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.featured-category-list:last-child {
+	flex-flow: column nowrap;
+	margin-left: 20px;
 }
 
 .featured-category {
 	position: relative;
 	width: 300px;
-	height: 125px;
+	height: 123px;
 }
 
 .featured-title {
-
-	padding-top: 23px;
+	/*padding-top: 23px;*/
 	padding-left: 22px;
-
 	font-size: 24px;
 	line-height: 30px;
 }
@@ -367,7 +413,6 @@ a {
 	left: 25px;
 	text-align: center;
 	padding-top: 12px;
-	
 	border-radius: 4px;
 	color: #ffffff;
 	background-color: rgba(0, 0, 0, 0.1);
@@ -378,6 +423,7 @@ a {
 }
 
 .featured-materials {
+	margin-right: 20px;
 	background-color: #ffbf47;
 }
 
@@ -386,11 +432,13 @@ a {
 }
 
 .featured-heavy-machinery {
+	margin-bottom: 20px;
 	background-color: #dc91d8;
 }
 
 /*сделать нормальный дизайн в лейте*/
 .featured-sale {
+	margin-bottom: 20px;
 	background-color: #8ed78f;
 }
 
@@ -398,8 +446,6 @@ a {
 .featured-delivery {
 	background-color: #ffc047;
 }
-
-
 
 .featured-button:hover,
 .featured-button:focus {
@@ -411,6 +457,7 @@ a {
 }
 
 .slide-header {
+	margin: 0;
 	font-size: 36px;
 	line-height: 36px;
 }
@@ -420,10 +467,15 @@ a {
 	line-height: 24px;
 }
 
+.slider-block {
+	padding: 0;
+	margin-top: 20px;
+}
+
 .slide {
-	
+	position: relative;
 	width: 620px;
-	height: 265px;
+	height: 266px;
 }
 
 .slide-1 {
@@ -433,117 +485,242 @@ a {
 }
 
 .slide-2 {
+	display: none;
+	/* спрятан для целей вёрстки*/
 	background-color: #293449;
 	background-image: url("../img/featured-slide-2.jpg");
 	background-repeat: no-repeat;
 }
 
-/*стилизация кнопок в слайдере и вообще - в конце файла*/
-
-.popular-items-header, 
-.popular-brands-header {
-	background-color: #f9f5f0;
+.button-slider {
+	position: absolute;
+	width: 195px;
+	left: 25px;
+	bottom: 22px;
 }
 
-/*.popular-items-header h2, 
+.popular-items-header,
+.popular-brands-header {
+	position: relative;
+	background-color: #f9f5f0;
+	height: 89px;
+}
+
+.popular-items-header {
+	margin-top: 36px;
+}
+
+.button-popular {
+	position: absolute;
+	top: 25px;
+	right: 24px;
+	width: 253px;
+}
+
+/*.popular-items-header h2,
 .popular-brands-header h2 */
 .popular-caption {
-	color: #32425c; 
+	display: block;
+	padding: 0;
+	margin: 0;
+	padding-top: 30px;
+	padding-left: 20px;
+	color: #32425c;
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
 }
 
-
-.item {
-	display: inline-block; /* вспомогательное */
-	border:1px solid black; /* вспомогательное */
-
-	float: left;
-	background-color: #ffffff;
-	color: #000;
-	font-family: "PT Sans", "Tahoma", sans-serif;
-	font-weight: 700;
+.popular-items-list {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+	margin-top: 18px;
+	padding-top: 2px;
 }
 
-.item h2 {
+.item {
+	position: relative;
+	display: block;
+	width: 220px;
+	height: 318px;
+	background-color: #ffffff;
+	color: #000000;
+	font-family: "PT Sans", "Tahoma", sans-serif;
+	font-weight: 700;
+
+	border: 1px solid #eaeaea;
+}
+
+.item-caption {
+	padding: 0;
+	/*margin: 0;*/
+	margin-top: 4px;
+	margin-bottom: 12px;
+	padding-left: 20px;
+	padding-right: 20px;
 	color: #000000;
 
 	font-size: 18px;
-	line-height: 20px
+	line-height: 20px;
+	text-align: center;
 }
 
 .old-price {
+	display: block;
+	/*разумно ли давать спану блок, если я просто хочу перенос на строку?*/
+	height: 18px;
+	/*без указаной высоты форматирование слетает, когда спан пуст*/
 	color: #a9a9a9;
-
 	font-size: 17px;
 	line-height: 18px;
 	text-decoration: line-through;
+	text-align: center;
 }
 
 .price {
+	position: relative;
+	display: block;
+	width: 121px;
+	height: 38px;
+	padding-top: 12px;
+	padding-left: 12px;
+	margin-left: 42px;
+	margin-top: 7px;
 	background-color: #ee3643;
 	color: #ffffff;
 
 	font-size: 17px;
 	line-height: 18px;
 	text-transform: uppercase;
+	text-align: center;
 }
 
-.catalog-item-on-hover button {
-	/*пока ничего*/
-	 /*и возможно вообще ничего с таким селектором*/
+.price::after {
+	content: "";
+	position: absolute;
+	left: 121px;
+	top: 0;
+	display: block;
+
+	width: 0;
+	height: 0;
+	border-left: 20px solid #ee3643;
+	border-top: 19px solid transparent;
+	border-bottom: 19px solid transparent;
 }
 
-.catalog-item-on-hover .add-to-cart {
+.catalog-item-on-hover {
+	visibility: hidden;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 218px;
+	height: 169px;
+	background-color: #ffffff;
+}
+
+/*для наглядности */
+.item:last-child .catalog-item-on-hover {
+	visibility: visible;
+}
+/*конец наглядности*/
+
+.button-add-to-cart,
+.button-bookmark {
+	width: 135px;
+	height: 38px;
+	border-radius: 4px;
+
+	text-transform: uppercase;
+}
+
+.button-add-to-cart {
 	color: #ffffff;
 	background-color: #63a63e;
-	border-color: #367315;
+	margin-bottom: 7px;
+
+	font-family: "Cuprum", "Tahoma", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	border-width: 0;
+	border-bottom: 3px solid #367315;
+}
+
+.button-add-to-cart:hover,
+.button-add-to-cart:focus {
+	background-color: #5fbb2d;
+}
+
+.button-add-to-cart:active {
+	background-color: #518534;
+	border-color: #518534;
+}
+
+.button-bookmark {
+	color: #32425c;
+	background-color: #ffffff;
 
 	font-family: "Cuprum", "Tahoma", sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
 
+	border: 3px solid #63a63e;
 }
 
-.catalog-item-on-hover .add-to-cart:hover,
-.catalog-item-on-hover .add-to-cart:focus {
-	background-color: #5fbb2d;
+.button-bookmark:focus,
+.button-bookmark:hover {
+	border-color: #32425c;
 }
 
-.catalog-item-on-hover .add-to-cart:active {
-	background-color: #518534;
-
-}
-
-
-.catalog-item-on-hover .bookmark {
- 	color: #32425c;
- 	background-color: #ffffff;
- 	border-color: #63a63e;
-
- 	font-family: "Cuprum", "Tahoma", sans-serif;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 18px;
-}
-
-.catalog-item-on-hover .bookmark:focus,
-.catalog-item-on-hover .bookmark:hover {
-	border-color: #000000;
-
-}
-
-.catalog-item-on-hover .bookmark:active {
+.button-bookmark:active {
 	opacity: 0.3;
 }
 
+.popular-brands-header {
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+}
 
-.brand { /* вспомогательное */
+/*.brand {  вспомогательное 
 	display: block;
 	float: left;
 	border: 1px solid black;
+}
+*/
+.popular-brands-list {
+
+	display: flex;
+	flex-flow: row wrap;
+	flex-basis: 940px;
+	justify-content: space-between;
+	align-items: space-between;
+
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+}
+
+.brand {
+	margin: 0;
+	padding: 0;
+	padding-top: 28px;
+	/*margin-right: 10px;*/
+	margin-bottom: 20px;
+	/*display: inline-block;*/
+	width: 220px;
+	height: 145px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #eaeaea;
 }
 
 .services {
@@ -589,7 +766,7 @@ a {
 	color: #32425c;
 }
 
-.service-option-selected { 
+.service-option-selected {
 	background-color: #ffffff;
 	color: #32425c;
 }
@@ -597,6 +774,7 @@ a {
 .services-description { /*вспомогательное*/
 	height: 300px;
 }
+
 .services-warranty {
 	background-image: url("../img/services-bg-warranty.png");
 	background-repeat: no-repeat;
@@ -623,7 +801,6 @@ a {
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
-
 }
 
 .delivery-service {
@@ -632,7 +809,7 @@ a {
 }
 
 
-.footer-top{
+.footer-top {
 	background-color: #32425c;
 	/*color: #ffffff;*/
 
@@ -644,7 +821,6 @@ a {
 .footer-menu-link {
 	color: #ffffff;
 	text-decoration: none;
-
 }
 
 
@@ -661,6 +837,7 @@ a {
 .footer-catalog-link {
 	color: #ffd180;
 }
+
 .footer-bottom {
 	font-size: 16px;
 	line-height: 18px;
@@ -670,22 +847,21 @@ a {
 	color: #ffd180;
 	text-decoration: none;
 }
+
 .footer-link:hover,
 .footer-link:focus {
 	text-decoration: underline;
-
 }
 
 .footer-link:active {
 	color: #ee3643;
 }
+
 .social:hover, 
 .social:focus,
 .social:active {
 	background-color: #ee3643;
 }
-
-
 
 .feedback-popup {
 	background-color: #ffffff;
@@ -705,27 +881,9 @@ a {
 	background-color: #f4f4f4;
 }
 
-
-
 /*красные кнопки*/ 
-.button {
-	background-color: #ee3643;
-	color: #ffffff;
 
-	font-size: 14px;
-	line-height: 18px;
-	text-transform: uppercase;
-	text-decoration: none;
-}
 
-.button:hover,
-.button:focus {
-	background-color: #ca2c37;
-}
-
-.button:active {
-	background-color: #ba2732;
-}
 /* переделать */
 /*------------*/
 
@@ -733,24 +891,23 @@ a {
 
 
 /*.main {
-	background-color: #000; 
+	background-color: #000;
 }
 */
 
-.breadcrumbs, 
+.breadcrumbs,
 .filter-section,
-.catalog-sort { 
+.catalog-sort {
 	font-family: "PT Sans", "Tahoma", sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;
 }
 
-.breadcrumbs-link{
+.breadcrumbs-link {
 	color: #000000;
 	font-size: 13px;
 	line-height: 18px;
 	text-decoration: none;
-
 }
 
 .current-category {
@@ -783,16 +940,15 @@ a {
 }
 
 .filter-header,
-.catalog-sort, 
+.catalog-sort,
 .catalog-sort-header,
 .filter-button,
-.pagination { 
+.pagination {
 	color: #000000;
 	font-size: 13px;
 	line-height: 18px;
 	font-weight: 400;
 	text-transform: uppercase;
-
 }
 
 .filter-option-label {
@@ -838,6 +994,7 @@ a {
 .pagination {
 	text-decoration: none;
 }
+
 .pagination:hover,
 .pagination:focus {
 	/*манипуляции с границей*/
@@ -861,5 +1018,4 @@ a {
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
-
 }
