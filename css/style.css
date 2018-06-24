@@ -316,7 +316,7 @@ a {
 	/*padding-top: 10px;
     padding-left: 47px;
     padding-bottom: 12px;*/
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 	
 	background-color: #ffffff;
 	color: #000000;
@@ -1021,7 +1021,7 @@ a {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	align-items: /*baseline*/; 
+	/*align-items: baseline; */
 	/*???*/
 }
 
@@ -1214,12 +1214,50 @@ a {
 	text-transform: uppercase;
 }
 
+
 .filter-section {
+	display: inline-flex;
+	flex-flow: column nowrap;
+
+	margin: 0;
+	padding: 0;
+	width: 220px;
+
 	color: #000000;
 }
 
+.filter-header {
+	width: 100%;
+	margin: 0;
+	padding: 11px 19px 9px;
+	/*padding-top: 11px;
+    padding-bottom: 9px;
+    padding-left: 19px;*/
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+	color: #000000;
+	background-color: #f7f3ec;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	border-radius: 4px;
+}
+
 .filter-fieldset {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	align-items: center;
+	flex-basis: 220px;
+
+	width: 220px;
 	border: 0;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .filter-legend {
@@ -1228,14 +1266,59 @@ a {
 	font-weight: 700;
 }
 
-.filter-price-input,
-.price-range,
-.filter-header,
+.filter-legend-price {
+	padding-top: 3px;
+}
+
+.price-range {
+	margin-top: 13px;
+	/*align-self: flex-start;*/
+	width: 220px;
+	height: 80px;
+	background-color: #f7f3ec;
+	border-radius: 4px;
+
+	/*временная заглушка*/
+}
+
+.price-range-list {
+	margin-top: 8px;
+}
+
+.filter-price-input {
+	/*display: inline-block;*/
+	padding: 0;
+	margin: 0;
+	padding-top: 2px;
+	padding-left: 16px;
+	width: 95px;
+	height: 38px;
+
+	font-size: 17px;
+	line-height: 18px;
+	text-align: center;
+
+	background-color: #f7f3ec;
+	border: none;
+	border-radius: 4px;
+}
+
+.filter-price-input:first-child {
+	margin-right: 25px;
+}
+
+.filter-legend-brands {
+	padding-top: 18px;
+}
+
+.filter-input {
+
+}
 .catalog-sort {
 	background-color: #f7f3ec;
 }
+/* наборы выше и ниже распихать по своим селекторам*/
 
-.filter-header,
 .catalog-sort,
 .catalog-sort-header,
 .filter-button,
@@ -1248,18 +1331,59 @@ a {
 }
 
 .filter-option-label {
+	padding: 14px 34px 6px;
+	margin: 0;
 	font-size: 15px;
 	line-height: 20px;
 }
 
-/*стилизация радиобатнов и чекбоксов позже, когда картинки к ним прилепим*/
+.brands-fieldset {
+	padding-bottom: 14px;
+}
 
+
+.filter-legend-power {
+	padding-top: 19px;
+}
+
+.power-fieldset {
+	border: none;
+}
+
+
+/* .filter-button - сделать общим класом для каталога*/
 .filter-button {
+	margin-top: 45px;
+	padding-top: 6px;
+	width: 140px;
+	height: 38px;
+
 	background-color: #ffffff;
-	border: 1px solid #000000;
+	
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
+
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	outline: none;
+}
+
+.filter-button:focus, 
+.filter-button:hover {
+	border-color: #bdc6ca;
+}
+
+.filter-button:active {
+	border-color: #ee3643;
+}
+
+.catalog {
+	padding: 0;
+	margin: 0;
+	display: inline-flex;
+	flex-flow: column nowrap;
+	width: 700px;
 }
 
 .sort-parameter {

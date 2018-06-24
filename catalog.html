@@ -74,34 +74,37 @@
 			    <form class="filter" method="get" action="http://echo.htmlacademy.ru"> <!-- Адрес-заглушка -->
 			         <h4 class="filter-header">Фильтр:</h4> 
 			         <fieldset class="filter-fieldset"> 
-			         		<legend class="filter-legend">Цена:</legend>
+			         		<legend class="filter-legend filter-legend-price">Цена:</legend>
 			         		<!-- на js?-->
 			         		<div class="price-range">
 			         			<input type="range" name="range-min">
 			         			<input type="range" name="range-max">
 			         		</div>
-			         		<input class="filter-price-input" type="number">
-			         		<!-- затолкать дефис в псевдоэлемент -->
-			         		<input class="filter-price-input" type="number">
+			         		<div class="price-range-list"> 
+			         			<!-- а без доп дива никак?  -->
+			         			<input class="filter-price-input" value="0" type="number">
+			         			<!-- затолкать дефис в псевдоэлемент -->
+			         			<input class="filter-price-input" value="30000" type="number">
+			         		</div>
 			         </fieldset>
-			         <fieldset class="filter-fieldset">
-			         		<legend class="filter-legend">Производители:</legend>
-			         			<input type="checkbox" class="visually-hidden filter-input filter-checkbox" name="filter-item-bosch" id="filter-label-bosch" checked>
+			         <fieldset class="filter-fieldset brands-fieldset">
+			         		<legend class="filter-legend filter-legend-brands">Производители:</legend>
+			         			<input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="filter-item-bosch" id="filter-label-bosch" checked>
 						<label class="filter-option-label" for="filter-label-bosch">BOSCH</label>
-			         			<input type="checkbox" class="visually-hidden filter-input filter-checkbox" name="filetr-item-interskol" id="filter-label-interskol">
+			         			<input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="filetr-item-interskol" id="filter-label-interskol">
 			         			<label class="filter-option-label" for="filter-label-interskol">Интерскол</label>
-			         			<input type="checkbox" class="visually-hidden filter-input filter-checkbox" name="filter-item-makita" id="filter-label-makita" checked>
+			         			<input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="filter-item-makita" id="filter-label-makita" checked>
 			         			<label class="filter-option-label" for="filter-label-makita">makita</label>
-			         			<input type="checkbox" class="visually-hidden filter-input filter-checkbox" name="filter-item-dewalt" id="filter-label-dewalt">
+			         			<input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="filter-item-dewalt" id="filter-label-dewalt">
 			         			<label class="filter-option-label" for="filter-label-dewalt">DeWALT</label>
-			         			<input type="checkbox" class="visually-hidden filter-input filter-checkbox" name="filter-item-hitachi" id="filter-label-hitachi">
+			         			<input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="filter-item-hitachi" id="filter-label-hitachi">
 			         			<label class="filter-option-label" for="filter-label-hitachi">Hitachi</label>
 			         </fieldset>
-			         <fieldset class="filter-fieldset">
-			         		<legend class="filter-legend">Питание:</legend>
-			         			<input type="radio" class="visually-hidden filter-input filter-radiobutton" name="filter-power" id="filter-power-cordless" checked>
+			         <fieldset class="filter-fieldset power-fieldset">
+			         		<legend class="filter-legend filter-legend-power">Питание:</legend>
+			         			<input class="visually-hidden filter-input filter-radiobutton" type="radio" name="filter-power" id="filter-power-cordless" checked>
 			         			<label class="filter-option-label" for="filter-power-cordless">Аккумуляторные</label>
-			         			<input type="radio" class="visually-hidden filter-input filter-radiobutton" name="filter-power" id="filter-power-wired">
+			         			<input class="visually-hidden filter-input filter-radiobutton" type="radio" name="filter-power" id="filter-power-wired">
 			         			<label class="filter-option-label" for="filter-power-wired">Сетевые</label>
 			         </fieldset>
 			         <button type="submit" class="filter-button">Показать</button>
