@@ -219,7 +219,7 @@ a {
 .header-middle {
 	display: flex;
 	margin-top: 47px;
-	margin-bottom: 40px;
+	margin-bottom: 39px;
 	flex-flow: row wrap;
 	justify-content: flex-end;
 	align-items: flex-start;
@@ -275,8 +275,9 @@ a {
 .header-profile {
 	display: flex;
 	flex-basis: 300px;
-	flex-flow: row nowrap;
-	justify-content: flex-end;
+	width: 300px;
+	flex-flow: row wrap;
+	justify-content: stretch;
 }
 
 .profile-logged-out {
@@ -310,11 +311,20 @@ a {
 }
 
 .header-profile-user {
+	width: 100%;
+	padding: 11px 47px 10px;
+	/*padding-top: 10px;
+    padding-left: 47px;
+    padding-bottom: 12px;*/
+    margin-bottom: 10px;
+	
 	background-color: #ffffff;
 	color: #000000;
 
+
 	font-size: 21px;
 	line-height: 21px;
+	text-decoration: none;
 }
 
 .header-profile-user:hover,
@@ -327,6 +337,8 @@ a {
 }
 
 .header-profile-link {
+	padding-left: 18px;
+    padding-right: 14px;
 	color: #32425c;
 	font-size: 16px;
 	line-height: 18px;
@@ -1152,19 +1164,11 @@ a {
 	background-color: #f4f4f4;
 }
 
-/*красные кнопки*/ 
 
-
-/* переделать */
-/*------------*/
 
 /*доп-стили для каталога */
 
 
-/*.main {
-	background-color: #000;
-}
-*/
 
 .breadcrumbs,
 .filter-section,
@@ -1174,7 +1178,22 @@ a {
 	text-transform: uppercase;
 }
 
+.breadcrumbs-list {
+	display: flex;
+	flex-basis: 360px;
+	width: 360px;
+	padding: 0;
+	margin: 0;
+	padding-top: 18px;
+	padding-right: 2px;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: center;
+}
 .breadcrumbs-link {
+	padding: 0;
+	margin: 0;
+	padding-left: 42px;
 	color: #000000;
 	font-size: 13px;
 	line-height: 18px;
@@ -1182,6 +1201,12 @@ a {
 }
 
 .current-category {
+	padding: 0;
+	margin: 0;
+	margin-top: 17px;
+	padding-top: 29px;
+    padding-left: 28px;
+    padding-bottom: 30px;
 	color: #32425c;
 	background-color: #f2f6f8;
 	font-size: 30px;

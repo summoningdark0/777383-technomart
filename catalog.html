@@ -36,7 +36,10 @@
 						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 					</div>
 					<div class="header-profile">
-						<a class="header-profile-user" href="#">Равшан Джамшутович</a>						<a class="header-profile-link" href="my-orders.html">Мои заказы</a>						<a class="header-profile-link" href="dashboard.html">Личный кабинет</a>					</div>
+						<a class="header-profile-user" href="#">Равшан Джамшутович</a>
+						<a class="header-profile-link" href="my-orders.html">Мои заказы</a>
+						<a class="header-profile-link" href="dashboard.html">Личный кабинет</a>					
+					</div>
 				</div>
 			</div>
 				<div class="wrapper">
@@ -58,19 +61,19 @@
 		<div class="wrapper">
 			<section class="breadcrumbs">
 				<ul class="breadcrumbs-list list-style-none">
-					<li><a  class="breadcrumbs-link" href="index.html"><img src="http://via.placeholder.com/20x20" width="20" height="20" alt="Главная страница"></a></li>	<!-- img - это временная забивка -->
+					<li><a  class="breadcrumbs-link" href="index.html"><img src="http://via.placeholder.com/20x20" width="14" height="12" alt="Главная страница"></a></li>	<!-- img - это временная забивка -->
 					<li><a  class="breadcrumbs-link" href="catalog.html">Каталог</a></li>
-					<li><a  class="breadcrumbs-link" href="catalog-tools.html">Инструменты</a></li>
+					<li><a  class="breadcrumbs-link" href="catalog-tools.html">Инструмент</a></li>
 					<li><a  class="breadcrumbs-link" href="catalog-tools-perforator.html">Перфораторы</a></li>
 				</ul>
 			</section>
 			<h2 class="current-category">Перфораторы</h2>
 			<section class="filter-section">
-			      	  <h2 class="visually-hidden">Фильтр товаров</h2>
-			         <!-- Форма -->
-			         <form class="filter" method="get" action="http://echo.htmlacademy.ru"> <!-- Адрес-заглушка -->
-			         	<h4 class="filter-header">Фильтр:</h4> 
-			         	<fieldset class="filter-fieldset"> 
+			    <h2 class="visually-hidden">Фильтр товаров</h2>
+			    <!-- Форма -->
+			    <form class="filter" method="get" action="http://echo.htmlacademy.ru"> <!-- Адрес-заглушка -->
+			         <h4 class="filter-header">Фильтр:</h4> 
+			         <fieldset class="filter-fieldset"> 
 			         		<legend class="filter-legend">Цена:</legend>
 			         		<!-- на js?-->
 			         		<div class="price-range">
@@ -80,8 +83,8 @@
 			         		<input class="filter-price-input" type="number">
 			         		<!-- затолкать дефис в псевдоэлемент -->
 			         		<input class="filter-price-input" type="number">
-			         	</fieldset>
-			         	<fieldset class="filter-fieldset">
+			         </fieldset>
+			         <fieldset class="filter-fieldset">
 			         		<legend class="filter-legend">Производители:</legend>
 			         			<input type="checkbox" class="visually-hidden filter-input filter-checkbox" name="filter-item-bosch" id="filter-label-bosch" checked>
 						<label class="filter-option-label" for="filter-label-bosch">BOSCH</label>
@@ -93,20 +96,20 @@
 			         			<label class="filter-option-label" for="filter-label-dewalt">DeWALT</label>
 			         			<input type="checkbox" class="visually-hidden filter-input filter-checkbox" name="filter-item-hitachi" id="filter-label-hitachi">
 			         			<label class="filter-option-label" for="filter-label-hitachi">Hitachi</label>
-			         	</fieldset>
-			         	<fieldset class="filter-fieldset">
+			         </fieldset>
+			         <fieldset class="filter-fieldset">
 			         		<legend class="filter-legend">Питание:</legend>
 			         			<input type="radio" class="visually-hidden filter-input filter-radiobutton" name="filter-power" id="filter-power-cordless" checked>
 			         			<label class="filter-option-label" for="filter-power-cordless">Аккумуляторные</label>
 			         			<input type="radio" class="visually-hidden filter-input filter-radiobutton" name="filter-power" id="filter-power-wired">
 			         			<label class="filter-option-label" for="filter-power-wired">Сетевые</label>
-			         	</fieldset>
-			         	<button type="submit" class="filter-button">Показать</button>
+			         </fieldset>
+			         <button type="submit" class="filter-button">Показать</button>
 			         	<!-- нужно ли добавлять в эту кнопку общий класс? 
 			         		 возможно в других баттонах добавить класс, где стилизовать какие-то общие параметры, и добавить красным кнопкам с индекса что-то вроде button-red с их спецификой. думать, но не сейчас -->
-			         </form>
+			    </form>
 			<!-- Конец формы -->
-			     	</section>
+			</section>
 			<section class="catalog">
 				<div class="catalog-sort">
 					<h4 class="catalog-sort-header">Сортировка:</h4> <!-- .catalog h4 -->
