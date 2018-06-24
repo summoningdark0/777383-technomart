@@ -55,7 +55,7 @@ a {
 	width: 10px;
 	/*нереальная ширина, чтобы не забывать указывать её в каждом инстансе*/
 	height: 38px;
-	padding-top: 11px;
+	padding-top: 10px;
 
 	background-color: #ee3643;
 	color: #ffffff;
@@ -264,7 +264,7 @@ a {
 	padding-left: 23px;
 	padding-top: 8px;
     padding-bottom: 9px;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 	border: 3px solid #ffffff;
 	color: #ee3643;
 	font-size: 21px;
@@ -389,8 +389,8 @@ a {
 .featured {
 	display: flex;
 	flex-basis: 940px;
-	padding-top: 40px;
-	padding-left: 1px;
+	padding-top: 41px;
+/*	padding-left: 1px; !pl1px*/
 }
 
 .featured-category-list {
@@ -478,11 +478,19 @@ a {
 
 .slide-header {
 	margin: 0;
+	padding: 0;
+	padding-top: 22px;
+	padding-left: 24px;
 	font-size: 36px;
 	line-height: 36px;
+	text-transform: uppercase;
 }
 
 .slide-paragraph {
+	padding: 0;
+	margin: 0;
+	padding-left: 24px;
+	padding-top: 1px;
 	font-size: 18px;
 	line-height: 24px;
 }
@@ -499,6 +507,7 @@ a {
 	width: 620px;
 	height: 266px;
 }
+
 
 .slide-1 {
 	background-color: #293449;
@@ -533,7 +542,7 @@ a {
 }
 
 .popular-items-header {
-	margin-top: 36px;
+	margin-top: 35px;
 }
 
 .button-popular {
@@ -582,10 +591,10 @@ a {
 .item-caption {
 	padding: 0;
 	/*margin: 0;*/
-	margin-top: 4px;
-	margin-bottom: 12px;
-	padding-left: 20px;
-	padding-right: 20px;
+	margin-top: 3px;
+	margin-bottom: 11px;
+	padding-left: 19px;
+	padding-right: 19px;
 	color: #000000;
 
 	font-size: 18px;
@@ -611,9 +620,9 @@ a {
 	width: 121px;
 	height: 38px;
 	padding-top: 12px;
-	padding-left: 12px;
-	margin-left: 42px;
-	margin-top: 7px;
+	padding-left: 15px;
+	margin-left: 41px;
+	margin-top: 8px;
 	background-color: #ee3643;
 	color: #ffffff;
 	border-top-left-radius: 4px;
@@ -811,8 +820,8 @@ a {
 
 .service-option {
 	height: 61px;
-	padding-left: 22px;
-	padding-top: 14px;
+	padding-left: 23px;
+	padding-top: 13px;
 
 	background-color: #32425c;
 	color: #ffffff;
@@ -868,7 +877,7 @@ a {
 
 .services-description-title {
 	padding: 0;
-	padding-bottom: 11px;
+	padding-bottom: 10px;
 	margin: 0;
 	color: #32425c;
 	font-size: 36px;
@@ -878,6 +887,8 @@ a {
 
 .services-description-paragraph,
 .category-details-paragraph {
+/*	padding-top: 1px; pt1px*/
+/*	padding-left: 1px; !pl1px*/
 	color: #000000;
 	font-family: "PT Sans", "Tahoma", sans-serif;
 	font-weight: 400;
@@ -920,7 +931,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 47px;
-	padding-bottom: 86px;
+	padding-bottom: 85px;
 	color: #000000;
 
 	font-size: 13px;
@@ -936,6 +947,7 @@ a {
 
 .company-info-paragraph {
 	padding: 0;
+/*	padding-left: 1px; !pl1px*/
 	padding-bottom: 24px;
 	margin: 0;
 	font-family: "PT Sans", "Tahoma", sans-serif;
@@ -952,7 +964,7 @@ a {
 
 .carrier-service {
 	margin: 0;
-	padding: 9px 36px 11px;
+	padding: 9px 37px 11px;
 	font-size: 18px;
 	line-height: 20px;
 }
@@ -972,7 +984,7 @@ a {
 }
 
 .button-contact-us {
-	margin-top: 32px;
+	margin-top: 31px;
 	width: 300px;
 }
 /*футер*/
@@ -1089,7 +1101,7 @@ a {
 .footer-copyright {
 	padding: 0;
 	padding-top: 37px;
-	padding-left: 1px;
+/*	padding-left: 1px; !pl1px*/
 	margin: 0;
 }
 
