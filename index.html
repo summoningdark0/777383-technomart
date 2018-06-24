@@ -169,14 +169,14 @@
 					<!-- вот здесь по макету кнопка на пиксель ниже, но что-то необосновано ради этого селектор свой делать -->
 				</div>
 				<ul class="popular-brands-list list-style-none">
-					<li class="brand"><a href="catalog-bosch.html"><img src="img/brands-bosch.jpg" alt="BOSCH" width="185" height="89"></a></li>
-					<li class="brand"><a href="catalog-makita.html"><img src="img/brands-makia.jpg" alt="makita" width="185" height="89"></a></li>
-					<li class="brand"><a href="catalog-dewalt.html"><img src="img/brands-dewalt.jpg" alt="DeWalt" width="185" height="89"></a></li>
-					<li class="brand"><a href="catalog-interskol.html"><img src="img/brands-interskol.jpg" alt="Интерскол" width="185" height="89"></a></li>
-					<li class="brand"><a href="catalog-hitachi.html"><img src="img/brands-hitachi.jpg" alt="HITACHI" width="185" height="89"></a></li>
-					<li class="brand"><a href="catalog-lg.html"><img src="img/brands-lg.jpg" alt="LJ" width="185" height="89"></a></li>
-					<li class="brand"><a href="catalog-aeg.html"><img src="img/brands-aeg.jpg" alt="AEG" width="185" height="89"></a></li>
-					<li class="brand"><a href="catalog-metabo.html"><img src="img/brands-metabo.jpg" alt="metabo" width="185" height="89"></a></li>
+					<li class="brand"><a class="brand-link" href="catalog-bosch.html"><img src="img/brands-bosch.jpg" alt="BOSCH" width="185" height="89"></a></li>
+					<li class="brand"><a class="brand-link" href="catalog-makita.html"><img src="img/brands-makia.jpg" alt="makita" width="185" height="89"></a></li>
+					<li class="brand"><a class="brand-link" href="catalog-dewalt.html"><img src="img/brands-dewalt.jpg" alt="DeWalt" width="185" height="89"></a></li>
+					<li class="brand"><a class="brand-link" href="catalog-interskol.html"><img src="img/brands-interskol.jpg" alt="Интерскол" width="185" height="89"></a></li>
+					<li class="brand"><a class="brand-link" href="catalog-hitachi.html"><img src="img/brands-hitachi.jpg" alt="HITACHI" width="185" height="89"></a></li>
+					<li class="brand"><a class="brand-link" href="catalog-lg.html"><img src="img/brands-lg.jpg" alt="LJ" width="185" height="89"></a></li>
+					<li class="brand"><a class="brand-link"href="catalog-aeg.html"><img src="img/brands-aeg.jpg" alt="AEG" width="185" height="89"></a></li>
+					<li class="brand"><a class="brand-link" href="catalog-metabo.html"><img src="img/brands-metabo.jpg" alt="metabo" width="185" height="89"></a></li>
 				</ul>
 			</section>
 		</div>
@@ -185,34 +185,38 @@
 			<div class="wrapper">
 				<h2 class="services-title">Сервисы</h2>
 				<p class="services-description-paragraph">Хороший интернет-магазин отличается от плохого не только ценами! <br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-				
-				<!-- а не надо ли это делать ссылками? -->
-				<ul class="services-list list-style-none">
-					<li class="service-option service-option-selected">Доставка</li>
-					<li class="service-option service-option-link">Гарантии</li>
-					<li class="service-option service-option-link">Кредит</li>
-				</ul>
-				<!-- подумать надо ли сюда ссылок -->
-				
-				<div class="services-loan services-description">
-					<h3 class="services-description-title">Кредит</h3>
-					<p class="services-description-paragraph">Залезть в долговую яму стало проще! <br>
-						Кредитные консультанты придут вам на помощь.
-						<a class="request-loan button" href="request-loan.html">Отправить заявку</a>
-					</p>
-				</div>
-				
-				<div class="services-warranty services-description">
-					<h3  class="services-description-title">Гарантия</h3>
-					<p class="services-description-paragraph">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br>
-						Дом уж восстановите как-нибудь сами.
-					</p>
-				</div>
-				
-				<div class="services-delivery services-description">
-					<h3 class="services-description-title">Доставка</h3>
-					<p class="services-description-paragraph">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-					</p>
+
+				<div class="services-wrapper">
+					<!-- а не надо ли это делать ссылками? -->
+					<ul class="services-list list-style-none">
+						<li class="service-option service-option-selected">Доставка</li>
+						<li class="service-option service-option-link">Гарантия</li>
+						<li class="service-option service-option-link">Кредит</li>
+					</ul>
+					<!-- подумать надо ли сюда ссылок -->
+					
+					<!-- на время вёрстки вводим класс display-none
+						-- потом убрать -->
+					<div class="services-loan services-description display-none">
+						<h3 class="services-description-title">Кредит</h3>
+						<p class="services-description-paragraph">Залезть в долговую яму стало проще! <br>
+							Кредитные консультанты придут вам на помощь.
+							<a class="request-loan button" href="request-loan.html">Отправить заявку</a>
+						</p>
+					</div>
+					
+					<div class="services-warranty services-description display-none">
+						<h3  class="services-description-title">Гарантия</h3>
+						<p class="services-description-paragraph">Если купленный у нас товар поломается или заискрипит,<br> а также в случае пожара, спровоцированного его возгаранием,<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br>
+							Дом уж восстановите как-нибудь сами.
+						</p>
+					</div>
+					
+					<div class="services-delivery services-description">
+						<h3 class="services-description-title">Доставка</h3>
+						<p class="services-description-paragraph">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! <br>Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>
+						<!-- понимание как сделать форматирование без <br> == 0; -->
+					</div>
 				</div>
 			</div>
 		</section>
