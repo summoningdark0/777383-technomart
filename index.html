@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
 	<link rel="stylesheet" href="css/normalize.css"> <!--нормалайз -->
 	<link rel="stylesheet" href="css/style.css"> <!-- стили -->
-	<link rel="stylesheet" href="fonts/fonts.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="fonts/fonts.css" type="text/css">
 	<!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">  --><!-- PT Sans Regular + Bold, Eng + Cyr -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">  --><!-- Cuprum Regular + Italic + Bold, Eng + Cyr // убрать италик удалив 400i  -->
   </head>
@@ -28,7 +28,7 @@
 		<section class="header-lower-section">
 			<div class="wrapper">
 				<div class="header-middle">
-					<h1 class="header-caption">Интернет-магазин строительных материалов <span class="nowrap">и инструментов для ремонта</h1>
+					<h1 class="header-caption">Интернет-магазин строительных материалов <span class="nowrap">и инструментов для ремонта</span></h1>
 					<div class="header-contact-info">
 						<span class="header-phone">+7 (812) 555-05-55</span>
 						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
@@ -46,7 +46,7 @@
 						<a class="menu-item" href="about-us.html">Компания</a>
 						<a class="menu-item" href="catalog.html">Каталог</a>
 						<a class="menu-item" href="news.html">Новости</a>
-						<a class="menu-item" href="offers.html">Спецпредложения</>
+						<a class="menu-item" href="offers.html">Спецпредложения</a>
 						<a class="menu-item" href="delivery.html">Доставка</a>
 						<a class="menu-item" href="contacts.html">Контакты</a>
 					</nav>
@@ -178,7 +178,7 @@
 					<li class="brand"><a class="brand-link" href="catalog-interskol.html"><img src="img/brands-interskol.jpg" alt="Интерскол" width="185" height="89"></a></li>
 					<li class="brand"><a class="brand-link" href="catalog-hitachi.html"><img src="img/brands-hitachi.jpg" alt="HITACHI" width="185" height="89"></a></li>
 					<li class="brand"><a class="brand-link" href="catalog-lg.html"><img src="img/brands-lg.jpg" alt="LJ" width="185" height="89"></a></li>
-					<li class="brand"><a class="brand-link"href="catalog-aeg.html"><img src="img/brands-aeg.jpg" alt="AEG" width="185" height="89"></a></li>
+					<li class="brand"><a class="brand-link" href="catalog-aeg.html"><img src="img/brands-aeg.jpg" alt="AEG" width="185" height="89"></a></li>
 					<li class="brand"><a class="brand-link" href="catalog-metabo.html"><img src="img/brands-metabo.jpg" alt="metabo" width="185" height="89"></a></li>
 				</ul>
 			</section>
@@ -199,7 +199,7 @@
 					<!-- подумать надо ли сюда ссылок -->
 					
 					<!-- на время вёрстки вводим класс display-none
-						-- потом убрать -->
+						-потом убрать -->
 					<div class="services-loan services-description display-none">
 						<h3 class="services-description-title">Кредит</h3>
 						<p class="services-description-paragraph">Залезть в долговую яму стало проще! <br>
@@ -306,11 +306,11 @@
 	<section class="feedback-popup popup">
 		<h2 class="visually-hidden">Обратная связь</h2> 
 		<!-- Форма -->
-		<form action="" class="feedback" method="get" name="feedback">
+		<form action="#" class="feedback" method="get" name="feedback">
 			<label for="feedback-name">Ваше имя:</label>
-			<input name="feedback-name" type="text" placeholder="Имя Фамилия">
+			<input name="feedback-name" id="feedback-name" type="text" placeholder="Имя Фамилия">
 			<label for="feedback-email">Ваш e-mail:</label>
-			<input name="feedback-email" type="email" placeholder="email@example.com">
+			<input name="feedback-email" id="feedback-email" type="email" placeholder="email@example.com">
 			<label for="feedback-content">Текст письма:</label>
 			<textarea name="feedback-content" id="feedback-content" cols="30" rows="10" placeholder="В свободной форме"></textarea>
 			
