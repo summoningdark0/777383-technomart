@@ -1214,9 +1214,14 @@ a {
 	text-transform: uppercase;
 }
 
+.main-block {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
 
 .filter-section {
-	display: inline-flex;
+	display: flex;
 	flex-flow: column nowrap;
 
 	margin: 0;
@@ -1320,7 +1325,6 @@ a {
 /* наборы выше и ниже распихать по своим селекторам*/
 
 .catalog-sort,
-.catalog-sort-header,
 .filter-button,
 .pagination {
 	color: #000000;
@@ -1352,14 +1356,14 @@ a {
 
 
 /* .filter-button - сделать общим класом для каталога*/
-.filter-button {
-	margin-top: 45px;
+.catalog-button {
 	padding-top: 6px;
-	width: 140px;
+	width: 10px; /*заведомо ложная*/
 	height: 38px;
 
 	background-color: #ffffff;
 	
+	font-family: "PT Sans", "Tahoma", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -1369,41 +1373,94 @@ a {
 	outline: none;
 }
 
-.filter-button:focus, 
-.filter-button:hover {
+.catalog-button:focus, 
+.catalog-button:hover {
 	border-color: #bdc6ca;
 }
 
-.filter-button:active {
+.catalog-button:active {
 	border-color: #ee3643;
 }
 
-.catalog {
+.filter-button {
+	margin-top: 45px;
+	width: 140px;
+}
+
+.catalog {/*
 	padding: 0;
-	margin: 0;
-	display: inline-flex;
+	margin: 0;*/
+	display: flex;
 	flex-flow: column nowrap;
 	width: 700px;
 }
 
-.sort-parameter {
-	display: inline;
 
-	color: rgba(0, 0, 0, 0.3);
-	border-bottom: 1px dotted #ee3643;
-	text-decoration: none;
+.catalog-sort {
+	display: flex;
+	flex-flow: row nowrap;
+	/*flex-basis: 700px;*/
+	/*если с флекс-базис, контейнер разносит до 700на700, не понимаю почему*/
+	justify-content: space-between;
+	align-items: center;
+	width: 700px;
+	height: 38px;
+	/*margin-left: 15px;*/
+	margin-top: 21px;
+
+	border-radius: 4px;
+
 }
 
-.sort-parameter:focus,
-.sort-parameter:hover {
+.catalog-sort-header {
+	padding: 0;
+	padding-left: 19px;
+	padding-right: 82px;
+	margin: 0;
+	color: #000000;
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.sort-parameter {
+	padding-right: 14px;
+	padding-left: 15px; 
+	/*бред*/
+}
+
+.sort-arrow {
+	/*забивка*/
+}
+
+.sort-arrow-asc {
+	/*забивка*/
+}
+
+.sort-arrow-desc {
+	/*забивка*/
+}
+
+.sort-parameter-general {
+	/*display: inline;*/
+	color: rgba(0, 0, 0, 0.3);
+	/*border-bottom: 1px dotted #ee3643;*/
+	text-decoration: underline;
+	text-decoration-color: #ee3643;
+	text-decoration-style: dotted;
+}
+
+.sort-parameter-general:focus,
+.sort-parameter-general:hover {
 
 	color: rgba(0, 0, 0, 1);
-	border-bottom: 1px solid #ee3643;
+	text-decoration-style: solid;
 }
 
-.sort-parameter:active {
+.sort-parameter-general:active {
 	color: #ee3643;
-	border-bottom: none;
+	text-decoration: none;
 }
 
 .sort-parameter-selected {
@@ -1411,29 +1468,69 @@ a {
 	text-decoration: none;
 }
 
+
+.catalog-items-list {
+	display: flex;
+	/*flex-basis: 700px;   - всё ломает */
+	width: 700px;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	padding: 0;
+	margin: 0;
+	margin-top: 19px;
+    /*margin-left: 16px;*/
+}
+
+.catalog-items-list .item {
+/*	margin-left: 15px;
+	margin-top: 19px;*/
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.catalog-items-list .item:nth-child(3n) {
+	margin-right: 0;
+}
+
+
+.pagination-list {
+	display: flex;
+	padding:0;
+	margin: 0;
+	
+}
+
 .pagination {
-	text-decoration: none;
+	margin-left: 10px;
+	margin-top: 32px;
+	padding-top: 3px;
+	width: 38px;	
 }
 
-.pagination:hover,
-.pagination:focus {
-	/*манипуляции с границей*/
-}
-
-.pagination:active {
-	/*манипуляции с границей*/
+.pagination-next {
+	width: 140px;
 }
 
 .pagination-selected {
-	background-color: #ee3643;
+	margin-top: 32px;
+	padding-top: 3px;
+	width: 38px;
 	color: #ffffff;
+	background-color: #ee3643;
+	border: none;
 }
 
 .category-details {
+	padding-top: 64px;
+	margin-bottom: 67px;
 	background-color: #f2f6f8;
 }
 
 .category-details-header {
+	padding: 0px;
+	margin: 0px;
+	/*padding-top: 64px;*/
+	padding-bottom: 15px;
 	color: #000000;
 	font-size: 30px;
 	line-height: 30px;
