@@ -626,7 +626,7 @@ a {
 	width: 60px;
 	height: 59px;
 	/*display: block;*/
-	background-image: url("../img/catalog-item-new.png");
+	background-image: url("../img/catalog-item-new-2.png");
 	background-repeat: no-repeat;
 }
 
@@ -1213,9 +1213,10 @@ a {
 .popup {
 	/*position: absolute;*/
 	z-index: 1;
-	box-shadow: 0 12px 44px 0 #000000; /*временно*/
+	box-shadow: 0 12px 44px 0 #000000; 
 }
 
+/*модалка с фидбеком в процессе работы*/
 .feedback-popup {
 	position: absolute;
 	top: 50%;
@@ -1224,7 +1225,6 @@ a {
 	margin-left: -320px;
 	width: 620px;
 	height: 430px;
-
 	/*left: 50%;*/
 
 	background-color: #ffffff;
@@ -1240,6 +1240,12 @@ a {
 	line-height: 18px;
 }
 
+.feedback-form {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	width: 460px;
+}
 .feedback-button-wraper {
 	background-color: #f4f4f4;
 }

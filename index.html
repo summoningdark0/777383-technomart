@@ -248,21 +248,21 @@
 					<a class="button button-contact-us" href="contact-us.html">Заблудились? Напишите нам!</a>
 				</section>
 				<!-- далее - в конце section company-info -->
-				<div class="feedback-popup popup">
+				<div class="feedback-popup popup display-none">
 					<h2 class="visually-hidden">Обратная связь</h2> 
 						<!-- Форма -->
-					<form action="#" class="feedback" method="get" name="feedback">
-						<label for="feedback-name">Ваше имя:</label>
-						<input name="feedback-name" id="feedback-name" type="text" placeholder="Имя Фамилия">
-						<label for="feedback-email">Ваш e-mail:</label>
-						<input name="feedback-email" id="feedback-email" type="email" placeholder="email@example.com">
-						<label for="feedback-content">Текст письма:</label>
-						<textarea name="feedback-content" id="feedback-content" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-						<div class="feedback-button-wraper">
-							<button class="button" type="submit">Отправить</button>
-						</div>
+					<form class="feedback-form" id="feedback-form" action="#" method="get" name="feedback">
+						<label for="feedback-name">Ваше имя:
+						<input name="feedback-name" id="feedback-name" type="text" placeholder="Имя Фамилия"></label>
+						<label for="feedback-email">Ваш e-mail:
+						<input name="feedback-email" id="feedback-email" type="email" placeholder="email@example.com"></label>
+						<label for="feedback-content">Текст письма:
+						<textarea name="feedback-content" id="feedback-content" cols="30" rows="10" placeholder="В свободной форме"></textarea></label>
 					</form>
-					<button type="button" class="popup-close">Закрыть</button>
+					<div class="feedback-button-wraper">
+							<button class="button" for="feedback-form" type="submit">Отправить</button>
+					</div>
+					<button type="button" class="popup-close display-none">Закрыть</button> <!-- мешает верстать, пока спрятал -->
 				</div>
 			</section>
 		</div>
@@ -321,8 +321,8 @@
 	</footer>
 
 	
-
-	<section class="map-popup popup">
+<!-- модалку с картой положить внутрь секции с информацией о компании -->
+	<section class="map-popup popup display-none">
 		<h2 class="visually-hidden">Карта проезда</h2> 
 		<button type="button" class="popup-close">Закрыть</button>
 	</section>
