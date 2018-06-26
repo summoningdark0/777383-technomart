@@ -140,9 +140,8 @@ a {
 	padding-left: 48px;
 	background-color: #ffffff;
 	color: #000000;
-	outline: none; 
+	outline: none;
 	/* вроде понятно по табуляции где находимся и без аутлайн*/
-
 }
 
 
@@ -460,6 +459,17 @@ a {
 	background-color: #ffbf47;
 }
 
+/*.featured-materials::after {
+	width: 22px;
+	height: 32px;
+	background-image: url("../img/symbol-defs.svg#checkbox-on");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	попытки затолкать свг спрайт в бекграунд
+	бессмысленные и беспощадные
+	не работает и не должно
+}*/
+
 .featured-tools {
 	background-color: #3bbce3;
 }
@@ -605,6 +615,19 @@ a {
 
 .item:hover {
 	box-shadow: 5px 9px 40px -5px rgba(41, 52, 73, 0.5);
+}
+
+.item-new::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	width: 60px;
+	height: 59px;
+	/*display: block;*/
+	background-image: url("../img/catalog-item-new.png");
+	background-repeat: no-repeat;
 }
 
 .item-caption {
@@ -809,20 +832,18 @@ a {
 	border: 1px solid #eaeaea;
 }
 
-.brand:hover, 
+.brand:hover,
 .brand:focus {
 	box-shadow: 0 7px 30px -3px rgba(41, 52, 73, 0.5);
 }
 
-.brand:active { 
- box-shadow: 0  5px 17px -2px rgba(41, 52, 73, 0.5);
+.brand:active {
+	box-shadow: 0  5px 17px -2px rgba(41, 52, 73, 0.5);
 }
 
-.brand:active .brand-link{
+.brand:active .brand-link {
 	opacity: 0.3;
 }
-
-
 
 /*чтобы ссылка заполняла весь контейнер*/
 
@@ -981,6 +1002,7 @@ a {
 .company-info {
 	display: flex;
 	justify-content: space-between;
+	position: relative;
 	margin-top: 47px;
 	padding-bottom: 85px;
 	color: #000000;
@@ -1026,6 +1048,7 @@ a {
 }
 
 .contact-info {
+	/*position: relative;*/
 	width: 300px;
 }
 
@@ -1187,9 +1210,25 @@ a {
 	padding-right: 14px;
 }
 
+.popup {
+	/*position: absolute;*/
+	z-index: 1;
+	box-shadow: 0 12px 44px 0 #000000; /*временно*/
+}
+
 .feedback-popup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -80px;
+	margin-left: -320px;
+	width: 620px;
+	height: 430px;
+
+	/*left: 50%;*/
+
 	background-color: #ffffff;
-	border-top: 3px solid #ee3643;
+	border-top: 5px solid #ee3643;
 	color: #000000;
 	font-size: 18px;
 	line-height: 18px;
