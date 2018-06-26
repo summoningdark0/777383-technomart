@@ -597,6 +597,12 @@ a {
 	font-weight: 700;
 
 	border: 1px solid #eaeaea;
+
+	/*overflow: visible;*/
+}
+
+.item:hover {
+	box-shadow: 5px 9px 40px -5px rgba(41, 52, 73, 0.5);
 }
 
 .item-caption {
@@ -793,6 +799,21 @@ a {
 	vertical-align: middle;
 	border: 1px solid #eaeaea;
 }
+
+.brand:hover, 
+.brand:focus {
+	box-shadow: 0 7px 30px -3px rgba(41, 52, 73, 0.5);
+}
+
+.brand:active { 
+ box-shadow: 0  5px 17px -2px rgba(41, 52, 73, 0.5);
+}
+
+.brand:active .brand-link{
+	opacity: 0.3;
+}
+
+
 
 /*чтобы ссылка заполняла весь контейнер*/
 
