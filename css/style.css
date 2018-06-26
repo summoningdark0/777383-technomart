@@ -140,7 +140,9 @@ a {
 	padding-left: 48px;
 	background-color: #ffffff;
 	color: #000000;
-	outline: none;
+	outline: none; 
+	/* вроде понятно по табуляции где находимся и без аутлайн*/
+
 }
 
 
@@ -703,16 +705,23 @@ a {
 	border-radius: 4px;
 
 	text-transform: uppercase;
-	outline: none;
+	/*outline: none;*/
 }
 
 /* рандомные красявости */
-.button-add-to-cart:focus,
+/*.button-add-to-cart:focus,
 .button-bookmark:focus {
 	outline: 1px ridge #85c47c;
 	outline-offset: 1px;
-}
+}*/
 /*в идеале сделать такой стейт для всех кнопок*/
+
+/* ломает навигацию с клавиатуры в фф */
+
+/* ... или нет :/ */
+
+/*навигация табами в фф скачет между формой поиска
+и этими двумя кнопками, игнорируя всё остальное*/
 
 .button-add-to-cart {
 	color: #ffffff;
@@ -1399,7 +1408,7 @@ a {
 
 	border: 1px solid #e5e5e5;
 	border-radius: 4px;
-	outline: none;
+	/*outline: none;*/
 }
 
 .catalog-button:focus,
