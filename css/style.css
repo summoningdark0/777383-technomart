@@ -636,14 +636,16 @@ a {
 	margin-top: 8px;
 	background-color: #ee3643;
 	color: #ffffff;
-	border-top-left-radius: 4px;
-	border-bottom-left-radius: 4px;
-
 	font-size: 17px;
 	line-height: 18px;
 	text-transform: uppercase;
 	text-align: center;
+
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
 }
+
+/* псевдоэлемент стелочки у ценника и его раскраска */
 
 .price::after {
 	content: "";
@@ -657,6 +659,15 @@ a {
 	border-left: 20px solid #ee3643;
 	border-top: 19px solid transparent;
 	border-bottom: 19px solid transparent;
+}
+
+.price:hover::after,
+.price:focus::after {
+	border-left-color: #ca2c37;
+}
+
+.price:active::after {
+	border-left-color: #ba2732;
 }
 
 .catalog-item-on-hover {
