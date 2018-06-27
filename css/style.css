@@ -7,8 +7,7 @@ body {
 	line-height: 24px;
 	font-weight: 400;
 	color: #ffffff;
-
-	background-color: #f2f6f8;
+	background-color: #ffffff;
 }
 
 *,
@@ -55,11 +54,9 @@ a {
 	width: 10px;
 	/*нереальная ширина, чтобы не забывать указывать её в каждом инстансе*/
 	height: 38px;
-	padding-top: 10px;
-
+	padding-top: 11px;
 	background-color: #ee3643;
 	color: #ffffff;
-
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -80,8 +77,10 @@ a {
 .header {
 	background-color: #f2f6f8;
 }
+
 .header-upper-section {
 	background-color: #293449;
+	margin-bottom: 47px;
 }
 
 .header-top {
@@ -98,7 +97,7 @@ a {
 	margin: 0;
 	color: #ffffff;
 	background-color: #ee3643;
-	border-bottom: 5px solid #b52933; /*граница не выпадает*/
+	/*border-bottom: 5px solid #b52933;*/
 	font-size: 24px;
 	line-height: 24px;
 	text-decoration: none;
@@ -218,11 +217,13 @@ a {
 
 .header-lower-section {
 	background-color: #f3f7f8;
+	margin-bottom: 40px;
+	border-bottom: 1px solid transparent;
 }
 
 .header-middle {
 	display: flex;
-	margin-top: 47px;
+	/*margin-top: 47px;*/
 	margin-bottom: 39px;
 	flex-flow: row wrap;
 	justify-content: flex-end;
@@ -397,15 +398,16 @@ a {
 }
 
 .main {
-	margin-top: 40px;
+	/*margin-top: 40px;*/
 	background-color: #ffffff;
 }
 
 .featured {
 	display: flex;
 	flex-basis: 940px;
-	padding-top: 41px;
+	/*padding-top: 41px;*/
 	/*	padding-left: 1px; !pl1px*/
+	margin-bottom: 35px;
 }
 
 .featured-category-list {
@@ -568,7 +570,8 @@ a {
 }
 
 .popular-items-header {
-	margin-top: 35px;
+	/*margin-top: 35px;*/
+	margin-bottom: 18px;
 }
 
 .button-popular {
@@ -597,8 +600,9 @@ a {
 	justify-content: space-between;
 	padding: 0;
 	margin: 0;
-	margin-top: 18px;
+	/*margin-top: 18px;*/
 	padding-top: 2px;
+	margin-bottom: 21px;
 }
 
 .item {
@@ -796,7 +800,8 @@ a {
 .popular-brands-header {
 	margin: 0;
 	padding: 0;
-	margin-top: 21px;
+	/*margin-top: 21px;*/
+	margin-bottom: 20px;
 }
 
 .popular-brands .popular-caption {
@@ -815,10 +820,9 @@ a {
 	flex-basis: 940px;
 	justify-content: space-between;
 	align-items: space-between;
-
 	margin: 0;
 	padding: 0;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 	margin-bottom: 65px;
 }
 
@@ -860,7 +864,8 @@ a {
 
 .services {
 	background-color: #f2f6f8;
-	padding-top: 40px;
+	padding-top: 64px;
+	margin-bottom: 48px;
 }
 
 
@@ -879,7 +884,7 @@ a {
 /* дисплей нан временный, удалить*/
 
 .services-wrapper {
-	margin-top: 69px;
+	/*margin-top: 69px;*/
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
@@ -887,6 +892,9 @@ a {
 }
 
 .services-title {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 28px;
 	color: #000000;
 	font-size: 30px;
 	line-height: 30px;
@@ -937,6 +945,7 @@ a {
 
 	padding: 0;
 	margin: 0;
+	margin-right: 60px;
 }
 
 /*ниже дивы*/
@@ -945,7 +954,7 @@ a {
 	width: 640px;
 	height: 100%;
 	padding-left: 20px;
-	margin-left: 60px;
+	/*margin-left: 60px;*/
 
 	background-position: right bottom;
 }
@@ -964,6 +973,8 @@ a {
 .category-details-paragraph {
 	/*	padding-top: 1px; pt1px*/
 	/*	padding-left: 1px; !pl1px*/
+	margin: 0;
+	padding: 0;
 	color: #000000;
 	font-family: "PT Sans", "Tahoma", sans-serif;
 	font-weight: 400;
@@ -1009,8 +1020,9 @@ a {
 	display: flex;
 	justify-content: space-between;
 	position: relative;
-	margin-top: 47px;
-	padding-bottom: 85px;
+	/*margin-top: 47px;*/
+	padding-top: 29px;
+	padding-bottom: 86px;
 	color: #000000;
 
 	font-size: 13px;
@@ -1018,6 +1030,8 @@ a {
 }
 
 .company-info-title {
+	margin: 0;
+	padding: 0;
 	margin-bottom: 29px;
 	font-size: 30px;
 	line-height: 30px;
@@ -1053,7 +1067,7 @@ a {
 }
 
 .button-carrier {
-	margin-top: 26px;
+	/*margin-top: 26px;*/
 	width: 220px;
 }
 
@@ -1072,7 +1086,7 @@ a {
 }
 
 .button-contact-us {
-	margin-top: 31px;
+	/*margin-top: 31px;*/
 	width: 300px;
 }
 /*футер*/
@@ -1177,6 +1191,7 @@ a {
 .footer-bottom {
 	/*	padding: 0;
 	margin: 0;*/
+	padding-bottom: 18px;
 	background-color: #293449;
 	font-size: 16px;
 	line-height: 18px;
