@@ -282,7 +282,7 @@ a {
 	flex-basis: 300px;
 	width: 300px;
 	flex-flow: row wrap;
-	justify-content: stretch;
+	justify-content: flex-end;
 }
 
 .profile-logged-out {
@@ -961,7 +961,7 @@ a {
 
 .services-description-title {
 	padding: 0;
-	padding-bottom: 10px;
+	padding-bottom: 25px;
 	margin: 0;
 	color: #32425c;
 	font-size: 36px;
@@ -1281,9 +1281,19 @@ a {
 
 /*доп-стили для каталога */
 
-.breadcrumbs,
-.filter-section,
+
+/*
 .catalog-sort {
+	font-family: "PT Sans", "Tahoma", sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+*/
+
+.breadcrumbs {
+	margin-top: -42px;
+	margin-bottom: 17px;
+
 	font-family: "PT Sans", "Tahoma", sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -1313,12 +1323,13 @@ a {
 }
 
 .current-category {
-	padding: 0;
-	margin: 0;
-	margin-top: 17px;
-	padding-top: 29px;
+	padding: 29px 28px 30px;
+/*	padding-top: 29px;
 	padding-left: 28px;
-	padding-bottom: 30px;
+	padding-bottom: 30px;*/
+	margin: 0;
+	/*margin-top: 17px;*/
+	margin-bottom: 21px;
 	color: #32425c;
 	background-color: #f2f6f8;
 	font-size: 30px;
@@ -1341,6 +1352,10 @@ a {
 	width: 220px;
 
 	color: #000000;
+
+	font-family: "PT Sans", "Tahoma", sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
 .filter-header {
@@ -1350,7 +1365,7 @@ a {
 	/*padding-top: 11px;
     padding-bottom: 9px;
     padding-left: 19px;*/
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 	margin-bottom: 10px;
 
 	color: #000000;
@@ -1465,12 +1480,13 @@ a {
 
 .power-fieldset {
 	border: none;
+	margin-bottom: 45px;
 }
 
 
 /* .filter-button - сделать общим класом для каталога*/
 .catalog-button {
-	padding-top: 6px;
+	padding-top: 5px;
 	width: 10px; /*заведомо ложная*/
 	height: 38px;
 
@@ -1495,7 +1511,8 @@ a {
 }
 
 .filter-button {
-	margin-top: 45px;
+	/*margin-top: 45px;*/
+
 	width: 140px;
 }
 
@@ -1517,9 +1534,15 @@ a {
 	width: 700px;
 	height: 38px;
 	/*margin-left: 15px;*/
-	margin-top: 21px;
+	/*margin-top: 21px;*/
+	padding: 11px 19px 9px;
+	margin-bottom: 20px;
 
 	background-color: #f7f3ec;
+
+	font-family: "PT Sans", "Tahoma", sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
 
 	border-radius: 4px;
 }
@@ -1589,8 +1612,9 @@ a {
 	justify-content: flex-start;
 	padding: 0;
 	margin: 0;
-	margin-top: 19px;
+	/*margin-top: 19px;*/
 	/*margin-left: 16px;*/
+	margin-bottom: 32px;
 }
 
 .catalog-items-list .item {
@@ -1613,7 +1637,7 @@ a {
 
 .pagination {
 	margin-left: 10px;
-	margin-top: 32px;
+	/*margin-top: 32px;*/
 	padding-top: 3px;
 	width: 38px;
 }
@@ -1623,7 +1647,7 @@ a {
 }
 
 .pagination-selected {
-	margin-top: 32px;
+	/*margin-top: 32px;*/
 	padding-top: 3px;
 	width: 38px;
 	color: #ffffff;
@@ -1633,7 +1657,8 @@ a {
 
 .category-details {
 	padding-top: 64px;
-	margin-bottom: 67px;
+	padding-bottom: 67px;
+	/*margin-bottom: 67px;*/
 	background-color: #f2f6f8;
 }
 
@@ -1641,7 +1666,7 @@ a {
 	padding: 0;
 	margin: 0;
 	/*padding-top: 64px;*/
-	padding-bottom: 15px;
+	padding-bottom: 28px;
 	color: #000000;
 	font-size: 30px;
 	line-height: 30px;
