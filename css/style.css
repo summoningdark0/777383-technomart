@@ -21,15 +21,20 @@ a {
 	color: #ffffff;
 }
 */
-.visually-hidden {
-	position: absolute;
-	overflow: hidden;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	width: 1px;
-	margin: -1px;
-	padding: 0;
-	border: 0;
+.visually-hidden:not(:focus):not(:active){
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*временный клирфикс, чтобы самому было понятнее что происходит*/
@@ -103,6 +108,8 @@ a {
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
+
+	box-shadow: 0 5px 0 #b52933;
 }
 
 .header-logo:hover,
@@ -404,7 +411,7 @@ a {
 
 .featured {
 	display: flex;
-	flex-basis: 940px;
+	width: 940px;
 	/*padding-top: 41px;*/
 	/*	padding-left: 1px; !pl1px*/
 	margin-bottom: 35px;
@@ -412,28 +419,32 @@ a {
 
 .featured-category-list {
 	display: flex;
-	flex-basis: 620px;
+	/*flex-basis: 620px;*/
+	width: 620px;
 	padding: 0;
 	margin: 0;
 	margin-top: 18px;
 	flex-flow: row wrap;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: flex-start;
 }
 
 .featured-category-list:last-child {
 	flex-flow: column nowrap;
+	width: 300px;
 	margin-left: 20px;
 }
 
 .featured-category {
-	position: relative;
+	/*position: relative;*/
 	width: 300px;
 	height: 123px;
 }
 
 .featured-title {
 	margin: 0;
+	padding: 0;
+	margin-bottom: 12px;
 	padding-top: 21px;
 	padding-left: 22px;
 	font-size: 24px;
@@ -441,10 +452,11 @@ a {
 }
 
 .featured-button {
-	position: absolute;
+	/*position: absolute;
 	bottom: 22px;
-	left: 25px;
+	left: 25px;*/
 	display: block;
+	margin-left: 25px;
 	width: 135px;
 	height: 38px;
 	padding-top: 10px;
@@ -604,7 +616,10 @@ a {
 	padding-top: 2px;
 	margin-bottom: 21px;
 }
-
+.item-wrapper {
+	display: block;
+	text-decoration: none;
+}
 .item {
 	position: relative;
 	display: block;
@@ -616,6 +631,8 @@ a {
 	font-weight: 700;
 
 	border: 1px solid #eaeaea;
+
+	
 
 	/*overflow: visible;*/
 }
@@ -668,10 +685,10 @@ a {
 	display: block;
 	width: 121px;
 	height: 38px;
-	padding-top: 12px;
-	padding-left: 15px;
-	margin-left: 41px;
-	margin-top: 8px;
+	padding-top: 6px;
+	padding-left: 20px;
+	margin-left: 42px;
+	margin-top: 9px;
 	background-color: #ee3643;
 	color: #ffffff;
 	font-size: 17px;
@@ -681,6 +698,7 @@ a {
 
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
+	border: none;
 }
 
 /* псевдоэлемент стелочки у ценника и его раскраска */
