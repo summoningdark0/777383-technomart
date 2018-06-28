@@ -271,17 +271,21 @@ a {
 	text-align: center;
 }
 
+
 .header-phone {
 	display: block;
 	padding-left: 23px;
 	padding-top: 8px;
 	padding-bottom: 9px;
 	margin-bottom: 4px;
-	border: 3px solid #ffffff;
 	color: #ee3643;
+	background-image: url("../img/icon-phone.svg");
+	background-repeat: no-repeat;
+	background-position: 13px 9px ;
 	font-size: 21px;
 	line-height: 21px;
 	text-transform: uppercase;
+	border: 3px solid #ffffff;
 }
 
 .header-profile {
@@ -473,7 +477,11 @@ a {
 
 .featured-materials {
 	margin-right: 20px;
+	background-image: url("../img/icon-1.svg");
+	background-repeat: no-repeat;
+	background-position: 213px 31px;
 	background-color: #ffbf47;
+
 }
 
 /*.featured-materials::after {
@@ -488,22 +496,34 @@ a {
 }*/
 
 .featured-tools {
+	background-image: url("../img/icon-2.svg");
+    background-repeat: no-repeat;
+    background-position: 197px 33px;
 	background-color: #3bbce3;
 }
 
 .featured-heavy-machinery {
 	margin-bottom: 20px;
+	background-image: url("../img/icon-3.svg");
+    background-repeat: no-repeat;
+    background-position: 191px 31px;
 	background-color: #dc91d8;
 }
 
 /*сделать нормальный дизайн в лейте*/
 .featured-sale {
 	margin-bottom: 20px;
+	background-image: url("../img/icon-4.svg");
+    background-repeat: no-repeat;
+    background-position: 196px 26px;
 	background-color: #8ed78f;
 }
 
 /*сделать нормальный дизайн в лейте*/
 .featured-delivery {
+	background-image: url("../img/icon-5.svg");
+    background-repeat: no-repeat;
+    background-position: 191px 32px;
 	background-color: #ffc047;
 }
 
@@ -1218,14 +1238,16 @@ a {
 .footer-bottom-contents {
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
+    align-items: center;
+    padding-top: 21px;
 }
 
 .footer-copyright {
 	padding: 0;
-	padding-top: 37px;
+	/*padding-top: 37px;*/
 	/*	padding-left: 1px; !pl1px*/
 	margin: 0;
+	margin-right: 140px;
 }
 
 .footer-link {
@@ -1242,18 +1264,55 @@ a {
 	color: #ee3643;
 }
 
+
+.footer-social-links {
+	font-size: 0;
+}
+
+.social {
+	display: inline-block;
+	/*vertical-align: middle;*/
+	width: 42px;
+	height: 42px;
+	/*border: 1px solid white;*/
+	border-radius: 50%;
+	margin-right: 3px;
+
+	background-color: #212a3a;
+}
+
 .social:hover,
 .social:focus,
 .social:active {
 	background-color: #ee3643;
 }
 
+.social-vk {
+	background-image: url("../img/icon-vk.svg");
+	background-repeat: no-repeat;
+	background-position: 8px 14px;
+}
+
+.social-fb {
+	background-image: url("../img/icon-fb.svg");
+	background-repeat: no-repeat;
+	background-position: 15px 11px;
+}
+
+.social-ig {
+	background-image: url("../img/icon-ig.svg");
+	background-repeat: no-repeat;
+	background-position: 10px 11px;
+}
+
 /* два селектора ниже слетят когда появятся социалистические кнопки*/
 .footer-feedback {
+	padding: 0;
 	padding-left: 120px;
 }
 
 .footer-dev {
+	padding: 0;
 	padding-right: 14px;
 }
 
