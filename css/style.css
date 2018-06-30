@@ -141,7 +141,7 @@ position: relative;
 	width: 17px;
 	height: 17px;
 	top: 12px;
-	left: 12px;
+	left: 17px;
 	fill: #ffffff;
 }
 
@@ -193,8 +193,30 @@ position: relative;
 	fill: #ee3643;
 }
 
+.header-icon {
+	fill: #ffffff;
+	opacity: 0.3;
+}
+
+.icon-bookmark {
+	position: absolute;
+    top: 12px;
+    left: 17px;
+	width: 14px;
+	height: 16px;
+}
+
+.icon-cart {
+	position: absolute;
+    top: 12px;
+    left: 18px;
+	width: 15px;
+	height: 15px;
+	/*opacity: 0.3;*/
+}
 
 .header-shortcuts {
+	position: relative;
 	padding-top: 12px;
 	/*padding-left: 44px;*/
 	color: #ffffff;
@@ -221,6 +243,15 @@ position: relative;
 .header-shortcuts:hover,
 .header-shortcuts:focus {
 	background-color: #161d29;
+}
+
+.header-shortcuts:hover .header-icon,
+.header-shortcuts:focus .header-icon {
+	opacity: 1;
+}
+
+.header-shortcuts:active .header-icon {
+	opacity: 0.5;
 }
 
 .header-shortcuts:active {
@@ -348,9 +379,30 @@ position: relative;
 }
 
 .header-login {
+	position: relative;
 	width: 120px;
 	padding-left: 20px;
 }
+
+.icon-login {
+	position: absolute;
+	top: 13px;
+	left: 13px;
+	width: 20px;
+	height: 17px;
+	fill: #c5c5c5;
+}
+
+.header-login:hover .icon-login,
+.header-login:focus .icon-login {
+	fill: #32425c;
+}
+
+.header-login:active .icon-login {
+	fill: #c5c5c5;
+}
+
+
 
 .header-signup {
 	width: 150px;
