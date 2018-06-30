@@ -10,7 +10,7 @@
 	<!-- <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">  --><!-- Cuprum Regular + Italic + Bold, Eng + Cyr // убрать италик удалив 400i  -->
   </head>
   <body>
-
+	<!-- SVG иконки - начало -->
   	<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<defs>
 		<symbol id="icon-search" viewBox="0 0 32 32">
@@ -34,9 +34,8 @@
 		</symbol>
 	</defs>
 	</svg>
-	
-	<header class="header">
-		
+	<!-- SVG иконки - конец -->
+	<header class="header">	
 		<section class="header-upper-section">
 			<div class="wrapper">
 				<div class="header-top">
@@ -194,7 +193,7 @@
 								<span class="old-price"></span>
 								<button class="price button" type="button" href="">12500 Р.</button>
 								<div class="catalog-item-on-hover">
-									<button type="button" class="button-add-to-cart">Купить</button>
+									<button type="button" class="button-add-to-cart"><svg class="hover-icon icon-button-cart"><use xlink:href="#icon-cart"></use></svg>Купить</button>
 									<button type="button" class="button-bookmark">В закладки</button>
 								</div>
 							</a>

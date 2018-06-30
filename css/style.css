@@ -860,6 +860,7 @@ position: relative;
 
 .button-add-to-cart,
 .button-bookmark {
+	position: relative;
 	width: 135px;
 	height: 38px;
 	border-radius: 4px;
@@ -883,6 +884,17 @@ position: relative;
 /*навигация табами в фф скачет между формой поиска
 и этими двумя кнопками, игнорируя всё остальное*/
 
+.icon-button-cart {
+	position: absolute;
+	top: 10px;
+	left: 12px;
+	width: 15px;
+	height: 15px;
+	fill: #ffffff;
+	opacity: 0.3;
+}
+
+
 .button-add-to-cart {
 	color: #ffffff;
 	background-color: #63a63e;
@@ -899,6 +911,11 @@ position: relative;
 .button-add-to-cart:hover,
 .button-add-to-cart:focus {
 	background-color: #5fbb2d;
+}
+
+.button-add-to-cart:hover .icon-button-cart,
+.button-add-to-cart:focus .icon-button-cart {
+	opacity: 1;
 }
 
 .button-add-to-cart:active {
@@ -1194,6 +1211,9 @@ position: relative;
 	padding: 9px 37px 11px;
 	font-size: 18px;
 	line-height: 20px;
+	background-image: url("../img/icon-dash.png");
+	background-repeat: no-repeat;
+	background-position: 0 19px;
 }
 
 .button-carrier {
