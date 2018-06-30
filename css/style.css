@@ -120,10 +120,10 @@ a {
 .header-logo:active {
 	background-color: #ba2732;
 }
-/*
+
 .header-search-form {
 position: relative;
-}*/
+}
 
 .header-search {
 	width: 270px;
@@ -135,6 +135,20 @@ position: relative;
 	color: #ffffff;
 	background-color: #293449;
 }
+
+.icon-search {
+	position: absolute;
+	width: 17px;
+	height: 17px;
+	top: 12px;
+	left: 12px;
+	fill: #ffffff;
+}
+
+
+/*.icon-search-mg {
+	fill: #ff0000;
+}*/
 
 
 /*.header-search-icon {
@@ -161,12 +175,22 @@ position: relative;
 	background-color: #212a3a;
 }
 
+.header-search:hover:not(:focus)+svg .icon-search-mg {
+	/*fill: #ff0000;*/
+	opacity: 0.5;
+	/*color: #00ff00;*/
+}
+
 .header-search:focus {
-	padding-left: 48px;
+	padding-left: 48px;	
 	background-color: #ffffff;
 	color: #000000;
 	outline: none;
 	/* вроде понятно по табуляции где находимся и без аутлайн*/
+}
+
+.header-search:focus+svg .icon-search-mg {
+	fill: #ee3643;
 }
 
 
