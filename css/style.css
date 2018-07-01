@@ -421,6 +421,7 @@ position: relative;
 }
 
 .header-profile-user {
+	position: relative;
 	width: 100%;
 	padding: 11px 47px 10px;
 	/*padding-top: 10px;
@@ -429,16 +430,45 @@ position: relative;
 	margin-bottom: 9px;
 	background-color: #ffffff;
 	color: #000000;
-
-
 	font-size: 21px;
 	line-height: 21px;
 	text-decoration: none;
 }
 
+.header-profile-icon {
+	fill: #c5c5c5;
+}
+
+.icon-user {
+	position: absolute;
+	top: 12px;
+	left: 14px;
+	width: 20px;
+	height: 18px;
+}
+
+.icon-logout {
+	position: absolute;
+	top: 13px;
+	right: 10px;
+	width: 21px;
+	height: 17px;
+}
+
+
 .header-profile-user:hover,
 .header-profile-user:focus {
 	color: #ee3643;
+}
+
+.header-profile-user:hover .header-profile-icon,
+.header-profile-user:focus .header-profile-icon {
+	fill: #32425c;
+}
+
+
+.header-profile-user:active .header-profile-icon {
+	fill: #c5c5c5;
 }
 
 .header-profile-user:active {
