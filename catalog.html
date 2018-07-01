@@ -49,6 +49,13 @@
 		<symbol id="icon-down-dir" viewBox="0 0 35 32">
 			<path d="M17.6 32l-17.6-32h35.2z"></path>
 		</symbol>
+		<symbol id="icon-close" viewBox="0 0 32 32">
+			<path d="M20.226 16l11.31-11.31c0.593-0.593 0.593-1.562 0-2.155l-2.071-2.071c-0.593-0.593-1.562-0.593-2.155 0l-11.31 11.31-11.31-11.31c-0.593-0.593-1.562-0.593-2.155 0l-2.071 2.071c-0.593 0.593-0.593 1.562 0 2.155l11.31 11.31-11.308 11.31c-0.593 0.593-0.593 1.562 0 2.155l2.071 2.071c0.593 0.593 1.562 0.593 2.155 0l11.31-11.31 11.31 11.31c0.593 0.593 1.562 0.593 2.155 0l2.071-2.071c0.593-0.593 0.593-1.562 0-2.155z"></path>
+		</symbol>
+		<symbol id="icon-checkmark" viewBox="0 0 32 32">
+			<path fill="#63a63e" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+			<path fill="#fff" d="M24.068 10.214c-0.088-0.087-0.209-0.141-0.343-0.141s-0.255 0.054-0.343 0.141l-8.94 8.94c-0.088 0.087-0.209 0.141-0.343 0.141s-0.255-0.054-0.343-0.141l-3.947-3.946c-0.088-0.087-0.209-0.141-0.343-0.141s-0.255 0.054-0.343 0.141l-1.714 1.714c-0.087 0.088-0.141 0.209-0.141 0.343s0.054 0.255 0.141 0.343l6.346 6.347c0.088 0.087 0.209 0.141 0.343 0.141s0.255-0.054 0.343-0.141l11.34-11.34c0.087-0.088 0.141-0.209 0.141-0.343s-0.054-0.255-0.141-0.343l-1.714-1.714z"></path>
+		</symbol>
 	</defs>
 	</svg>
 	<!-- SVG иконки - конец -->
@@ -168,10 +175,10 @@
 							<a class="sort-parameter sort-parameter-selected" href="#by-price">По цене</a>
 							<a class="sort-parameter sort-parameter-general" href="#by-type">По типу</a>
 							<a class="sort-parameter sort-parameter-general" href="#by-function">По функционалу</a>
-							<a class="icon-dir" href="#ascending">
+							<a class="icon-dir dir-active" href="#ascending">
 								<svg class="catalog-icon icon-up-dir"><use xlink:href="#icon-up-dir"></use></svg>
 							</a>
-							<a class="icon-dir" href="#descending">
+							<a class="icon-dir dir-inactive" href="#descending">
 								<svg class="catalog-icon icon-down-dir"><use xlink:href="#icon-down-dir"></use></svg>
 							</a>
 					</div>
@@ -186,7 +193,7 @@
 								<span class="old-price">22500 Р.</span>
 								<button class="price button" type="button" href="">15500 Р.</button>
 								<div class="catalog-item-on-hover">
-									<button type="button" class="button-add-to-cart">Купить</button>
+									<button type="button" class="button-add-to-cart"><svg class="hover-icon icon-button-cart"><use xlink:href="#icon-cart"></use></svg>Купить</button>
 									<button type="button" class="button-bookmark">В закладки</button>
 								</div>
 							</a>
@@ -200,7 +207,7 @@
 								<span class="old-price">30500 Р.</span>
 								<button class="price button" type="button" href="">25500 Р.</button>
 								<div class="catalog-item-on-hover">
-									<button type="button" class="button-add-to-cart">Купить</button>
+									<button type="button" class="button-add-to-cart"><svg class="hover-icon icon-button-cart"><use xlink:href="#icon-cart"></use></svg>Купить</button>
 									<button type="button" class="button-bookmark">В закладки</button>
 								</div>
 							</a>
@@ -214,7 +221,7 @@
 								<span class="old-price"></span>
 								<button class="price button" type="button" href="">12500 Р.</button>
 								<div class="catalog-item-on-hover">
-									<button type="button" class="button-add-to-cart">Купить</button>
+									<button type="button" class="button-add-to-cart"><svg class="hover-icon icon-button-cart"><use xlink:href="#icon-cart"></use></svg>Купить</button>
 									<button type="button" class="button-bookmark">В закладки</button>
 								</div>
 							</a>
@@ -228,7 +235,7 @@
 								<span class="old-price">22500 Р.</span>
 								<button class="price button" type="button" href="">15500 Р.</button>
 								<div class="catalog-item-on-hover">
-									<button type="button" class="button-add-to-cart">Купить</button>
+									<button type="button" class="button-add-to-cart"><svg class="hover-icon icon-button-cart"><use xlink:href="#icon-cart"></use></svg>Купить</button>
 									<button type="button" class="button-bookmark">В закладки</button>
 								</div>
 							</a>
@@ -242,7 +249,7 @@
 								<span class="old-price">30500 Р.</span>
 								<button class="price button" type="button" href="">25500 Р.</button>
 								<div class="catalog-item-on-hover">
-									<button type="button" class="button-add-to-cart">Купить</button>
+									<button type="button" class="button-add-to-cart"><svg class="hover-icon icon-button-cart"><use xlink:href="#icon-cart"></use></svg>Купить</button>
 									<button type="button" class="button-bookmark">В закладки</button>
 								</div>
 							</a>
@@ -256,7 +263,7 @@
 								<span class="old-price"></span>
 								<button class="price button" type="button" href="">12500 Р.</button>
 								<div class="catalog-item-on-hover">
-									<button type="button" class="button-add-to-cart">Купить</button>
+									<button type="button" class="button-add-to-cart"><svg class="hover-icon icon-button-cart"><use xlink:href="#icon-cart"></use></svg>Купить</button>
 									<button type="button" class="button-bookmark">В закладки</button>
 								</div>
 							</a>
@@ -270,7 +277,7 @@
 								<span class="old-price">22500 Р.</span>
 								<button class="price button" type="button" href="">15500 Р.</button>
 								<div class="catalog-item-on-hover">
-									<button type="button" class="button-add-to-cart">Купить</button>
+									<button type="button" class="button-add-to-cart"><svg class="hover-icon icon-button-cart"><use xlink:href="#icon-cart"></use></svg>Купить</button>
 									<button type="button" class="button-bookmark">В закладки</button>
 								</div>
 							</a>
@@ -284,7 +291,7 @@
 								<span class="old-price">30500 Р.</span>
 								<button class="price button" type="button" href="">25500 Р.</button>
 								<div class="catalog-item-on-hover">
-									<button type="button" class="button-add-to-cart">Купить</button>
+									<button type="button" class="button-add-to-cart"><svg class="hover-icon icon-button-cart"><use xlink:href="#icon-cart"></use></svg>Купить</button>
 									<button type="button" class="button-bookmark">В закладки</button>
 								</div>
 							</a>
@@ -298,7 +305,7 @@
 								<span class="old-price"></span>
 								<button class="price button" type="button" href="">12500 Р.</button>
 								<div class="catalog-item-on-hover">
-									<button type="button" class="button-add-to-cart">Купить</button>
+									<button type="button" class="button-add-to-cart"><svg class="hover-icon icon-button-cart"><use xlink:href="#icon-cart"></use></svg>Купить</button>
 									<button type="button" class="button-bookmark">В закладки</button>
 								</div>
 							</a>
@@ -319,16 +326,6 @@
 				<p class="category-details-paragraph"> Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. <br>Cуществуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 			</div>
 		</section>
-
-		<div class="popup display-none purchase-popup">
-				<div class="purchase-message">Товар добавлен в корзину!</div>
-			<div class="purchase-button-wrapper">
-				<button class="button purchase-checkout">Оформить заказ</button>
-				<button class="button purchase-continue">Продолжить покупки</button>
-			</div>
-
-			<!-- что-то мне кажется перемудрил со врапперами  -->
-		</div>
 	</main>
 
 
@@ -383,5 +380,12 @@
 			</div>
 		</div>
 	</footer>
+	<div class="popup purchase-popup">
+		<div class="purchase-message">Товар добавлен в корзину!</div>
+		<div class="purchase-button-wrapper">
+			<button class="button purchase-checkout-button">Оформить заказ</button>
+			<button class="button purchase-continue-button">Продолжить покупки</button>
+		</div>
+	</div>
   </body>
 </html>
