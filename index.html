@@ -292,7 +292,8 @@
 					<a class="button button-contact-us" href="contact-us.html">Заблудились? Напишите нам!</a>
 				</section>
 				<!-- далее - в конце section company-info -->
-				<div class="feedback-popup display-none popup">
+
+				<div class="feedback-popup popup">
 					<div class="popup-wrapper">
 						<h2 class="visually-hidden">Обратная связь</h2> 
 							<!-- Форма -->
@@ -305,11 +306,14 @@
 							<textarea class="feedback-input feedback-area" cols="62" rows="5" name="feedback-content" id="feedback-content" cols="30" rows="10" placeholder="В свободной форме"></textarea></label>
 						</form>
 					</div>
-					<div class="feedback-button-wrapper">
-						<button class="button feedback-button" for="feedback-form" type="submit">Отправить</button>
+					<div class="popup-button-field">
+						<div class="popup-wrapper">
+							<button class="button feedback-button" for="feedback-form" type="submit">Отправить</button>
+						</div>
 					</div>
 					<button type="button" class="popup-close display-none">Закрыть</button> <!-- мешает верстать, пока спрятал -->
 				</div>
+
 			</section>
 		</div>
 	</main>
