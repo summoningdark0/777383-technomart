@@ -311,7 +311,8 @@
 							<button class="button feedback-button" for="feedback-form" type="submit">Отправить</button>
 						</div>
 					</div>
-					<button type="button" class="popup-close display-none">Закрыть</button> <!-- мешает верстать, пока спрятал -->
+					<a href="#close"><svg class="icon-popup-close"><use xlink:href="#icon-close"></use></svg></a> 
+					<!-- переделать кнопку закрытия везде  -->
 				</div>
 
 			</section>
@@ -372,9 +373,23 @@
 
 	
 <!-- модалку с картой положить внутрь секции с информацией о компании -->
-	<section class="map-popup popup display-none">
+	<div class="map-popup popup display-none">
 		<h2 class="visually-hidden">Карта проезда</h2> 
 		<button type="button" class="popup-close">Закрыть</button>
-	</section>
+	</div>
+
+	<div class="popup display-none purchase-popup">
+		<div class="popup-wrapper">
+			<svg class="icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg>
+			<div class="purchase-message">Товар добавлен в корзину!</div>
+		</div>
+		<div class="popup-button-field">
+			<div class="popup-wrapper">
+				<button class="button purchase-checkout-button">Оформить заказ</button>
+				<button class="button purchase-continue-button">Продолжить покупки</button>
+			</div>
+		</div>
+		<a href="#close"><svg class="icon-popup-close"><use xlink:href="#icon-close"></use></svg></a>
+	</div>
   </body>
 </html>
