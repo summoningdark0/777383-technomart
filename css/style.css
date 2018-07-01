@@ -902,7 +902,7 @@ position: relative;
 }
 
 /*для наглядности */
-.item:last-child .catalog-item-on-hover {
+.item:nth-child(3) .catalog-item-on-hover {
 	visibility: visible;
 }
 /*конец наглядности*/
@@ -1690,7 +1690,7 @@ position: relative;
 	flex-flow: column wrap;
 	justify-content: flex-start;
 	align-items: center;
-	flex-basis: 220px;
+	/*flex-basis: 220px;*/
 
 	width: 220px;
 	border: 0;
@@ -1722,7 +1722,11 @@ position: relative;
 }
 
 .price-range-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
 	margin-top: 8px;
+
 }
 
 .filter-price-input {
@@ -1742,10 +1746,19 @@ position: relative;
 	border: none;
 	border-radius: 4px;
 }
-
+/*
 .filter-price-input:first-child {
 	margin-right: 25px;
-}
+}*/
+
+/*
+.filter-price-input::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "dicks";
+	color: #000000;
+}*/
 
 .filter-legend-brands {
 	padding-top: 18px;
