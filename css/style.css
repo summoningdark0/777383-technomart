@@ -1903,8 +1903,6 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .filter-button {
-	/*margin-top: 45px;*/
-
 	width: 140px;
 }
 
@@ -1919,15 +1917,13 @@ input[type="checkbox"]:disabled + label::before {
 .catalog-sort {
 	display: flex;
 	flex-flow: row nowrap;
-	/*flex-basis: 700px;*/
-	/*если с флекс-базис, контейнер разносит до 700на700, не понимаю почему*/
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 	width: 700px;
 	height: 38px;
 	/*margin-left: 15px;*/
 	/*margin-top: 21px;*/
-	padding: 11px 19px 9px;
+	padding: 11px 0 9px 19px;
 	margin-bottom: 20px;
 
 	background-color: #f7f3ec;
@@ -1941,8 +1937,7 @@ input[type="checkbox"]:disabled + label::before {
 
 .catalog-sort-header {
 	padding: 0;
-	padding-left: 19px;
-	padding-right: 82px;
+	padding-right: 110px;
 	margin: 0;
 	color: #000000;
 	font-size: 13px;
@@ -1952,13 +1947,30 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .sort-parameter {
-	padding-right: 14px;
-	padding-left: 15px;
+	padding-right: 39px;
+    padding-left: 30px;
+
+	/*padding-right: 14px;
+	padding-left: 15px;*/
 	/*бред*/
 }
 
-.sort-arrow {
+
+.sort-parameter:last-of-type {
+	padding-right: 0;
+}
+
+.catalog-icon {
+	width: 11px;
+	height: 10px;
+	
+}
+
+.icon-dir {
 	/*забивка*/
+	    margin-left: 4px;
+    margin-right: 17px;
+	
 }
 
 .sort-arrow-asc {
