@@ -12,6 +12,32 @@
 	<!-- <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">  --><!-- Cuprum Regular + Italic + Bold, Eng + Cyr // убрать италик удалив 400i  -->
   </head>
   <body> 
+  	<!-- SVG иконки - начало -->
+  	<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<symbol id="icon-search" viewBox="0 0 32 32">
+			<!-- ФФ обрезает два пикселя слева, нужен вьюбокс -2 0 32 32 -->
+			<title>icon-search</title>
+			<path d="M32 29.338l-6.667-6.667c1.811-2.342 2.903-5.32 2.903-8.553 0-0 0-0.001 0-0.001v0c0-7.797-6.321-14.118-14.118-14.118s-14.118 6.321-14.118 14.118c0 7.797 6.321 14.118 14.118 14.118v0c3.219 0 6.178-1.090 8.553-2.903l6.667 6.667 2.662-2.662zM3.765 14.118c0-5.709 4.644-10.353 10.353-10.353 5.707 0 10.353 4.644 10.353 10.353 0 5.707-4.646 10.353-10.353 10.353-5.715-0.006-10.347-4.638-10.353-10.352v-0.001z"></path>
+		</symbol>
+		<symbol  id="icon-bookmark" viewBox="0 0 28 32">
+			<title>icon-bookmark</title>
+			<path d="M28 30c0 1.1-0.736 1.482-1.636 0.852l-10.726-7.53c-0.9-0.63-2.374-0.63-3.274 0l-10.728 7.53c-0.9 0.63-1.636 0.248-1.636-0.852v-28c0-1.1 0.9-2 2-2h24c1.1 0 2 0.9 2 2v28z"></path>
+		</symbol>
+		<symbol id="icon-cart" viewBox="0 0 32 32">
+			<title>icon-cart</title>
+			<path d="M12.8 28.8c0 1.767-1.433 3.2-3.2 3.2s-3.2-1.433-3.2-3.2c0-1.767 1.433-3.2 3.2-3.2s3.2 1.433 3.2 3.2z"></path>
+			<path d="M29.867 28.8c0 1.767-1.433 3.2-3.2 3.2s-3.2-1.433-3.2-3.2c0-1.767 1.433-3.2 3.2-3.2s3.2 1.433 3.2 3.2z"></path>
+			<path d="M32 4.267h-23.317l-0.9-4.267h-7.782v4.267h4.333l4.235 19.2h23.433v-4.267h-11.859l11.859-4.371z"></path>
+		</symbol>
+		<symbol id="icon-login" viewBox="0 0 38 32">
+			<title>icon-login</title>
+			<path d="M28 16l-16.706-16v11.294h-11.294v9.412h11.294v11.294z"></path>
+			<path d="M31.974 28.254h-9.463v3.746h9.463c4.1 0 5.655-3.407 5.702-5.696v-20.604c-0.047-2.291-1.602-5.7-5.702-5.7h-9.463v3.746h9.463c1.579 0 1.867 1.282 1.901 1.99v20.525c-0.032 0.708-0.322 1.993-1.901 1.993z"></path>
+		</symbol>
+	</defs>
+	</svg>
+	<!-- SVG иконки - конец -->
 	<header class="header">
 
 		<section class="header-upper-section">
@@ -19,7 +45,12 @@
 				<div class="header-top">
 					<h2 class="visually-hidden">Интернет-магазин Техномарт</h2>
 					<a class="header-logo">Техномарт</a>
-					<input class="header-search" type="search" placeholder="Поиск"> 
+					<form class="header-search-form">
+						<input class="header-search" is="header-search" type="search" placeholder="Поиск:">
+						<svg class="icon-search">
+ 							 <use class="icon-search-mg" xlink:href="#icon-search"></use>
+						</svg>
+					</form> 
 					<a class="header-shortcuts header-bookmarks" href="#">Закладки: 0</a>
 					<a class="header-shortcuts header-cart-has-items header-cart" href="#">Корзина: 10</a>
 					<a class="header-shortcuts header-place-order" href="#">Оформить заказ</a>
@@ -267,7 +298,7 @@
 			</div>
 		</section>
 
-		<div class="popup purchase-popup">
+		<div class="popup display-none purchase-popup">
 				<div class="purchase-message">Товар добавлен в корзину!</div>
 			<div class="purchase-button-wrapper">
 				<button class="button purchase-checkout">Оформить заказ</button>
