@@ -371,6 +371,7 @@ position: relative;
 	justify-content: flex-start;
 }
 
+
 .profile-logged-out {
 	padding-top: 11px;
 	padding-bottom: 11px;
@@ -386,6 +387,7 @@ position: relative;
 	position: relative;
 	width: 120px;
 	padding-left: 20px;
+	margin-left: 20px;
 }
 
 .icon-login {
@@ -583,7 +585,7 @@ position: relative;
 }
 
 .featured-category {
-	/*position: relative;*/
+	position: relative;
 	width: 300px;
 	height: 123px;
 }
@@ -1610,6 +1612,7 @@ position: relative;
 */
 
 .breadcrumbs {
+	position: relative;
 	margin-top: -42px;
 	margin-bottom: 17px;
 
@@ -1633,7 +1636,9 @@ position: relative;
 
 
 .icon-home {
-	display: inline-block;
+	position: absolute;
+	top: 23px;
+	left: 0;
 	width: 14px;
 	height: 12px;
 	fill: #c5cad1;
