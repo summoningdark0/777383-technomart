@@ -39,6 +39,10 @@
 		<symbol id="icon-user" viewBox="0 0 36 32">
 			<path d="M31.788 25.184c-3.812-1.307-7.566-2.962-9.257-4.249-1.168-0.891-1.369-2.876-0.919-4.293 1.988-1.605 3.314-4.404 3.314-7.605 0-4.99-3.2-9.036-7.148-9.036s-7.148 4.046-7.148 9.036c0 3.202 1.326 5.998 3.312 7.604 0.45 1.419 0.251 3.404-0.919 4.295-1.689 1.287-5.445 2.94-9.257 4.249s-3.765 6.816-3.765 6.816h35.556s0.044-5.509-3.767-6.816z"></path>
 		</symbol>
+		<symbol id="icon-home" viewBox="0 0 40 32">
+			<path d="M8 21.333v10.667h10.667v-10.667h5.333v10.667h10.667v-10.667l-13.333-11.957z"></path>
+			<path d="M39.549 16.973l-4.883-4.304v-12.669h-5.333v7.965l-7.115-6.272c-0.053-0.045-0.115-0.061-0.171-0.099-0.062-0.046-0.132-0.087-0.206-0.122l-0.008-0.003c-0.072-0.026-0.157-0.048-0.245-0.063l-0.009-0.001c-0.083-0.016-0.163-0.032-0.248-0.032-0.083 0-0.163 0.016-0.245 0.032-0.095 0.015-0.181 0.038-0.262 0.070l0.008-0.003c-0.075 0.029-0.141 0.077-0.213 0.123-0.056 0.037-0.12 0.053-0.171 0.099l-17.328 15.28c-0.275 0.246-0.447 0.601-0.447 0.997 0 0.735 0.593 1.331 1.327 1.336h0c0.001 0 0.002 0 0.004 0 0.338 0 0.646-0.126 0.88-0.334l-0.001 0.001 16.448-14.501 16.451 14.501c0.225 0.178 0.513 0.286 0.826 0.286 0.738 0 1.336-0.598 1.336-1.336 0-0.371-0.152-0.707-0.396-0.95l-0-0z"></path>
+		</symbol>
 	</defs>
 	</svg>
 	<!-- SVG иконки - конец -->
@@ -101,7 +105,7 @@
 			<section class="breadcrumbs">
 				<h2 class="visually-hidden">Древо категорий</h2>
 				<ul class="breadcrumbs-list list-style-none">
-					<li><a  class="breadcrumbs-link" href="index.html"><img src="http://via.placeholder.com/20x20" width="14" height="12" alt="Главная страница"></a></li>	<!-- img - это временная забивка -->
+					<li><a class="breadcrumbs-link" href="index.html"><svg class="icon-home"><use xlink:href="#icon-home"></use></svg></a></li>	
 					<li><a  class="breadcrumbs-link" href="catalog.html">Каталог</a></li>
 					<li><a  class="breadcrumbs-link" href="catalog-tools.html">Инструмент</a></li>
 					<li><a  class="breadcrumbs-link" href="catalog-tools-perforator.html">Перфораторы</a></li>
@@ -111,7 +115,7 @@
 			<div class="main-block">
 				<section class="filter-section">
 				    <h2 class="visually-hidden">Фильтр товаров</h2>
-				    <!-- Форма -->
+				    <!-- Форма --
 				    <form class="filter" method="get" action="http://echo.htmlacademy.ru"> <!-- Адрес-заглушка -->
 				         <h4 class="filter-header">Фильтр:</h4> 
 				         <fieldset class="filter-fieldset"> 

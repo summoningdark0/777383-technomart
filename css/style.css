@@ -1604,6 +1604,14 @@ position: relative;
 	align-items: center;
 }
 
+
+.icon-home {
+	display: inline-block;
+	width: 14px;
+	height: 12px;
+	fill: #c5cad1;
+}
+
 .breadcrumbs-link {
 	padding: 0;
 	margin: 0;
@@ -1611,8 +1619,16 @@ position: relative;
 	color: #000000;
 	font-size: 13px;
 	line-height: 18px;
-	text-decoration: none;
+	text-decoration: none;	
 }
+
+.breadcrumbs-list li:not(:first-child) {
+	background-image: url(../img/icon-right-small.svg);
+	background-repeat: no-repeat;
+	background-position: 15px 5px;
+}
+
+
 
 .current-category {
 	padding: 29px 28px 30px;
