@@ -366,7 +366,7 @@ position: relative;
 	flex-basis: 300px;
 	width: 300px;
 	flex-flow: row wrap;
-	justify-content: flex-end;
+	justify-content: flex-start;
 }
 
 .profile-logged-out {
@@ -482,6 +482,23 @@ position: relative;
 	font-size: 16px;
 	line-height: 18px;
 	text-decoration: underline;
+}
+
+.header-profile-link:last-child {
+	position: relative;
+}
+.header-profile-link:last-child::before{
+	position: absolute;
+	top: 7px;
+	left: 2px;
+	content: '';
+	display: block;
+	width: 4px;
+	height: 4px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background-color: #32425c;
 }
 
 .header-profile-link:hover,
