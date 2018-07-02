@@ -407,6 +407,7 @@
 		var mapLink = document.querySelector(".map");
 		var	mapClose = document.querySelector(".map-close");
 
+		// Попап заказа
 		for (var i = 0; i < purchaseLink.length; i++){
 			purchaseLink[i].addEventListener("click", function(evt) {
 			evt.preventDefault();
@@ -420,6 +421,8 @@
 			purchasePopup.classList.add("display-none");
 		});
 
+		// попап отзыва
+
 		feedbackLink.addEventListener("click", function(evt) {
 			evt.preventDefault();
 			feedbackPopup.classList.remove("display-none");
@@ -429,7 +432,7 @@
 			evt.preventDefault();
 			feedbackPopup.classList.add("display-none");
 		});
-
+		// попап карты
 		mapLink.addEventListener("click", function(evt) {
 			evt.preventDefault();
 			mapPopup.classList.remove("display-none");
@@ -439,6 +442,16 @@
 			evt.preventDefault();
 			mapPopup.classList.add("display-none");
 		});
+
+		// ну давайте поебёмся со слайдерами
+
+		var ServOpt = document.querySelectorAll(".service-option");
+		var ServLink = document.querySelectorAll(".service-option-link");
+
+		(ServOpt[0]&&ServLink[0]).addEventListener("click", function(evt){
+			console.log(ServOpt, ServLink);
+		});
+
 
 
 	</script>

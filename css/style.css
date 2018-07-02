@@ -1114,6 +1114,11 @@ position: relative;
 	line-height: 30px;
 }
 
+.service-option:not(.service-option-selected) {
+	cursor: pointer;
+
+}
+
 .service-option-link {
 	border-top: 1px solid #405069;
 	border-bottom: 1px solid #293449;
