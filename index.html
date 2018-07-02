@@ -389,7 +389,29 @@
 				<button class="button purchase-continue-button">Продолжить покупки</button>
 			</div>
 		</div>
-		<a href="#close"><svg class="icon-popup-close"><use xlink:href="#icon-close"></use></svg></a>
+		<a href="#close"><svg class="purchase-close icon-popup-close"><use xlink:href="#icon-close"></use></svg></a>
 	</div>
+
+
+
+	<script type="text/javascript">
+		var purchasePopup = document.querySelector(".purchase-popup");
+		var purchaseLink = document.querySelectorAll(".button-add-to-cart");
+		var purchaseClose = document.querySelector(".purchase-close");
+
+		for (var i = 0; i < purchaseLink.length; i++) {
+			purchaseLink[i].addEventListener("click", function(evt) {
+			evt.preventDefault();
+			// console.log("Now I Became Horse");
+			purchasePopup.classList.remove("display-none");
+		});
+		}
+
+		purchaseClose .addEventListener("click", function(evt) {
+			evt.preventDefault();
+			purchasePopup.classList.add("display-none");
+		})
+
+	</script>
   </body>
 </html>

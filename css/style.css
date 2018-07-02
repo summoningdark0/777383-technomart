@@ -796,14 +796,15 @@ position: relative;
 	font-weight: 700;
 
 	border: 1px solid #eaeaea;
-
-	
-
 	/*overflow: visible;*/
 }
 
 .item:hover {
 	box-shadow: 5px 9px 40px -5px rgba(41, 52, 73, 0.5);
+}
+
+.item:hover .catalog-item-on-hover {
+	visibility: visible;
 }
 
 .item-new::before {
@@ -906,9 +907,9 @@ position: relative;
 }
 
 /*для наглядности */
-.item:nth-child(3) .catalog-item-on-hover {
+/*.item:nth-child(3) .catalog-item-on-hover {
 	visibility: visible;
-}
+}*/
 /*конец наглядности*/
 
 .button-add-to-cart,
