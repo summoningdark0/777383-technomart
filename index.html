@@ -279,24 +279,27 @@
 						<p class="carrier-service">Автотрейдинг</p>					
 						<p class="carrier-service">ЖелДорЭкспедиция</p>
 					</div>
-					<a class="button button-carrier" href="about-us.html">Подробнее о компании</a>
+					<a class="button button-company-details" href="about-us.html">Подробнее о компании</a>
 				</section>
 					
 				<section class="contact-info">
 					<h3 class="company-info-title">Контакты</h3>
 					<p class="company-info-paragraph">Вы можете забрать товар сами, заехав в наш офис:</p>
-					<div class="map"> 
+					<a class="map" href="map.html"> 
 						<!-- Див под карту -->	
-						<img src="img/map.jpg" width="300" height="158" alt="Наше здание на карте"> <!-- Плейсхолдер -->
+						<img src="img/map.jpg" width="300" height="158" alt="Наше здание на карте">
+					</a>
+
+					<div class="map-popup popup display-none">
+						<h2 class="visually-hidden">Карта проезда</h2> 
+						<button type="button" class="map-close popup-close">Закрыть</button>
 					</div>
 					<a class="button button-contact-us" href="contact-us.html">Заблудились? Напишите нам!</a>
 				</section>
-				<!-- далее - в конце section company-info -->
-
-				<div class="feedback-popup popup">
+					<!-- Обратная связь - начало -->
+				<div class="feedback-popup display-none popup">
 					<div class="popup-wrapper">
 						<h2 class="visually-hidden">Обратная связь</h2> 
-							<!-- Форма -->
 						<form class="feedback-form" id="feedback-form" action="#" method="get" name="feedback">
 							<label class="feedback-label" for="feedback-name">Ваше имя:
 							<input class="feedback-input" name="feedback-name" id="feedback-name" type="text" placeholder="Имя Фамилия"></label>
@@ -307,14 +310,14 @@
 						</form>
 					</div>
 					<div class="popup-button-field">
-						<div class="popup-wrapper">
-							<button class="button feedback-button" for="feedback-form" type="submit">Отправить</button>
-						</div>
+					<div class="popup-wrapper">
+						<button class="button feedback-button" for="feedback-form" type="submit">Отправить</button>
 					</div>
-					<a href="#close"><svg class="icon-popup-close"><use xlink:href="#icon-close"></use></svg></a> 
-					<!-- переделать кнопку закрытия везде  -->
 				</div>
-
+				<a href="#close"><svg class="icon-popup-close feedback-close"><use xlink:href="#icon-close"></use></svg></a> 
+			</div>
+	<!-- Обратная связь - конец -->
+				<!-- далее - в конце section company-info -->
 			</section>
 		</div>
 	</main>
@@ -370,14 +373,15 @@
 			</div>
 		</div>
 	</footer>
-
 	
-<!-- модалку с картой положить внутрь секции с информацией о компании -->
+	<!-- Карта начало -->
 	<div class="map-popup popup display-none">
 		<h2 class="visually-hidden">Карта проезда</h2> 
-		<button type="button" class="popup-close">Закрыть</button>
+		<button type="button" class="map-close popup-close">Закрыть</button>
 	</div>
+	<!-- Карта - конце -->
 
+	<!-- Успешно заказано - начало -->
 	<div class="popup display-none purchase-popup">
 		<div class="popup-wrapper">
 			<svg class="icon-checkmark"><use xlink:href="#icon-checkmark"></use></svg>
@@ -391,6 +395,7 @@
 		</div>
 		<a href="#close"><svg class="purchase-close icon-popup-close"><use xlink:href="#icon-close"></use></svg></a>
 	</div>
+	<!-- Успешно заказано - конец -->
 
 
 
@@ -398,8 +403,12 @@
 		var purchasePopup = document.querySelector(".purchase-popup");
 		var purchaseLink = document.querySelectorAll(".button-add-to-cart");
 		var purchaseClose = document.querySelector(".purchase-close");
+		var feedbackPopup = document.querySelector(".feedback-popup");
+		var feedbackLink = document.querySelector(".button-contact-us");
+		var feedbackClose = document.querySelector(".feedback-close");
 
-		for (var i = 0; i < purchaseLink.length; i++) {
+
+		for (var i = 0; i < purchaseLink.length; i++){
 			purchaseLink[i].addEventListener("click", function(evt) {
 			evt.preventDefault();
 			// console.log("Now I Became Horse");
@@ -407,10 +416,21 @@
 		});
 		}
 
-		purchaseClose .addEventListener("click", function(evt) {
+		purchaseClose.addEventListener("click", function(evt) {
 			evt.preventDefault();
 			purchasePopup.classList.add("display-none");
-		})
+		});
+
+		feedbackLink.addEventListener("click", function(evt) {
+			evt.preventDefault();
+			feedbackPopup.classList.remove("display-none");
+		});
+
+		feedbackClose.addEventListener("click", function(evt){
+			evt.preventDefault();
+			feedbackPopup.classList.add("display-none");
+		});
+
 
 	</script>
   </body>
