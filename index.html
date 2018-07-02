@@ -290,13 +290,18 @@
 						<img src="img/map.jpg" width="300" height="158" alt="Наше здание на карте">
 					</a>
 
+					<!-- Карта начало -->
 					<div class="map-popup popup display-none">
 						<h2 class="visually-hidden">Карта проезда</h2> 
-						<button type="button" class="map-close popup-close">Закрыть</button>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5823605615665!2d30.320612!3d59.93907200000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1530554909703" width="940" height="445" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<a href="#close"><svg class="icon-popup-close map-close"><use xlink:href="#icon-close"></use></svg></a> 
 					</div>
-					<a class="button button-contact-us" href="contact-us.html">Заблудились? Напишите нам!</a>
+					<!-- Карта - конец -->
+
+						<a class="button button-contact-us" href="contact-us.html">Заблудились? Напишите нам!</a>
+					</div>
 				</section>
-					<!-- Обратная связь - начало -->
+						<!-- Обратная связь - начало -->
 				<div class="feedback-popup display-none popup">
 					<div class="popup-wrapper">
 						<h2 class="visually-hidden">Обратная связь</h2> 
@@ -313,10 +318,10 @@
 					<div class="popup-wrapper">
 						<button class="button feedback-button" for="feedback-form" type="submit">Отправить</button>
 					</div>
+					</div>
+					<a href="#close"><svg class="icon-popup-close feedback-close"><use xlink:href="#icon-close"></use></svg></a> 
 				</div>
-				<a href="#close"><svg class="icon-popup-close feedback-close"><use xlink:href="#icon-close"></use></svg></a> 
-			</div>
-	<!-- Обратная связь - конец -->
+					<!-- Обратная связь - конец -->
 				<!-- далее - в конце section company-info -->
 			</section>
 		</div>
@@ -374,13 +379,6 @@
 		</div>
 	</footer>
 	
-	<!-- Карта начало -->
-	<div class="map-popup popup display-none">
-		<h2 class="visually-hidden">Карта проезда</h2> 
-		<button type="button" class="map-close popup-close">Закрыть</button>
-	</div>
-	<!-- Карта - конце -->
-
 	<!-- Успешно заказано - начало -->
 	<div class="popup display-none purchase-popup">
 		<div class="popup-wrapper">
@@ -406,7 +404,9 @@
 		var feedbackPopup = document.querySelector(".feedback-popup");
 		var feedbackLink = document.querySelector(".button-contact-us");
 		var feedbackClose = document.querySelector(".feedback-close");
-
+		var mapPopup = document.querySelector(".map-popup");
+		var mapLink = document.querySelector(".map");
+		var	mapClose = document.querySelector(".map-close");
 
 		for (var i = 0; i < purchaseLink.length; i++){
 			purchaseLink[i].addEventListener("click", function(evt) {
@@ -429,6 +429,16 @@
 		feedbackClose.addEventListener("click", function(evt){
 			evt.preventDefault();
 			feedbackPopup.classList.add("display-none");
+		});
+
+		mapLink.addEventListener("click", function(evt) {
+			evt.preventDefault();
+			mapPopup.classList.remove("display-none");
+		});
+
+		mapClose.addEventListener("click", function(evt)	{
+			evt.preventDefault();
+			mapPopup.classList.add("display-none");
 		});
 
 
