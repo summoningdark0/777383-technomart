@@ -103,20 +103,19 @@
 							<a class="featured-button" href="catalog-tools.html">на все случаи</a>
 						</li>
 					</ul>
-					<ul class="slider-block list-style-none">
-						<li class="slide slide-1">
+					<div class="slider-block">
+						<a class="slider-right-arrow" href="#next-right"></a>
+						<a class="slider-left-arrow" href="#next-left"></a>
+						<a class="button button-slider" href="catalog-tools-drill.html">Открыть каталог</a>
+						<div class="slide slide-1 display-none">
 							<h3 class="slide-header">Дрели</h3>
 							<p class="slide-paragraph">Соседям на радость!</p>
-							<a class="button button-slider" href="catalog-tools-drill.html">Открыть каталог</a>
-						</li>
-						<li class="slide slide-2"> 
-							<!-- временно спрятан для целей вёрстки 
-								см селектор slide-2 -->
+						</div>
+						<div class="slide slide-2"> 
 							<h3 class="slide-header">Перфораторы</h3>
 							<p class="slide-paragraph">Настоящие мужские игрушки</p>
-							<a class="button button-slider" href="catalog-tools-perforator.html">Открыть каталог</a>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</div>
 				<div>
 
@@ -232,12 +231,15 @@
 				<p class="service-description-paragraph service-description-general">Хороший интернет-магазин отличается от плохого не только ценами! <br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
 				<div class="services-wrapper">
-					<!-- а не надо ли это делать ссылками? -->
-					<ul class="services-list list-style-none">
-						<li class="service-option service-option-selected">Доставка</li>
-						<li class="service-option service-option-link">Гарантия</li>
-						<li class="service-option service-option-link">Кредит</li>
-					</ul>
+			
+					<div class="services-list">
+						<label class="service-option service-option-selected" for="radio-delivery">Доставка</label>
+						<label class="service-option service-option-link" for="radio-warranty">Гарантия</label>
+						<label class="service-option service-option-link" for="radio-loan">Кредит</label>
+						<input type="radio" name="service-radio" id="radio-delivery" class="service-tab" checked>
+						<input type="radio" name="service-radio" id="radio-warranty" class="service-tab">
+						<input type="radio" name="service-radio" id="radio-loan" class="service-tab">
+					</div>
 					
 					<div class="service-description service-delivery">
 						<h3 class="service-description-title">Доставка</h3>
