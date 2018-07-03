@@ -229,7 +229,7 @@
 		<section class="services">
 			<div class="wrapper">
 				<h2 class="services-title">Сервисы</h2>
-				<p class="services-description-paragraph services-description-general">Хороший интернет-магазин отличается от плохого не только ценами! <br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+				<p class="service-description-paragraph service-description-general">Хороший интернет-магазин отличается от плохого не только ценами! <br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
 				<div class="services-wrapper">
 					<!-- а не надо ли это делать ссылками? -->
@@ -238,33 +238,34 @@
 						<li class="service-option service-option-link">Гарантия</li>
 						<li class="service-option service-option-link">Кредит</li>
 					</ul>
-					<!-- подумать надо ли сюда ссылок -->
 					
-					<!-- на время вёрстки вводим класс display-none
-						-потом убрать -->
-					<div class="services-loan services-description display-none">
-						<h3 class="services-description-title">Кредит</h3>
-						<p class="services-description-paragraph">Залезть в долговую яму стало проще! <br>
+					<div class="service-description service-delivery">
+						<h3 class="service-description-title">Доставка</h3>
+						<p class="service-description-paragraph">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! <br>Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>
+						<!-- понимание как сделать форматирование без <br> == 0; -->
+					</div>
+					
+					<div class="service-description service-warranty display-none">
+						<h3  class="service-description-title">Гарантия</h3>
+						<p class="service-description-paragraph">Если купленный у нас товар поломается или заискрипит,<br> а также в случае пожара, спровоцированного его возгаранием,<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br>
+							Дом уж восстановите как-нибудь сами.
+						</p>
+					</div>
+
+					<div class="service-description service-loan display-none">
+						<h3 class="service-description-title">Кредит</h3>
+						<p class="service-description-paragraph">Залезть в долговую яму стало проще! <br>
 							Кредитные консультанты придут вам на помощь.
 							<a class="request-loan button" href="request-loan.html">Отправить заявку</a>
 						</p>
 					</div>
 					
-					<div class="services-warranty services-description display-none">
-						<h3  class="services-description-title">Гарантия</h3>
-						<p class="services-description-paragraph">Если купленный у нас товар поломается или заискрипит,<br> а также в случае пожара, спровоцированного его возгаранием,<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br>
-							Дом уж восстановите как-нибудь сами.
-						</p>
-					</div>
 					
-					<div class="services-delivery services-description">
-						<h3 class="services-description-title">Доставка</h3>
-						<p class="services-description-paragraph">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! <br>Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>
-						<!-- понимание как сделать форматирование без <br> == 0; -->
-					</div>
 				</div>
 			</div>
 		</section>
+
+
 		
 		<div class="wrapper">
 			<section class="company-info">
@@ -407,6 +408,7 @@
 		var mapLink = document.querySelector(".map");
 		var	mapClose = document.querySelector(".map-close");
 
+		// Попап заказа
 		for (var i = 0; i < purchaseLink.length; i++){
 			purchaseLink[i].addEventListener("click", function(evt) {
 			evt.preventDefault();
@@ -420,6 +422,8 @@
 			purchasePopup.classList.add("display-none");
 		});
 
+		// попап отзыва
+
 		feedbackLink.addEventListener("click", function(evt) {
 			evt.preventDefault();
 			feedbackPopup.classList.remove("display-none");
@@ -429,7 +433,7 @@
 			evt.preventDefault();
 			feedbackPopup.classList.add("display-none");
 		});
-
+		// попап карты
 		mapLink.addEventListener("click", function(evt) {
 			evt.preventDefault();
 			mapPopup.classList.remove("display-none");
@@ -439,7 +443,6 @@
 			evt.preventDefault();
 			mapPopup.classList.add("display-none");
 		});
-
 
 	</script>
   </body>
