@@ -1,4 +1,4 @@
-	var purchasePopup = document.querySelector(".purchase-popup");
+		var purchasePopup = document.querySelector(".purchase-popup");
 		var purchaseLink = document.querySelectorAll(".button-add-to-cart");
 		var purchaseClose = document.querySelector(".purchase-close");
 		var feedbackPopup = document.querySelector(".feedback-popup");
@@ -7,8 +7,10 @@
 		var mapPopup = document.querySelector(".map-popup");
 		var mapLink = document.querySelector(".map");
 		var	mapClose = document.querySelector(".map-close");
-
+		var tab = document.querySelectorAll(".service-option");
+		var tabContents = document.querySelectorAll(".service-description");
 		// Попап заказа
+
 		for (var i = 0; i < purchaseLink.length; i++){
 			purchaseLink[i].addEventListener("click", function(evt) {
 			evt.preventDefault();
@@ -43,3 +45,16 @@
 			evt.preventDefault();
 			mapPopup.classList.add("display-none");
 		});
+//потом!
+		// for (var j = 0; j < tab.length; j++) {
+		// 	tab[j].addEventListener("click", function(evt) {
+		// 		evt.preventDefault();
+		// 		debugger;
+		// 		tabContents[a].classList.remove("display-none");
+		// 	});
+		// 	}
+
+	
+
+
+

@@ -571,8 +571,9 @@ position: relative;
 	/*flex-basis: 620px;*/
 	width: 620px;
 	padding: 0;
-	margin: 0;
-	margin-top: 18px;
+	/*margin: 0;*/
+	margin: 18px 0;
+
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: flex-start;
@@ -704,6 +705,8 @@ position: relative;
 	position: relative;
 	padding: 0;
 	margin-top: 20px;
+	margin-bottom: 0px;
+
 	width: 620px;
 	height: 266px;
 }
@@ -712,6 +715,55 @@ position: relative;
 	position: relative;
 	width: 620px;
 	height: 266px;
+}
+
+
+.arrow-left {
+	position: absolute;
+	top: 114px;
+	left: 25px;
+}
+
+
+
+.arrow-right {
+	position: absolute;
+	
+	top: 114px;
+	right: 20px;
+	
+
+}
+
+.icon-left, 
+.icon-right {
+	width: 22px;
+	height: 40px;
+	fill:#ffffff;
+}
+
+.slider-position {
+	content: "";
+	position: absolute;
+	bottom: 36px;
+	left: calc(50% - 15px);
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #ffffff;
+}
+
+.slider-position:last-child {
+	left: calc(50% + 5px);
+}
+
+
+.slider-position-current {
+	box-shadow: inset 0 0 0 2px #ffffff;
+}
+
+.slider-position.slider-position-current {
+	background-color: #ee3643;
 }
 
 /*.slide::before	{
@@ -1169,6 +1221,18 @@ input.service-tab[type="radio"]:checked + label.service-option {
 	border-color: transparent;
 }
 
+/*#radio-delivery:checked ~ .service-delivery {
+	display: block;
+}
+
+#radio-warranty:checked ~ .service-warranty {
+	display: block;
+}
+
+#radio-loan:checked ~ .service-loan {
+	display: block;
+}*/
+
 
 .services-list {
 	position: relative;
@@ -1197,6 +1261,7 @@ input.service-tab[type="radio"]:checked + label.service-option {
 /*ниже дивы*/
 
 .service-description { /*вспомогательное*/
+	/*display:none;*/
 	width: 640px;
 	height: 100%;
 	padding-left: 20px;
@@ -1233,6 +1298,7 @@ input.service-tab[type="radio"]:checked + label.service-option {
 }
 
 .service-warranty {
+	/*display: block;*/
 	background-image: url("../img/services-bg-warranty.png");
 	background-repeat: no-repeat;
 }
@@ -1242,16 +1308,21 @@ input.service-tab[type="radio"]:checked + label.service-option {
 }
 
 .service-delivery {
+	display: block;
 	background-image: url("../img/services-bg-delivery.png");
 	background-repeat: no-repeat;
 	/*background-position: right bottom;*/
 }
+
+
+
 
 .service-delivery .service-description-paragraph {
 	width: 280px;
 }
 
 .service-loan {
+	/*display: none;*/
 	background-image: url("../img/services-bg-loan.png");
 	background-repeat: no-repeat;
 }
@@ -1334,7 +1405,7 @@ input.service-tab[type="radio"]:checked + label.service-option {
 	display: inline-block;
 	margin: 0;
 	padding: 0;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
     width: 300px;
     height: 158px;
 }
@@ -1467,7 +1538,7 @@ input.service-tab[type="radio"]:checked + label.service-option {
 	/*padding-top: 37px;*/
 	/*	padding-left: 1px; !pl1px*/
 	margin: 0;
-	margin-right: 140px;
+	margin-right: 100px;
 }
 
 .footer-link {
@@ -1528,7 +1599,7 @@ input.service-tab[type="radio"]:checked + label.service-option {
 /* два селектора ниже слетят когда появятся социалистические кнопки*/
 .footer-feedback {
 	padding: 0;
-	padding-left: 120px;
+	padding-left: 40px;
 }
 
 .footer-dev {

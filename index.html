@@ -37,6 +37,12 @@
 			<path fill="#63a63e" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 			<path fill="#fff" d="M24.068 10.214c-0.088-0.087-0.209-0.141-0.343-0.141s-0.255 0.054-0.343 0.141l-8.94 8.94c-0.088 0.087-0.209 0.141-0.343 0.141s-0.255-0.054-0.343-0.141l-3.947-3.946c-0.088-0.087-0.209-0.141-0.343-0.141s-0.255 0.054-0.343 0.141l-1.714 1.714c-0.087 0.088-0.141 0.209-0.141 0.343s0.054 0.255 0.141 0.343l6.346 6.347c0.088 0.087 0.209 0.141 0.343 0.141s0.255-0.054 0.343-0.141l11.34-11.34c0.087-0.088 0.141-0.209 0.141-0.343s-0.054-0.255-0.141-0.343l-1.714-1.714z"></path>
 		</symbol>
+		<symbol id="icon-left" viewBox="0 0 22 40" width="22" height="40">
+			<polygon points="19.83,-0.035 21.919,2.064 4.13,19.947 21.977,37.886 19.887,39.985 -0.048,19.947 "/>
+		</symbol>
+		<symbol id="icon-right" viewBox="0 0 22 40">
+			<polygon  points="2.098,-0.035 0.009,2.064 17.798,19.947 -0.048,37.886 2.041,39.985 21.976,19.947 	"/>
+		</symbol>
 	</defs>
 	</svg>
 	<!-- SVG иконки - конец -->
@@ -104,16 +110,44 @@
 						</li>
 					</ul>
 					<div class="slider-block">
-						<a class="slider-right-arrow" href="#next-right"></a>
-						<a class="slider-left-arrow" href="#next-left"></a>
-						<a class="button button-slider" href="catalog-tools-drill.html">Открыть каталог</a>
+						
 						<div class="slide slide-1 display-none">
 							<h3 class="slide-header">Дрели</h3>
 							<p class="slide-paragraph">Соседям на радость!</p>
+							<a class="slider-right-arrow" href="#next-right"></a>
+							<a class="slider-left-arrow" href="#next-left"></a>
+							<a class="button button-slider" href="catalog-tools-drill.html">Открыть каталог</a>
+							<div class="arrow-right">
+								<svg class="icon-right">
+ 									<use xlink:href="#icon-right"></use>
+								</svg>
+							</div>
+							<div class="arrow-left">
+								<svg  class="icon-left">
+ 							 		<use xlink:href="#icon-left"></use>
+								</svg>
+							</div>
+							<div class="slider-position slider-position-current"></div>
+							<div class="slider-position"></div>
 						</div>
 						<div class="slide slide-2"> 
 							<h3 class="slide-header">Перфораторы</h3>
 							<p class="slide-paragraph">Настоящие мужские игрушки</p>
+							<a class="slider-right-arrow" href="#next-right"></a>
+							<a class="slider-left-arrow" href="#next-left"></a>
+							<a class="button button-slider" href="catalog-tools-drill.html">Открыть каталог</a>
+							<div class="arrow-right">
+								<svg class="icon-right">
+ 									<use xlink:href="#icon-right"></use>
+								</svg>
+							</div>
+							<div class="arrow-left">
+								<svg class="icon-left">
+ 							 		<use xlink:href="#icon-left"></use>
+								</svg>
+							</div>
+							<div class="slider-position "></div>
+							<div class="slider-position slider-position-current"></div>
 						</div>
 					</div>
 				</div>
@@ -149,10 +183,7 @@
 								<div class="item-image"><img src="img/bosch-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="169"> </div>
 								<h3 class="item-caption">Перфоратор BOSCH BFG 9000</h3>
 								<span class="old-price">32500 Р.</span>
-								<!-- в нормальной версии поменять на спан с текущей ценой поменять на ссылку ведущую на страницу товара
-												
-								! сделать ссылки ведущие на несвёрстаные страницы попапчиками - тип "вы нажали на ссыль attr(href) или как-то так.
-								попапы длительностью 1-2 секунды, с автоматическим fade-out -->
+								
 								<button class="price button" type="button" href="">25500 Р.</button>
 								<div class="catalog-item-on-hover">
 									<button type="button" class="button-add-to-cart"><svg class="hover-icon icon-button-cart"><use xlink:href="#icon-cart"></use></svg>Купить</button>
@@ -229,25 +260,24 @@
 			<div class="wrapper">
 				<h2 class="services-title">Сервисы</h2>
 				<p class="service-description-paragraph service-description-general">Хороший интернет-магазин отличается от плохого не только ценами! <br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-
+				<!-- <input type="radio" name="service-radio" id="radio-delivery" class="service-tab" checked>
+					<input type="radio" name="service-radio" id="radio-warranty" class="service-tab">
+					<input type="radio" name="service-radio" id="radio-loan" class="service-tab"> -->
 				<div class="services-wrapper">
 			
 					<div class="services-list">
 						<input type="radio" name="service-radio" id="radio-delivery" class="service-tab" checked>
 						<label class="service-option " for="radio-delivery">Доставка</label>
-						<!-- service-option-selected -->
+						
 						<input type="radio" name="service-radio" id="radio-warranty" class="service-tab">
 						<label class="service-option" for="radio-warranty">Гарантия</label>
-						<!-- service-option-link -->
+						
 						<input type="radio" name="service-radio" id="radio-loan" class="service-tab">
 						<label class="service-option" for="radio-loan">Кредит</label>
-						<!-- service-option-link -->
-						
-						
 						
 					</div>
 					
-					<div class="service-description service-delivery">
+					<div class="service-description service-delivery display-none">
 						<h3 class="service-description-title">Доставка</h3>
 						<p class="service-description-paragraph">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! <br>Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>
 						<!-- понимание как сделать форматирование без <br> == 0; -->
