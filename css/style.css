@@ -223,16 +223,16 @@ input[type="radio"].visually-hidden {
 	color: rgba(255, 255, 255, 0.6);
 }
 
-.header-cart-has-items {
+.header-shortcut-full {
 	background-color: #ee3643;
 }
 
-.header-cart-has-items:hover,
-.header-cart-has-items:focus {
+.header-shortcut-full:hover,
+.header-shortcut-full:focus {
 	background-color: #ca2c37;
 }
 
-.header-cart-has-items:active {
+.header-shortcut-full:active {
 	background-color: #ba2732;
 	color: rgba(255, 255, 255, 0.5);
 }
@@ -1592,6 +1592,7 @@ input.service-tab[type="radio"]:checked + label.service-option {
 	width: 20px;
 	height: 22px;
 	z-index: 10;
+	cursor: pointer;
 }
 
 .icon-filter-max {
