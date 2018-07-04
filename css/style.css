@@ -1131,16 +1131,13 @@ position: relative;
 	text-transform: uppercase;
 }
 
-/*.service-tab {
-	position: absolute;
-	opacity: 0;
-	tabindex: -1;
-	width: 1px;
-	height: 1px;
-}*/
+input.service-tab {
+	display: none;
+}
 
 
-.service-option {
+input.service-tab + .service-option {
+	/*display: block;*/
 	height: 61px;
 	padding-left: 23px;
 	padding-top: 13px;
@@ -1152,7 +1149,8 @@ position: relative;
 	line-height: 30px;
 }
 
-.service-option-link {
+input.service-tab[type="radio"]:checked ~ label.service-option {
+	background-color: red;
 	border-top: 1px solid #405069;
 	border-bottom: 1px solid #293449;
 }
@@ -1897,7 +1895,7 @@ position: relative;
 	
 }
 
-input[type=checkbox]:not(:checked) + label::before {
+input.filter-input[type=checkbox]:not(:checked) + label::before {
 	position: absolute;
 	top: 11px;
 	left: 0;
@@ -1909,7 +1907,7 @@ input[type=checkbox]:not(:checked) + label::before {
 }
 
 
-input[type=checkbox]:checked + label::before {
+input.filter-input[type=checkbox]:checked + label::before {
 	position: absolute;
 	top: 11px;
 	left: 0;
@@ -1930,7 +1928,7 @@ input[type=checkbox]:checked + label::before {
 	margin-bottom: 45px;
 }
 
-input[type=radio]:checked + label::before {
+input.filter-input[type=radio]:checked + label::before {
 	position: absolute;
 	top: 10px;
 	left: -1px;
@@ -1941,7 +1939,7 @@ input[type=radio]:checked + label::before {
 	background-repeat: no-repeat;
 }
 
-input[type=radio]:not(:checked) + label::before {
+input.filter-input[type=radio]:not(:checked) + label::before {
 	position: absolute;
 	top: 10px;
 	left: -1px;
@@ -1953,25 +1951,25 @@ input[type=radio]:not(:checked) + label::before {
 }
 
 
-input[type="radio"] + label::before,
-input[type="checkbox"] + label::before {
+input.filter-input[type="radio"] + label::before,
+input.filter-input[type="checkbox"] + label::before {
 	opacity: 0.79;
 }
 
-input[type="radio"] + label:hover::before,
-input[type="checkbox"] + label:hover::before {
+input.filter-input[type="radio"] + label:hover::before,
+input.filter-input[type="checkbox"] + label:hover::before {
 	opacity: 1;
 }
 
 
-input[type="radio"]:disabled + label,
-input[type="checkbox"]:disabled + label {
+input.filter-input[type="radio"]:disabled + label,
+input.filter-input[type="checkbox"]:disabled + label {
 	opacity: 0.4; 
 	/* прозрачность текста 40% */
 }
 
-input[type="radio"]:disabled + label::before,
-input[type="checkbox"]:disabled + label::before {
+input.filter-input[type="radio"]:disabled + label::before,
+input.filter-input[type="checkbox"]:disabled + label::before {
 	opacity: 0.75; 
 	/* прозрачность чекбокса, накладыватся поверх прозрачности текста, итого 30% */
 }
