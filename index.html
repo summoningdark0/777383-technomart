@@ -3,18 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-	<link rel="stylesheet" href="css/normalize.css"> <!--нормалайз -->
-	<link rel="stylesheet" href="css/style.css"> <!-- стили -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css" type="text/css">
-	<!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">  --><!-- PT Sans Regular + Bold, Eng + Cyr -->
-	<!-- <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">  --><!-- Cuprum Regular + Italic + Bold, Eng + Cyr // убрать италик удалив 400i  -->
   </head>
   <body>
 	<!-- SVG иконки - начало -->
   	<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<defs>
 		<symbol id="icon-search" viewBox="0 0 32 32">
-			<!-- ФФ обрезает два пикселя слева, нужен вьюбокс -2 0 32 32 -->
 			<path d="M32 29.338l-6.667-6.667c1.811-2.342 2.903-5.32 2.903-8.553 0-0 0-0.001 0-0.001v0c0-7.797-6.321-14.118-14.118-14.118s-14.118 6.321-14.118 14.118c0 7.797 6.321 14.118 14.118 14.118v0c3.219 0 6.178-1.090 8.553-2.903l6.667 6.667 2.662-2.662zM3.765 14.118c0-5.709 4.644-10.353 10.353-10.353 5.707 0 10.353 4.644 10.353 10.353 0 5.707-4.646 10.353-10.353 10.353-5.715-0.006-10.347-4.638-10.353-10.352v-0.001z"></path>
 		</symbol>
 		<symbol  id="icon-bookmark" viewBox="0 0 28 32">
@@ -26,7 +23,6 @@
 			<path d="M32 4.267h-23.317l-0.9-4.267h-7.782v4.267h4.333l4.235 19.2h23.433v-4.267h-11.859l11.859-4.371z"></path>
 		</symbol>
 		<symbol id="icon-login" viewBox="0 0 38 32">
-			<!-- <title>icon-login</title> - убрал все тайтлы, могут поломать а11и-->
 			<path d="M28 16l-16.706-16v11.294h-11.294v9.412h11.294v11.294z"></path>
 			<path d="M31.974 28.254h-9.463v3.746h9.463c4.1 0 5.655-3.407 5.702-5.696v-20.604c-0.047-2.291-1.602-5.7-5.702-5.7h-9.463v3.746h9.463c1.579 0 1.867 1.282 1.901 1.99v20.525c-0.032 0.708-0.322 1.993-1.901 1.993z"></path>
 		</symbol>
@@ -37,7 +33,7 @@
 			<path fill="#63a63e" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 			<path fill="#fff" d="M24.068 10.214c-0.088-0.087-0.209-0.141-0.343-0.141s-0.255 0.054-0.343 0.141l-8.94 8.94c-0.088 0.087-0.209 0.141-0.343 0.141s-0.255-0.054-0.343-0.141l-3.947-3.946c-0.088-0.087-0.209-0.141-0.343-0.141s-0.255 0.054-0.343 0.141l-1.714 1.714c-0.087 0.088-0.141 0.209-0.141 0.343s0.054 0.255 0.141 0.343l6.346 6.347c0.088 0.087 0.209 0.141 0.343 0.141s0.255-0.054 0.343-0.141l11.34-11.34c0.087-0.088 0.141-0.209 0.141-0.343s-0.054-0.255-0.141-0.343l-1.714-1.714z"></path>
 		</symbol>
-		<symbol id="icon-left" viewBox="0 0 22 40" width="22" height="40">
+		<symbol id="icon-left" viewBox="0 0 22 40">
 			<polygon points="19.83,-0.035 21.919,2.064 4.13,19.947 21.977,37.886 19.887,39.985 -0.048,19.947 "/>
 		</symbol>
 		<symbol id="icon-right" viewBox="0 0 22 40">
@@ -97,7 +93,7 @@
 	<main class="main">
 		<div class="wrapper">
 			<section class="featured">
-				<h2 class="visually-hidden">Спецпредложения</h2><!-- Скрыть -->
+				<h2 class="visually-hidden">Спецпредложения</h2>
 				<div>
 					<ul class="featured-category-list list-style-none">
 						<li class="featured-category featured-materials item-new">
@@ -151,9 +147,6 @@
 						</div>
 					</div>
 				</div>
-				<div>
-
-					<!-- по непонятной причине кнопки смещены на несколько пикселей	влево, хотя используется абсолютно идентичный код  -->
 					<ul class="featured-category-list list-style-none">
 						<li class="featured-category featured-heavy-machinery">
 							<h3 class="featured-title">Техника</h3>
@@ -168,9 +161,8 @@
 							<a class="featured-button" href="delivery.html">бесплатно</a>
 						</li>
 					</ul>
-				</div>
 			</section>
-			
+		</div>
 			<div class="wrapper">
 				<section class="popular popular-items">
 					<div class="popular-items-header">
@@ -179,69 +171,70 @@
 					</div>
 					<ul class="popular-items-list list-style-none">
 						<li class="item">
-							<a href="#" class="item-wrapper">
+							<div class="item-wrapper">
 								<div class="item-image"><img src="img/bosch-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="169"> </div>
 								<h3 class="item-caption">Перфоратор BOSCH BFG 9000</h3>
 								<span class="old-price">32500 Р.</span>
 								
-								<button class="price button" type="button" href="">25500 Р.</button>
+								<button class="price button" type="button">25500 Р.</button>
 								<div class="catalog-item-on-hover">
 									<button type="button" class="button-add-to-cart"><svg class="hover-icon icon-button-cart"><use xlink:href="#icon-cart"></use></svg>Купить</button>
 									<button type="button" class="button-bookmark">В закладки</button>
 								</div>
-							</a>
+							</div>
 						</li>
 						<li class="item">
-							<a href="" class="item-wrapper">
+							<div class="item-wrapper">
 								<div class="item-image">
 									<img src="img/bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="169">
 								</div>
 								<h3 class="item-caption">Перфоратор BOSCH BFG 3000</h3>
 								<span class="old-price">22500 Р.</span>
-								<button class="price button" type="button" href="">15500 Р.</button>
+								<button class="price button" type="button">15500 Р.</button>
 								<div class="catalog-item-on-hover">
 									<button type="button" class="button-add-to-cart"><svg class="hover-icon icon-button-cart"><use xlink:href="#icon-cart"></use></svg>Купить</button>
 									<button type="button" class="button-bookmark">В закладки</button>
 								</div>
-							</a>
+							</div>
 						</li>
 						<li class="item">
-							<a href="" class="item-wrapper">
+							<div class="item-wrapper">
 								<div class="item-image">
 									<img src="img/bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="169">
 								</div>
 								<h3 class="item-caption">Перфоратор BOSCH BFG 6000</h3>
 								<span class="old-price">30500 Р.</span>
-								<button class="price button" type="button" href="">25500 Р.</button>
+								<button class="price button" type="button">25500 Р.</button>
 								<div class="catalog-item-on-hover">
 									<button type="button" class="button-add-to-cart"><svg class="hover-icon icon-button-cart"><use xlink:href="#icon-cart"></use></svg>Купить</button>
 									<button type="button" class="button-bookmark">В закладки</button>
 								</div>
-							</a>
+							</div>
 						</li>
 						<li class="item item-new">
-							<a href="" class="item-wrapper">
+							<div class="item-wrapper">
 								<div class="item-image">
 									<img src="img/bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="169">
 								</div>
 								<h3 class="item-caption">Перфоратор BOSCH BFG 2000</h3>
 								<span class="old-price"></span>
-								<button class="price button" type="button" href="">12500 Р.</button>
+								<button class="price button" type="button">12500 Р.</button>
 								<div class="catalog-item-on-hover">
 									<button type="button" class="button-add-to-cart"><svg class="hover-icon icon-button-cart"><use xlink:href="#icon-cart"></use></svg>Купить</button>
 									<button type="button" class="button-bookmark">В закладки</button>
 								</div>
-							</a>
+							</div>
 						</li>
 					</ul>
 				</section>
 			</div>
-			
+
+	
+		<div class="wrapper">
 			<section class="popular popular-brands">
 				<div class="popular-brands-header">
 					<h2 class="popular-caption">Популярные производители:</h2>
-					<a class="button button-popular" href="catalog-brands.html">Все производители</a> 
-					<!-- вот здесь по макету кнопка на пиксель ниже, но что-то необосновано ради этого селектор свой делать -->
+					  <a class="button button-popular" href="catalog-brands.html">Все производители</a>  
 				</div>
 				<ul class="popular-brands-list list-style-none">
 					<li class="brand"><a class="brand-link" href="catalog-bosch.html"><img src="img/brands-bosch.jpg" alt="BOSCH" width="185" height="89"></a></li>
@@ -260,27 +253,20 @@
 			<div class="wrapper">
 				<h2 class="services-title">Сервисы</h2>
 				<p class="service-description-paragraph service-description-general">Хороший интернет-магазин отличается от плохого не только ценами! <br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-				<!-- <input type="radio" name="service-radio" id="radio-delivery" class="service-tab" checked>
-					<input type="radio" name="service-radio" id="radio-warranty" class="service-tab">
-					<input type="radio" name="service-radio" id="radio-loan" class="service-tab"> -->
+				
 				<div class="services-wrapper">
-			
 					<div class="services-list">
 						<input type="radio" name="service-radio" id="radio-delivery" class="service-tab" checked>
 						<label class="service-option " for="radio-delivery">Доставка</label>
-						
 						<input type="radio" name="service-radio" id="radio-warranty" class="service-tab">
 						<label class="service-option" for="radio-warranty">Гарантия</label>
-						
 						<input type="radio" name="service-radio" id="radio-loan" class="service-tab">
 						<label class="service-option" for="radio-loan">Кредит</label>
-						
 					</div>
 					
 					<div class="service-description service-delivery display-none">
 						<h3 class="service-description-title">Доставка</h3>
 						<p class="service-description-paragraph">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! <br>Ведь мы неплохо заработаем, <br>поднимая его на ваш этаж!</p>
-						<!-- понимание как сделать форматирование без <br> == 0; -->
 					</div>
 					
 					<div class="service-description service-warranty display-none">
@@ -298,12 +284,9 @@
 						</p>
 					</div>
 					
-					
 				</div>
 			</div>
 		</section>
-
-
 		
 		<div class="wrapper">
 			<section class="company-info">
@@ -324,22 +307,22 @@
 				<section class="contact-info">
 					<h3 class="company-info-title">Контакты</h3>
 					<p class="company-info-paragraph">Вы можете забрать товар сами, заехав в наш офис:</p>
-					<a class="map" href="map.html"> 
-						<!-- Див под карту -->	
+					<a class="map" href="map.html">
 						<img src="img/map.jpg" width="300" height="158" alt="Наше здание на карте">
 					</a>
 
 					<!-- Карта начало -->
 					<div class="map-popup popup display-none">
 						<h2 class="visually-hidden">Карта проезда</h2> 
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5823605615665!2d30.320612!3d59.93907200000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1530554909703" width="940" height="445" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5823605615665!2d30.320612!3d59.93907200000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1530554909703" width="940" height="445" style="border:0" allowfullscreen></iframe> 
+						<!-- frameborder="0"  -->
 						<a href="#close"><svg class="icon-popup-close map-close"><use xlink:href="#icon-close"></use></svg></a> 
 					</div>
 					<!-- Карта - конец -->
 
 						<a class="button button-contact-us" href="contact-us.html">Заблудились? Напишите нам!</a>
 				</section>
-						<!-- Обратная связь - начало -->
+				<!-- Обратная связь - начало -->
 				<div class="feedback-popup display-none popup">
 					<div class="popup-wrapper">
 						<h2 class="visually-hidden">Обратная связь</h2> 
@@ -349,25 +332,24 @@
 							<label class="feedback-label" for="feedback-email">Ваш e-mail:
 							<input class="feedback-input" name="feedback-email" id="feedback-email" type="email" placeholder="email@example.com"></label>
 							<label class="feedback-label" for="feedback-content">Текст письма:
-							<textarea class="feedback-input feedback-area" cols="62" rows="5" name="feedback-content" id="feedback-content" cols="30" rows="10" placeholder="В свободной форме"></textarea></label>
+							<textarea class="feedback-input feedback-area" cols="62" rows="5" name="feedback-content" id="feedback-content" placeholder="В свободной форме"></textarea></label>
 						</form>
 					</div>
 					<div class="popup-button-field">
-					<div class="popup-wrapper">
-						<button class="button feedback-button" for="feedback-form" type="submit">Отправить</button>
-					</div>
+						<div class="popup-wrapper">
+							<button class="button feedback-button" form="feedback-form" type="submit">Отправить</button>
+						</div>
 					</div>
 					<a href="#close"><svg class="icon-popup-close feedback-close"><use xlink:href="#icon-close"></use></svg></a> 
 				</div>
-					<!-- Обратная связь - конец -->
-				<!-- далее - в конце section company-info -->
+				<!-- Обратная связь - конец -->
 			</section>
 		</div>
 	</main>
 
 	<footer class="footer">
 		<div class="footer-top">
-			<div class="wrapper"> <!-- а не перебор ли здесь с дивами? -->
+			<div class="wrapper">
 				<div class="footer-top-contents">
 					<div class="footer-info-section">
 						<a class="footer-logo" href="">Техномарт</a>
@@ -433,56 +415,6 @@
 	</div>
 	<!-- Успешно заказано - конец -->
 
-
-
-<!-- 	<script type="text/javascript">
-		var purchasePopup = document.querySelector(".purchase-popup");
-		var purchaseLink = document.querySelectorAll(".button-add-to-cart");
-		var purchaseClose = document.querySelector(".purchase-close");
-		var feedbackPopup = document.querySelector(".feedback-popup");
-		var feedbackLink = document.querySelector(".button-contact-us");
-		var feedbackClose = document.querySelector(".feedback-close");
-		var mapPopup = document.querySelector(".map-popup");
-		var mapLink = document.querySelector(".map");
-		var	mapClose = document.querySelector(".map-close");
-
-		// Попап заказа
-		for (var i = 0; i < purchaseLink.length; i++){
-			purchaseLink[i].addEventListener("click", function(evt) {
-			evt.preventDefault();
-			// console.log("Now I Became Horse");
-			purchasePopup.classList.remove("display-none");
-		});
-		}
-
-		purchaseClose.addEventListener("click", function(evt) {
-			evt.preventDefault();
-			purchasePopup.classList.add("display-none");
-		});
-
-		// попап отзыва
-
-		feedbackLink.addEventListener("click", function(evt) {
-			evt.preventDefault();
-			feedbackPopup.classList.remove("display-none");
-		});
-
-		feedbackClose.addEventListener("click", function(evt){
-			evt.preventDefault();
-			feedbackPopup.classList.add("display-none");
-		});
-		// попап карты
-		mapLink.addEventListener("click", function(evt) {
-			evt.preventDefault();
-			mapPopup.classList.remove("display-none");
-		});
-
-		mapClose.addEventListener("click", function(evt)	{
-			evt.preventDefault();
-			mapPopup.classList.add("display-none");
-		});
-
-	</script> -->
-	<script type="text/javascript" src="js/scripts-index.js"></script>
+	<script src="js/scripts-index.js"></script>
   </body>
 </html>
