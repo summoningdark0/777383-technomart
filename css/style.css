@@ -1136,7 +1136,7 @@ input.service-tab {
 }
 
 
-input.service-tab + .service-option {
+input.service-tab[type="radio"] + label.service-option {
 	/*display: block;*/
 	height: 61px;
 	padding-left: 23px;
@@ -1147,33 +1147,28 @@ input.service-tab + .service-option {
 	font-weight: 700;
 	font-size: 21px;
 	line-height: 30px;
-}
-
-input.service-tab[type="radio"]:checked ~ label.service-option {
-	background-color: red;
 	border-top: 1px solid #405069;
 	border-bottom: 1px solid #293449;
 }
 
-.service-option-link:hover,
-.service-option-link:focus {
+/*input.service-tab[type="radio"] + label.service-option {
+	background-color: red;
+	
+}
+*/
+input.service-tab[type="radio"] + label.service-option:hover,
+input.service-tab[type="radio"] + label.service-option:focus {
 	background-color: #293449;
 	border-bottom-color: transparent;
 }
 
-.service-option-link:active,
-.service-option-selected {
+input.service-tab[type="radio"] + label.service-option:active,
+input.service-tab[type="radio"]:checked + label.service-option {
 	background-color: #ffffff;
 	color: #32425c;
 	border-color: transparent;
 }
 
-/*
-дублируется с селектором выше
-.service-option-selected {
-	background-color: #ffffff;
-	color: #32425c;
-}*/
 
 .services-list {
 	position: relative;
