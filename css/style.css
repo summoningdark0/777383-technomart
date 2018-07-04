@@ -1876,6 +1876,7 @@ input.service-tab[type="radio"]:checked + label.service-option {
 }
 
 .price-range {
+	position: relative;
 	margin-top: 13px;
 	/*align-self: flex-start;*/
 	width: 220px;
@@ -1886,11 +1887,50 @@ input.service-tab[type="radio"]:checked + label.service-option {
 	/*временная заглушка*/
 }
 
+.icon-filter-range {
+	width: 20px;
+	height: 22px;
+	z-index: 10;
+}
+
+.icon-filter-max {
+	position: absolute;
+	top: 29px;
+	right: 40px;
+}
+
+.icon-filter-min {
+	position: absolute;
+	top: 29px;
+	left: 20px;
+}
+
+.filter-range-active {
+	position: absolute;
+	top: 38px;
+	left: 30px;
+	width: 140px;
+	height: 2px;
+	background-color: #00ca74;
+	z-index: 5;
+}
+
+.filter-range-inactive {
+	position: absolute;
+	top: 38px;
+	left: 30px;
+	width: 170px;
+	height: 2px;
+	background-color: #d7dcde;
+}
+
+
 .price-range-list {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
 	margin-top: 8px;
+	z-index: 2;
 
 }
 
@@ -2263,6 +2303,7 @@ input.filter-input[type="checkbox"]:disabled + label::before {
 	height: 282px;
 	background-color: #ffffff;
 	border-top: 7px solid #ee3643;
+	z-index: 100;
 }
 
 

@@ -5,7 +5,7 @@
 	<title>HTML Academy: Техномарт</title>
 	<link rel="stylesheet" href="css/normalize.css"> <!--нормалайз -->
 	<link rel="stylesheet" href="css/style.css"> <!-- стили -->
-	<link rel="stylesheet" href="fonts/fonts.css" type="text/css">
+	<link rel="stylesheet" href="css/fonts.css" type="text/css">
 				<!--пересадить файл в папку цсс  -->
 
 	<!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> --> <!-- PT Sans Regular + Bold, Eng + Cyr -->
@@ -56,6 +56,12 @@
 			<path fill="#63a63e" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 			<path fill="#fff" d="M24.068 10.214c-0.088-0.087-0.209-0.141-0.343-0.141s-0.255 0.054-0.343 0.141l-8.94 8.94c-0.088 0.087-0.209 0.141-0.343 0.141s-0.255-0.054-0.343-0.141l-3.947-3.946c-0.088-0.087-0.209-0.141-0.343-0.141s-0.255 0.054-0.343 0.141l-1.714 1.714c-0.087 0.088-0.141 0.209-0.141 0.343s0.054 0.255 0.141 0.343l6.346 6.347c0.088 0.087 0.209 0.141 0.343 0.141s0.255-0.054 0.343-0.141l11.34-11.34c0.087-0.088 0.141-0.209 0.141-0.343s-0.054-0.255-0.141-0.343l-1.714-1.714z"></path>
 		</symbol>
+		<symbol id="icon-filter-range" viewBox="0 0 20 23" >
+			<path opacity="0.3" fill="#ABABAB" d="M10,20C4.477,20,0,15.522,0,10v2c0,5.522,4.477,10,10,10c5.522,0,10-4.478,10-10v-2 C20,15.522,15.522,20,10,20z"/>
+		<circle fill="#FFFFFF" cx="10" cy="10" r="10"/>
+		<circle fill="#ABABAB" cx="10" cy="10" r="2"/>
+</symbol>
+
 	</defs>
 	</svg>
 	<!-- SVG иконки - конец -->
@@ -65,7 +71,7 @@
 			<div class="wrapper">
 				<div class="header-top">
 					<h2 class="visually-hidden">Интернет-магазин Техномарт</h2>
-					<a class="header-logo">Техномарт</a>
+					<a class="header-logo" href="index.html">Техномарт</a>
 					<form class="header-search-form">
 						<input class="header-search" is="header-search" type="search" placeholder="Поиск:">
 						<svg class="icon-search">
@@ -134,6 +140,10 @@
 				         <fieldset class="filter-fieldset"> 
 				         		<legend class="filter-legend filter-legend-price">Цена:</legend>
 				         		<div class="price-range">
+				         			<svg class="icon-filter-range icon-filter-min"><use xlink:href="#icon-filter-range"></use></svg>
+				         			<svg class="icon-filter-range icon-filter-max"><use xlink:href="#icon-filter-range"></use></svg>
+				         			<div class="filter-range-active"></div>
+				         			<div class="filter-range-inactive"></div>
 				         			<!-- напихать картинок -->
 				         		</div>
 				         		<div class="price-range-list">
@@ -392,6 +402,7 @@
 		</div>
 		<a href="#close"><svg class="purchase-close icon-popup-close"><use xlink:href="#icon-close"></use></svg></a>
 	</div>
-	<script type="text/javascript" src="js/scripts.js"></script>
+
+	<script type="text/javascript" src="js/scripts-catalog.js"></script>
   </body>
 </html>
