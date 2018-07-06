@@ -17,9 +17,9 @@ body {
 }
 
 
-*:focus {
+/**:focus {
 	outline: 1px solid lightgreen;
-}
+}*/
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
