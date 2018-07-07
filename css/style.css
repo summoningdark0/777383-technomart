@@ -71,7 +71,8 @@ input[type="radio"].visually-hidden {
 	border: 0;
 	padding: 0;
 	white-space: nowrap;
-	clip-path: inset(100%);
+	-webkit-clip-path: inset(100%);
+	        clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
@@ -175,6 +176,24 @@ input[type="radio"].visually-hidden {
 	top: 12px;
 	left: 17px;
 	fill: #ffffff;
+}
+
+.header-search::-webkit-input-placeholder {
+	color: #ffffff;
+	font-size: 17px;
+	opacity: 1; /*фаерфоксу*/
+}
+
+.header-search:-ms-input-placeholder {
+	color: #ffffff;
+	font-size: 17px;
+	opacity: 1; /*фаерфоксу*/
+}
+
+.header-search::-ms-input-placeholder {
+	color: #ffffff;
+	font-size: 17px;
+	opacity: 1; /*фаерфоксу*/
 }
 
 .header-search::placeholder {
@@ -1458,6 +1477,24 @@ input.service-tab[type="radio"]:checked + label.service-option {
 	line-height: 18px;
 }
 
+.feedback-popup ::-webkit-input-placeholder {
+	color: #a9a9a9;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.feedback-popup :-ms-input-placeholder {
+	color: #a9a9a9;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.feedback-popup ::-ms-input-placeholder {
+	color: #a9a9a9;
+	font-size: 13px;
+	line-height: 18px;
+}
+
 .feedback-popup ::placeholder {
 	color: #a9a9a9;
 	font-size: 13px;
@@ -1911,14 +1948,17 @@ input.filter-input[type="checkbox"]:disabled + label::before {
 .sort-parameter-general {
 	color: rgba(0, 0, 0, 0.3);
 	text-decoration: underline;
-	text-decoration-color: #ee3643;
-	text-decoration-style: dotted;
+	-webkit-text-decoration-color: #ee3643;
+	        text-decoration-color: #ee3643;
+	-webkit-text-decoration-style: dotted;
+	        text-decoration-style: dotted;
 }
 
 .sort-parameter-general:focus,
 .sort-parameter-general:hover {
 	color: rgba(0, 0, 0, 1);
-	text-decoration-style: solid;
+	-webkit-text-decoration-style: solid;
+	        text-decoration-style: solid;
 }
 
 .sort-parameter-general:active {
@@ -2006,7 +2046,8 @@ input.filter-input[type="checkbox"]:disabled + label::before {
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	padding-top: 48px;
 	width: 620px;
 	height: 282px;
