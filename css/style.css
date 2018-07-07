@@ -929,8 +929,8 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-flow: row wrap;
 	flex-basis: 940px;
-	justify-content: space-between;
-	align-items: space-between;
+	justify-content: flex-start;
+	/*align-items: space-between;*/
 	margin: 0;
 	padding: 0;
 	margin-bottom: 65px;
@@ -940,11 +940,16 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	margin-bottom: 20px;
+	margin-right: 20px;
 	width: 220px;
 	height: 145px;
 	text-align: center;
 	vertical-align: middle;
 	border: 1px solid #eaeaea;
+}
+
+.brand:nth-child(4n) {
+	margin-right: 0;
 }
 
 .brand:hover,
