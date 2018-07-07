@@ -1108,8 +1108,7 @@ input.service-tab[type="radio"]:checked + label.service-option {
 	text-transform: uppercase;
 }
 
-.service-description-paragraph,
-.category-details-paragraph {
+.service-description-paragraph {
 	margin: 0;
 	padding: 0;
 	padding-bottom: 67px;
@@ -1985,6 +1984,16 @@ input.filter-input[type="checkbox"]:disabled + label::before {
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
+}
+
+.category-details-paragraph {
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	font-family: "PT Sans", "Tahoma", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 24px;
 }
 
 .purchase-popup {
