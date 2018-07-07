@@ -973,6 +973,13 @@ input[type="radio"].visually-hidden {
 	border-bottom: 19px solid transparent;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+.price::after { 
+	left: 120px;
+ }
+/*бешеные хаки для совместимости из интернетов*/
+}
+
 .price:hover::after,
 .price:focus::after {
 	border-left-color: #ca2c37;
