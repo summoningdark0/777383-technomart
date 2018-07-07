@@ -910,6 +910,8 @@ input[type="radio"].visually-hidden {
 }
 
 .button-add-to-cart {
+	display: block;
+	padding: 9px 47px;
 	color: #ffffff;
 	background-color: #63a63e;
 	margin-bottom: 7px;
@@ -917,8 +919,10 @@ input[type="radio"].visually-hidden {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
+	text-decoration: none;
 	border-width: 0;
 	border-bottom: 3px solid #367315;
+
 }
 
 .button-add-to-cart:hover,
