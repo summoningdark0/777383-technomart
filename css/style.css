@@ -1102,7 +1102,7 @@ input.service-tab[type="radio"]:checked + label.service-option {
 }
 
 .service-loan {
-	display: block;
+	/*display: block;*/
 	background-image: url("../img/services-bg-loan.png");
 	background-repeat: no-repeat;
 	background-position: right top;
