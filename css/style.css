@@ -977,7 +977,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
-	height: 285px;
+	min-height: 285px;
 }
 
 .services-title {
@@ -1067,6 +1067,7 @@ input.service-tab[type="radio"]:checked + label.service-option {
 .category-details-paragraph {
 	margin: 0;
 	padding: 0;
+	padding-bottom: 67px;
 	color: #000000;
 	font-family: "PT Sans", "Tahoma", sans-serif;
 	font-weight: 400;
@@ -1074,23 +1075,26 @@ input.service-tab[type="radio"]:checked + label.service-option {
 	line-height: 24px;
 }
 
-.service-description-general {
+/*.service-description-general {
 	margin-bottom: 67px;
 }
-
+*/
 .service-warranty {
+	/*display: block;*/
 	background-image: url("../img/services-bg-warranty.png");
 	background-repeat: no-repeat;
+	background-position: right top;
 }
 
-.service-warranty .service-description-paragraph {
+.service-warranty  .service-description-paragraph {
 	width: 380px;
 }
 
 .service-delivery {
-	display: block;
+	/*display: block;*/
 	background-image: url("../img/services-bg-delivery.png");
 	background-repeat: no-repeat;
+	background-position: right 25px;
 }
 
 .service-delivery .service-description-paragraph {
@@ -1098,8 +1102,14 @@ input.service-tab[type="radio"]:checked + label.service-option {
 }
 
 .service-loan {
+	display: block;
 	background-image: url("../img/services-bg-loan.png");
 	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.service-loan .service-description-paragraph {
+	width: 380px;
 }
 
 .request-loan {
