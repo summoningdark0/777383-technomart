@@ -9,10 +9,12 @@
 			evt.preventDefault();
 			// console.log("Now I Became Horse");
 			purchasePopup.classList.remove("display-none");
+			purchasePopup.classList.add("popup-animation");
 		});
 		}
 
 		purchaseClose.addEventListener("click", function(evt) {
 			evt.preventDefault();
 			purchasePopup.classList.add("display-none");
+			purchasePopup.classList.remove("popup-animation");
 		});

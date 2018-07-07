@@ -12,14 +12,15 @@
 		for (var i = 0; i < purchaseLink.length; i++){
 			purchaseLink[i].addEventListener("click", function(evt) {
 			evt.preventDefault();
-			// console.log("Now I Became Horse");
 			purchasePopup.classList.remove("display-none");
+			purchasePopup.classList.add("popup-animation");
 		});
 		}
 
 		purchaseClose.addEventListener("click", function(evt) {
 			evt.preventDefault();
 			purchasePopup.classList.add("display-none");
+			purchasePopup.classList.remove("popup-animation");
 		});
 
 		// попап отзыва
@@ -27,20 +28,24 @@
 		feedbackLink.addEventListener("click", function(evt) {
 			evt.preventDefault();
 			feedbackPopup.classList.remove("display-none");
+			feedbackPopup.classList.add("feedback-popup-animation");
 		});
 
 		feedbackClose.addEventListener("click", function(evt){
 			evt.preventDefault();
 			feedbackPopup.classList.add("display-none");
+			feedbackPopup.classList.remove("feedback-popup-animation");
 		});
 		// попап карты
 		mapLink.addEventListener("click", function(evt) {
 			evt.preventDefault();
 			mapPopup.classList.remove("display-none");
+		 	mapPopup.classList.add("map-popup-animation");
 		});
 
 		mapClose.addEventListener("click", function(evt)	{
 			evt.preventDefault();
 			mapPopup.classList.add("display-none");
+			mapPopup.classList.remove("map-popup-animation");
 		});
 

@@ -1647,6 +1647,29 @@ input.service-tab[type="radio"]:checked + label.service-option {
 	line-height: 18px;
 }
 
+
+/*аниме*/
+
+@-webkit-keyframes roll-in-right {
+		0% { -webkit-transform: translateX(2000px) scale(0.25); transform: translateX(2000px) scale(0.25); }
+		70% { -webkit-transform: translateX(-30px) scale(0.5); transform: translateX(-30px) scale(0.5); }
+		100% { -webkit-transform: translateX(0) scale(1); transform: translateX(0) scale(1); }
+	}
+
+@keyframes roll-in-right {
+		0% { -webkit-transform: translateX(2000px) scale(0.25); transform: translateX(2000px) scale(0.25); }
+		70% { -webkit-transform: translateX(-30px) scale(0.5); transform: translateX(-30px) scale(0.5); }
+		100% { -webkit-transform: translateX(0) scale(1); transform: translateX(0) scale(1); }
+	}
+
+.feedback-popup-animation {
+	-webkit-animation-name: roll-in-right;
+	        animation-name: roll-in-right;
+	-webkit-animation-duration: 0.4s;
+	        animation-duration: 0.4s;
+}
+/*аниме из дед*/
+
 .feedback-popup ::-webkit-input-placeholder {
 	color: #a9a9a9;
 	font-size: 13px;
@@ -1741,6 +1764,30 @@ input.service-tab[type="radio"]:checked + label.service-option {
 	width: 940px;
 	height: 445px;
 }
+
+/*аниме*/
+
+@-webkit-keyframes mapup {
+	0% {-webkit-transform: scale(0);transform: scale(0); opacity: 0;}
+	70% {-webkit-transform: scale(1);transform: scale(1); opacity: 0.8;}
+	100% {-webkit-transform: scale(1);transform: scale(1); opacity: 1;}
+}
+
+@keyframes mapup {
+	0% {-webkit-transform: scale(0);transform: scale(0); opacity: 0;}
+	70% {-webkit-transform: scale(1);transform: scale(1); opacity: 0.8;}
+	100% {-webkit-transform: scale(1);transform: scale(1); opacity: 1;}
+}
+
+.map-popup-animation {
+	-webkit-animation-name: mapup;
+	        animation-name: mapup;
+	-webkit-animation-duration: 0.3s;
+	        animation-duration: 0.3s;
+}
+
+/*аниме из дед*/
+
 
 .feedback-button {
 	width: 460px;
@@ -2321,9 +2368,8 @@ input.filter-input[type="checkbox"]:disabled + label::before {
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	        -ms-transform: translate(-50%, -50%);
-	    transform: translate(-50%, -50%);
+	margin-left: -310px;
+	margin-top: -141px;
 	padding-top: 48px;
 	width: 620px;
 	height: 282px;
@@ -2331,6 +2377,29 @@ input.filter-input[type="checkbox"]:disabled + label::before {
 	border-top: 7px solid #ee3643;
 	z-index: 100;
 }
+
+/*аниме*/
+
+@-webkit-keyframes roll-in-left {
+		0% { -webkit-transform: translateX(-2000px) scale(0.25); transform: translateX(-2000px) scale(0.25); }
+		70% { -webkit-transform: translateX(30px) scale(0.5); transform: translateX(30px) scale(0.5); }
+		100% { -webkit-transform: translateX(0) scale(1); transform: translateX(0) scale(1); }
+	}
+
+@keyframes roll-in-left {
+		0% { -webkit-transform: translateX(-2000px) scale(0.25); transform: translateX(-2000px) scale(0.25); }
+		70% { -webkit-transform: translateX(30px) scale(0.5); transform: translateX(30px) scale(0.5); }
+		100% { -webkit-transform: translateX(0) scale(1); transform: translateX(0) scale(1); }
+	}
+
+.popup-animation {
+	-webkit-animation-name: roll-in-left;
+	        animation-name: roll-in-left;
+	-webkit-animation-duration: 0.4s;
+	        animation-duration: 0.4s;
+}
+
+/* аниме из дед */
 
 .purchase-message {
 	display: inline-block;
@@ -2376,3 +2445,5 @@ input.filter-input[type="checkbox"]:disabled + label::before {
 .purchase-continue-button:active {
 	opacity: 0.5;
 }
+
+
